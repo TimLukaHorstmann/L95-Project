@@ -2,16 +2,519 @@
  ID  Len.  Stat. Recal  Prec.  Bracket gold test Bracket Words  Tags Accracy
 ============================================================================
    1   10    0   62.50  83.33     5      8    6      1      9     8    88.89
+-<1>---(wn1=  9, bn1=  9)-           -<2>---(wn2=  9, bn2=  6)-
+  0 : 1 : PRP$    my                      0 : 1 : PRP$    my              
+  1 : 1 : NN      aunt                    1 : 1 : NN      aunt            
+  2 : 1 : POS     's                      2 : 1 : POS     's              
+  3 : 1 : NN      can                     3 : 1 : NN      can             
+  4 : 1 : NN      opener                  4 : 1 : NN      opener          
+  5 : 1 : MD      can                     5 : 1 : MD      can             
+  6 : 1 : VB      open                    6 : 1 : VB      open            
+  7 : 1 : DT      a                       7 : 1 : DT      a               
+  8 : 0 : NN      drum                    8 : 0 : VB      drum            
+
+  0 : 5 :   0    9  TOP           0 : 1 :   0    9  S     
+  1 : 1 :   0    9  S             1 : 1 :   0    5  NP    
+  2 : 1 :   0    5  NP            2 : 0 :   0    3  NP    
+  3 : 0 :   1    5  NP            3 : 1 :   5    9  VP    
+  4 : 0 :   2    5  NP            4 : 1 :   6    9  VP    
+  5 : 0 :   3    5  NP            5 : 1 :   7    9  NP    
+  6 : 1 :   5    9  VP          
+  7 : 1 :   6    9  VP          
+  8 : 1 :   7    9  NP          
+
+========
    2   10    0   55.56  83.33     5      9    6      0      9     9   100.00
+-<1>---(wn1=  9, bn1= 10)-           -<2>---(wn2=  9, bn2=  6)-
+  0 : 1 : DT      the                     0 : 1 : DT      the             
+  1 : 1 : JJ      old                     1 : 1 : JJ      old             
+  2 : 1 : NN      car                     2 : 1 : NN      car             
+  3 : 1 : VBD     broke                   3 : 1 : VBD     broke           
+  4 : 1 : RP      down                    4 : 1 : RP      down            
+  5 : 1 : IN      in                      5 : 1 : IN      in              
+  6 : 1 : DT      the                     6 : 1 : DT      the             
+  7 : 1 : NN      car                     7 : 1 : NN      car             
+  8 : 1 : NN      park                    8 : 1 : NN      park            
+
+  0 : 5 :   0    9  TOP           0 : 1 :   0    9  S     
+  1 : 1 :   0    9  S             1 : 1 :   0    3  NP    
+  2 : 1 :   0    3  NP            2 : 1 :   3    9  VP    
+  3 : 0 :   1    3  NP            3 : 0 :   4    5  PRT   
+  4 : 0 :   1    2  ADJP          4 : 1 :   5    9  PP    
+  5 : 1 :   3    9  VP            5 : 1 :   6    9  NP    
+  6 : 0 :   3    5  V           
+  7 : 1 :   5    9  PP          
+  8 : 1 :   6    9  NP          
+  9 : 0 :   7    9  NP          
+
+========
    3   11    0   60.00  75.00     6     10    8      0     10     8    80.00
+-<1>---(wn1= 10, bn1= 11)-           -<2>---(wn2= 10, bn2=  8)-
+  0 : 0 : RB      at                      0 : 0 : IN      at              
+  1 : 0 : RBS     least                   1 : 0 : JJS     least           
+  2 : 1 : CD      two                     2 : 1 : CD      two             
+  3 : 1 : NNS     men                     3 : 1 : NNS     men             
+  4 : 1 : VBD     broke                   4 : 1 : VBD     broke           
+  5 : 1 : RP      in                      5 : 1 : RP      in              
+  6 : 1 : CC      and                     6 : 1 : CC      and             
+  7 : 1 : VBD     stole                   7 : 1 : VBD     stole           
+  8 : 1 : PRP$    my                      8 : 1 : PRP$    my              
+  9 : 1 : NN      tv                      9 : 1 : NN      tv              
+
+  0 : 5 :   0   10  TOP           0 : 1 :   0   10  S     
+  1 : 1 :   0   10  S             1 : 1 :   0    4  NP    
+  2 : 1 :   0    4  NP            2 : 0 :   0    3  QP    
+  3 : 0 :   0    3  ADVP          3 : 1 :   4   10  VP    
+  4 : 0 :   1    3  ADVP          4 : 1 :   4    6  VP    
+  5 : 1 :   4   10  VP            5 : 0 :   5    6  PRT   
+  6 : 1 :   4    6  VP            6 : 1 :   7   10  VP    
+  7 : 0 :   4    6  V             7 : 1 :   8   10  NP    
+  8 : 0 :   6   10  CONJP       
+  9 : 1 :   7   10  VP          
+ 10 : 1 :   8   10  NP          
+
+========
    4   10    0   45.45  83.33     5     11    6      0      9     8    88.89
+-<1>---(wn1=  9, bn1= 12)-           -<2>---(wn2=  9, bn2=  6)-
+  0 : 1 : NNP     kim                     0 : 1 : NNP     kim             
+  1 : 1 : CC      and                     1 : 1 : CC      and             
+  2 : 1 : NNP     sandy                   2 : 1 : NNP     sandy           
+  3 : 0 : RB      both                    3 : 0 : DT      both            
+  4 : 1 : VBD     broke                   4 : 1 : VBD     broke           
+  5 : 1 : RP      up                      5 : 1 : RP      up              
+  6 : 1 : IN      with                    6 : 1 : IN      with            
+  7 : 1 : PRP$    their                   7 : 1 : PRP$    their           
+  8 : 1 : NNS     partners                8 : 1 : NNS     partners        
+
+  0 : 5 :   0    9  TOP           0 : 1 :   0    9  S     
+  1 : 1 :   0    9  S             1 : 1 :   0    3  NP    
+  2 : 1 :   0    3  NP            2 : 1 :   4    9  VP    
+  3 : 0 :   0    1  NP            3 : 0 :   5    6  PRT   
+  4 : 0 :   1    3  CONJP         4 : 1 :   6    9  PP    
+  5 : 0 :   2    3  NP            5 : 1 :   7    9  NP    
+  6 : 0 :   3    9  VP          
+  7 : 0 :   3    4  ADVP        
+  8 : 1 :   4    9  VP          
+  9 : 0 :   4    6  V           
+ 10 : 1 :   6    9  PP          
+ 11 : 1 :   7    9  NP          
+
+========
    5   15    0   66.67  62.50    10     15   16      0     14    13    92.86
+-<1>---(wn1= 14, bn1= 16)-           -<2>---(wn2= 14, bn2= 16)-
+  0 : 1 : DT      the                     0 : 1 : DT      the             
+  1 : 1 : NN      horse                   1 : 1 : NN      horse           
+  2 : 1 : RB      as                      2 : 1 : RB      as              
+  3 : 1 : RB      well                    3 : 1 : RB      well            
+  4 : 0 : RB      as                      4 : 0 : IN      as              
+  5 : 1 : DT      the                     5 : 1 : DT      the             
+  6 : 1 : NNS     rabbits                 6 : 1 : NNS     rabbits         
+  7 : 1 : WDT     which                   7 : 1 : WDT     which           
+  8 : 1 : PRP     we                      8 : 1 : PRP     we              
+  9 : 1 : VBD     wanted                  9 : 1 : VBD     wanted          
+ 10 : 1 : TO      to                     10 : 1 : TO      to              
+ 11 : 1 : VB      eat                    11 : 1 : VB      eat             
+ 12 : 1 : VBZ     has                    12 : 1 : VBZ     has             
+ 13 : 1 : VBN     escaped                13 : 1 : VBN     escaped         
+
+  0 : 5 :   0   14  TOP           0 : 1 :   0   14  S     
+  1 : 1 :   0   14  S             1 : 1 :   0   12  NP    
+  2 : 1 :   0   12  NP            2 : 1 :   0    2  NP    
+  3 : 1 :   0    2  NP            3 : 0 :   2    5  CONJP 
+  4 : 0 :   2   12  CONJP         4 : 1 :   5   12  NP    
+  5 : 0 :   2    5  ADVP          5 : 1 :   5    7  NP    
+  6 : 0 :   3    4  ADVP          6 : 0 :   7   12  SBAR  
+  7 : 0 :   4    5  ADVP          7 : 0 :   7    8  WHNP  
+  8 : 1 :   5   12  NP            8 : 1 :   8   12  S     
+  9 : 1 :   5    7  NP            9 : 0 :   8    9  NP    
+ 10 : 0 :   7   12  S            10 : 1 :   9   12  VP    
+ 11 : 1 :   8   12  S            11 : 0 :  10   12  S     
+ 12 : 1 :   9   12  VP           12 : 1 :  10   12  VP    
+ 13 : 1 :  10   12  VP           13 : 0 :  11   12  VP    
+ 14 : 1 :  12   14  VP           14 : 1 :  12   14  VP    
+ 15 : 1 :  13   14  VP           15 : 1 :  13   14  VP    
+
+========
    6   16    0   63.16  75.00    12     19   16      1     15    14    93.33
+-<1>---(wn1= 15, bn1= 20)-           -<2>---(wn2= 15, bn2= 16)-
+  0 : 1 : PRP     it                      0 : 1 : PRP     it              
+  1 : 1 : VBD     was                     1 : 1 : VBD     was             
+  2 : 1 : PRP$    my                      2 : 1 : PRP$    my              
+  3 : 1 : NN      aunt                    3 : 1 : NN      aunt            
+  4 : 1 : POS     's                      4 : 1 : POS     's              
+  5 : 1 : NN      car                     5 : 1 : NN      car             
+  6 : 1 : WDT     which                   6 : 1 : WDT     which           
+  7 : 1 : PRP     we                      7 : 1 : PRP     we              
+  8 : 1 : VBD     sold                    8 : 1 : VBD     sold            
+  9 : 1 : IN      at                      9 : 1 : IN      at              
+ 10 : 1 : NN      auction                10 : 1 : NN      auction         
+ 11 : 0 : RB      last                   11 : 0 : JJ      last            
+ 12 : 1 : NN      year                   12 : 1 : NN      year            
+ 13 : 1 : IN      in                     13 : 1 : IN      in              
+ 14 : 1 : NNP     february               14 : 1 : NNP     february        
+
+  0 : 5 :   0   15  TOP           0 : 1 :   0   15  S     
+  1 : 1 :   0   15  S             1 : 1 :   0    1  NP    
+  2 : 1 :   0    1  NP            2 : 1 :   1   15  VP    
+  3 : 1 :   1   15  VP            3 : 1 :   2   15  NP    
+  4 : 1 :   2   15  NP            4 : 1 :   2    6  NP    
+  5 : 1 :   2    6  NP            5 : 0 :   2    5  NP    
+  6 : 0 :   3    6  NP            6 : 0 :   6   15  SBAR  
+  7 : 0 :   4    6  NP            7 : 0 :   6    7  WHNP  
+  8 : 0 :   6   15  S             8 : 1 :   7   15  S     
+  9 : 1 :   7   15  S             9 : 1 :   7    8  NP    
+ 10 : 1 :   7    8  NP           10 : 1 :   8   15  VP    
+ 11 : 1 :   8   15  VP           11 : 1 :   9   11  PP    
+ 12 : 0 :   8   13  VP           12 : 1 :  10   11  NP    
+ 13 : 0 :   8   11  VP           13 : 0 :  11   13  NP    
+ 14 : 1 :   9   11  PP           14 : 1 :  13   15  PP    
+ 15 : 1 :  10   11  NP           15 : 1 :  14   15  NP    
+ 16 : 0 :  11   13  ADVP        
+ 17 : 0 :  12   13  NP          
+ 18 : 1 :  13   15  PP          
+ 19 : 1 :  14   15  NP          
+
+========
    7   21    0   57.69  68.18    15     26   22      1     18    13    72.22
+-<1>---(wn1= 18, bn1= 27)-           -<2>---(wn2= 18, bn2= 22)-
+  0 : 1 : JJ      natural                 0 : 1 : JJ      natural         
+  1 : 1 : NNS     disasters               1 : 1 : NNS     disasters       
+  2 : 0 : :       –                     2 : 0 : IN      –             
+  3 : 1 : NNS     storms                  3 : 1 : NNS     storms          
+  4 : 1 : NN      flooding                4 : 1 : NN      flooding        
+  5 : 1 : NNS     hurricanes              5 : 1 : NNS     hurricanes      
+  6 : 0 : :       –                     6 : 0 : RB      –             
+  7 : 1 : VBP     occur                   7 : 1 : VBP     occur           
+  8 : 1 : RB      infrequently            8 : 1 : RB      infrequently    
+  9 : 1 : CC      but                     9 : 1 : CC      but             
+ 10 : 0 : VBP     cause                  10 : 0 : VB      cause           
+ 11 : 1 : NN      devastation            11 : 1 : NN      devastation     
+ 12 : 1 : WDT     that                   12 : 1 : WDT     that            
+ 13 : 0 : VBZ     strains                13 : 0 : NNS     strains         
+ 14 : 1 : NNS     resources              14 : 1 : NNS     resources       
+ 15 : 0 : IN      to                     15 : 0 : TO      to              
+ 16 : 1 : NN      breaking               16 : 1 : NN      breaking        
+ 17 : 1 : NN      point                  17 : 1 : NN      point           
+
+  0 : 5 :   0   18  TOP           0 : 1 :   0   18  S     
+  1 : 1 :   0   18  S             1 : 0 :   0    6  NP    
+  2 : 0 :   0    7  NP            2 : 1 :   0    2  NP    
+  3 : 1 :   0    2  NP            3 : 0 :   2    6  PP    
+  4 : 0 :   0    1  ADJP          4 : 1 :   3    6  NP    
+  5 : 0 :   2    7  PRN           5 : 1 :   3    4  NP    
+  6 : 0 :   2    6  PRN           6 : 1 :   4    5  NP    
+  7 : 1 :   3    6  NP            7 : 1 :   5    6  NP    
+  8 : 0 :   3    5  NP            8 : 0 :   6    7  ADVP  
+  9 : 1 :   3    4  NP            9 : 1 :   7   18  VP    
+ 10 : 0 :   4    5  LST          10 : 1 :   7    9  VP    
+ 11 : 1 :   4    5  NP           11 : 1 :   8    9  ADVP  
+ 12 : 0 :   5    6  LST          12 : 1 :  10   18  VP    
+ 13 : 1 :   5    6  NP           13 : 1 :  11   18  NP    
+ 14 : 1 :   7   18  VP           14 : 0 :  11   12  NP    
+ 15 : 1 :   7    9  VP           15 : 0 :  12   18  SBAR  
+ 16 : 0 :   7    8  VP           16 : 0 :  12   13  WHNP  
+ 17 : 1 :   8    9  ADVP         17 : 0 :  13   18  S     
+ 18 : 0 :   9   18  CONJP        18 : 1 :  13   18  VP    
+ 19 : 1 :  10   18  VP           19 : 1 :  14   15  NP    
+ 20 : 1 :  11   18  NP           20 : 1 :  15   18  PP    
+ 21 : 0 :  12   18  S            21 : 1 :  16   18  NP    
+ 22 : 1 :  13   18  VP          
+ 23 : 0 :  13   15  VP          
+ 24 : 1 :  14   15  NP          
+ 25 : 1 :  15   18  PP          
+ 26 : 1 :  16   18  NP          
+
+========
    8   27    1    0.00   0.00     0      0    0      0      0     0     0.00
+-<1>---(wn1= 24, bn1= 35)-           -<2>---(wn2= 23, bn2= 22)-
+  0 : 9 : NNS     letters                 0 : 9 : NNS     letters         
+  1 : 9 : VBN     delivered               1 : 9 : VBN     delivered       
+  2 : 9 : IN      on                      2 : 9 : IN      on              
+  3 : 9 : NN      time                    3 : 9 : NN      time            
+  4 : 9 : IN      by                      4 : 9 : IN      by              
+  5 : 9 : JJ      old                     5 : 9 : JJ      old-fashioned   
+  6 : 9 : JJ      fashioned               6 : 9 : NNS     means           
+  7 : 9 : NNS     means                   7 : 9 : VBP     are             
+  8 : 9 : VBP     are                     8 : 9 : RB      increasingly    
+  9 : 9 : RB      increasingly            9 : 9 : JJ      rare            
+ 10 : 9 : JJ      rare                   10 : 9 : CC      so              
+ 11 : 9 : RB      so                     11 : 9 : PRP     it              
+ 12 : 9 : PRP     it                     12 : 9 : VBZ     is              
+ 13 : 9 : VBZ     is                     13 : 9 : RB      as              
+ 14 : 9 : RB      as                     14 : 9 : RB      well            
+ 15 : 9 : RB      well                   15 : 9 : IN      that            
+ 16 : 9 : IN      that                   16 : 9 : DT      that            
+ 17 : 9 : DT      that                   17 : 9 : VBZ     is              
+ 18 : 9 : VBZ     is                     18 : 9 : RB      not             
+ 19 : 9 : RB      not                    19 : 9 : DT      the             
+ 20 : 9 : DT      the                    20 : 9 : JJ      only            
+ 21 : 9 : JJ      only                   21 : 9 : NN      option          
+ 22 : 9 : NN      option                 22 : 9 : JJ      available       
+ 23 : 9 : JJ      available             
+
+  0 : 9 :   0   24  TOP           0 : 9 :   0   23  S     
+  1 : 9 :   0   24  S             1 : 9 :   0   10  S     
+  2 : 9 :   0    8  NP            2 : 9 :   0    7  NP    
+  3 : 9 :   0    1  NP            3 : 9 :   0    1  NP    
+  4 : 9 :   1    8  S             4 : 9 :   1    7  VP    
+  5 : 9 :   1    8  VP            5 : 9 :   2    4  PP    
+  6 : 9 :   1    4  VP            6 : 9 :   3    4  NP    
+  7 : 9 :   2    4  PP            7 : 9 :   4    7  PP    
+  8 : 9 :   3    4  NP            8 : 9 :   5    7  NP    
+  9 : 9 :   4    8  PP            9 : 9 :   7   10  VP    
+ 10 : 9 :   5    8  NP           10 : 9 :   8   10  ADJP  
+ 11 : 9 :   5    7  ADJP         11 : 9 :  11   23  S     
+ 12 : 9 :   5    6  ADJP         12 : 9 :  11   12  NP    
+ 13 : 9 :   5    6  ADJP         13 : 9 :  12   23  VP    
+ 14 : 9 :   8   11  VP           14 : 9 :  13   15  ADVP  
+ 15 : 9 :   9   11  ADJP         15 : 9 :  15   23  SBAR  
+ 16 : 9 :   9   10  ADVP         16 : 9 :  16   23  S     
+ 17 : 9 :  11   24  S            17 : 9 :  16   17  NP    
+ 18 : 9 :  11   12  ADVP         18 : 9 :  17   23  VP    
+ 19 : 9 :  12   24  S            19 : 9 :  19   23  NP    
+ 20 : 9 :  12   13  NP           20 : 9 :  19   22  NP    
+ 21 : 9 :  13   24  VP           21 : 9 :  22   23  ADJP  
+ 22 : 9 :  13   16  VP          
+ 23 : 9 :  14   16  ADVP        
+ 24 : 9 :  15   16  ADVP        
+ 25 : 9 :  16   24  S           
+ 26 : 9 :  17   24  S           
+ 27 : 9 :  17   18  NP          
+ 28 : 9 :  18   24  VP          
+ 29 : 9 :  19   24  ADVP        
+ 30 : 9 :  20   24  NP          
+ 31 : 9 :  20   23  NP          
+ 32 : 9 :  21   23  NP          
+ 33 : 9 :  21   22  ADJP        
+ 34 : 9 :  23   24  ADJP        
+
+========
    9   53    1    0.00   0.00     0      0    0      0      0     0     0.00
+-<1>---(wn1= 43, bn1= 57)-           -<2>---(wn2= 44, bn2= 35)-
+  0 : 9 : NNP     english                 0 : 9 : NNP     english         
+  1 : 9 : RB      also                    1 : 9 : RB      also            
+  2 : 9 : VBZ     has                     2 : 9 : VBZ     has             
+  3 : 9 : JJ      many                    3 : 9 : JJ      many            
+  4 : 9 : NNS     words                   4 : 9 : NNS     words           
+  5 : 9 : IN      of                      5 : 9 : IN      of              
+  6 : 9 : JJR     more                    6 : 9 : JJR     more            
+  7 : 9 : CC      or                      7 : 9 : CC      or              
+  8 : 9 : JJR     less                    8 : 9 : JJR     less            
+  9 : 9 : JJ      unique                  9 : 9 : JJ      unique          
+ 10 : 9 : NN      function               10 : 9 : NN      function        
+ 11 : 9 : VBG     including              11 : 9 : VBG     including       
+ 12 : 9 : NNS     interjections          12 : 9 : NNS     interjections   
+ 13 : 9 : -LRB-   -LRB-                  13 : 9 : -LRB-   -LRB-           
+ 14 : 9 : UH      oh                     14 : 9 : UH      oh              
+ 15 : 9 : UH      ah                     15 : 9 : UH      ah              
+ 16 : 9 : -RRB-   -RRB-                  16 : 9 : -RRB-   -RRB-           
+ 17 : 9 : NNS     negatives              17 : 9 : NNS     negatives       
+ 18 : 9 : -LRB-   -LRB-                  18 : 9 : -LRB-   -LRB-           
+ 19 : 9 : RB      no                     19 : 9 : UH      no              
+ 20 : 9 : RB      not                    20 : 9 : RB      not             
+ 21 : 9 : -RRB-   -RRB-                  21 : 9 : -RRB-   -RRB-           
+ 22 : 9 : NN      politeness             22 : 9 : NN      politeness      
+ 23 : 9 : NNS     markers                23 : 9 : NNS     markers         
+ 24 : 9 : -LRB-   -LRB-                  24 : 9 : -LRB-   -LRB-           
+ 25 : 9 : UH      please                 25 : 9 : UH      please          
+ 26 : 9 : VB      thank                  26 : 9 : VB      thank           
+ 27 : 9 : PRP     you                    27 : 9 : PRP     you             
+ 28 : 9 : -RRB-   -RRB-                  28 : 9 : -RRB-   -RRB-           
+ 29 : 9 : CC      and                    29 : 9 : CC      and             
+ 30 : 9 : DT      the                    30 : 9 : DT      the             
+ 31 : 9 : JJ      existential            31 : 9 : JJ      existential     
+ 32 : 9 : RB      there                  32 : 9 : POS     '               
+ 33 : 9 : -LRB-   -LRB-                  33 : 9 : RB      there           
+ 34 : 9 : EX      there                  34 : 9 : -LRB-   -LRB-           
+ 35 : 9 : VBP     are                    35 : 9 : EX      there           
+ 36 : 9 : NNS     horses                 36 : 9 : VBP     are             
+ 37 : 9 : CC      but                    37 : 9 : NNS     horses          
+ 38 : 9 : RB      not                    38 : 9 : CC      but             
+ 39 : 9 : NNS     unicorns               39 : 9 : RB      not             
+ 40 : 9 : -RRB-   -RRB-                  40 : 9 : NNS     unicorns        
+ 41 : 9 : IN      among                  41 : 9 : -RRB-   -RRB-           
+ 42 : 9 : NNS     others                 42 : 9 : IN      among           
+                                         43 : 9 : NNS     others          
+
+  0 : 9 :   0   43  TOP           0 : 9 :   0   44  S     
+  1 : 9 :   0   43  S             1 : 9 :   0    1  NP    
+  2 : 9 :   0    1  NP            2 : 9 :   1    2  ADVP  
+  3 : 9 :   1   43  VP            3 : 9 :   2   44  VP    
+  4 : 9 :   1    2  ADVP          4 : 9 :   3   11  NP    
+  5 : 9 :   2   43  VP            5 : 9 :   3    5  NP    
+  6 : 9 :   3   43  NP            6 : 9 :   5   11  PP    
+  7 : 9 :   3   43  NP            7 : 9 :   6   11  NP    
+  8 : 9 :   3    4  ADJP          8 : 9 :  11   42  PRN   
+  9 : 9 :   4   43  NP            9 : 9 :  11   41  VP    
+ 10 : 9 :   5   43  PP           10 : 9 :  11   38  VP    
+ 11 : 9 :   6   43  NP           11 : 9 :  12   33  NP    
+ 12 : 9 :   6   11  NP           12 : 9 :  12   29  NP    
+ 13 : 9 :   6    9  ADJP         13 : 9 :  12   13  NP    
+ 14 : 9 :   6    7  ADJP         14 : 9 :  13   17  PRN   
+ 15 : 9 :   7    9  CONJP        15 : 9 :  14   16  INTJ  
+ 16 : 9 :   8    9  ADJP         16 : 9 :  17   18  NP    
+ 17 : 9 :   9   11  NP           17 : 9 :  18   22  PRN   
+ 18 : 9 :   9   10  ADJP         18 : 9 :  19   20  INTJ  
+ 19 : 9 :  11   43  VP           19 : 9 :  20   21  ADVP  
+ 20 : 9 :  11   43  VP           20 : 9 :  22   24  NP    
+ 21 : 9 :  11   43  VP           21 : 9 :  24   29  PRN   
+ 22 : 9 :  11   41  VP           22 : 9 :  25   28  S     
+ 23 : 9 :  11   41  VP           23 : 9 :  25   26  INTJ  
+ 24 : 9 :  12   17  NP           24 : 9 :  26   28  VP    
+ 25 : 9 :  12   13  NP           25 : 9 :  27   28  NP    
+ 26 : 9 :  13   17  PRN          26 : 9 :  30   33  NP    
+ 27 : 9 :  14   16  LST          27 : 9 :  33   34  ADVP  
+ 28 : 9 :  14   15  LST          28 : 9 :  35   38  S     
+ 29 : 9 :  17   22  NP           29 : 9 :  35   36  NP    
+ 30 : 9 :  17   18  NP           30 : 9 :  36   38  VP    
+ 31 : 9 :  18   22  PRN          31 : 9 :  37   38  NP    
+ 32 : 9 :  19   21  LST          32 : 9 :  40   41  NP    
+ 33 : 9 :  19   20  LST          33 : 9 :  42   44  PP    
+ 34 : 9 :  22   29  NP           34 : 9 :  43   44  NP    
+ 35 : 9 :  22   24  NP          
+ 36 : 9 :  24   29  PRN         
+ 37 : 9 :  25   28  LST         
+ 38 : 9 :  25   26  LST         
+ 39 : 9 :  26   28  VP          
+ 40 : 9 :  27   28  NP          
+ 41 : 9 :  29   40  CONJP       
+ 42 : 9 :  30   40  ADVP        
+ 43 : 9 :  30   33  ADVP        
+ 44 : 9 :  30   33  ADVP        
+ 45 : 9 :  31   33  ADVP        
+ 46 : 9 :  31   32  ADJP        
+ 47 : 9 :  32   33  ADVP        
+ 48 : 9 :  33   40  PRN         
+ 49 : 9 :  34   40  S           
+ 50 : 9 :  35   40  VP          
+ 51 : 9 :  36   40  NP          
+ 52 : 9 :  37   40  CONJP       
+ 53 : 9 :  38   39  ADVP        
+ 54 : 9 :  39   40  NP          
+ 55 : 9 :  41   43  PP          
+ 56 : 9 :  42   43  NP          
+
+========
   10   18    1    0.00   0.00     0      0    0      0      0     0     0.00
+-<1>---(wn1= 16, bn1= 19)-           -<2>---(wn2= 15, bn2=  9)-
+  0 : 9 : DT      the                     0 : 9 : DT      the             
+  1 : 9 : NNP     penn                    1 : 9 : NNP     penn            
+  2 : 9 : NNP     treebank                2 : 9 : NN      treebank        
+  3 : 9 : NN      tagset                  3 : 9 : NN      tagset          
+  4 : 9 : VBD     was                     4 : 9 : VBD     was             
+  5 : 9 : VBN     culled                  5 : 9 : VBN     culled          
+  6 : 9 : IN      from                    6 : 9 : IN      from            
+  7 : 9 : DT      the                     7 : 9 : DT      the             
+  8 : 9 : JJ      original                8 : 9 : JJ      original        
+  9 : 9 : CD      87                      9 : 9 : NN      87-tag          
+ 10 : 9 : NN      tag                    10 : 9 : NN      tagset          
+ 11 : 9 : NN      tagset                 11 : 9 : IN      for             
+ 12 : 9 : IN      for                    12 : 9 : DT      the             
+ 13 : 9 : DT      the                    13 : 9 : JJ      brown           
+ 14 : 9 : NNP     brown                  14 : 9 : NN      corpus          
+ 15 : 9 : NNP     corpus                
+
+  0 : 9 :   0   16  TOP           0 : 9 :   0   15  S     
+  1 : 9 :   0   16  S             1 : 9 :   0    4  NP    
+  2 : 9 :   0    4  NP            2 : 9 :   4   15  VP    
+  3 : 9 :   1    4  NP            3 : 9 :   5   15  VP    
+  4 : 9 :   2    4  NP            4 : 9 :   6   15  PP    
+  5 : 9 :   3    4  NP            5 : 9 :   7   15  NP    
+  6 : 9 :   4   16  VP            6 : 9 :   7   11  NP    
+  7 : 9 :   4    6  VP            7 : 9 :  11   15  PP    
+  8 : 9 :   6   16  PP            8 : 9 :  12   15  NP    
+  9 : 9 :   7   16  NP          
+ 10 : 9 :   8   11  ADJP        
+ 11 : 9 :   9   11  NP          
+ 12 : 9 :   9   10  NP          
+ 13 : 9 :  10   11  NP          
+ 14 : 9 :  11   16  NP          
+ 15 : 9 :  12   16  PP          
+ 16 : 9 :  13   16  NP          
+ 17 : 9 :  14   16  NP          
+ 18 : 9 :  15   16  NP          
+
+========
   11   40    0   33.33  37.50    12     36   32     12     38    29    76.32
+-<1>---(wn1= 38, bn1= 37)-           -<2>---(wn2= 38, bn2= 32)-
+  0 : 1 : IN      for                     0 : 1 : IN      for             
+  1 : 1 : NN      example                 1 : 1 : NN      example         
+  2 : 1 : DT      the                     2 : 1 : DT      the             
+  3 : 1 : JJ      original                3 : 1 : JJ      original        
+  4 : 0 : NNP     brown                   4 : 0 : JJ      brown           
+  5 : 1 : CC      and                     5 : 1 : CC      and             
+  6 : 0 : NNP     c5                      6 : 0 : NNS     c5              
+  7 : 1 : NNS     tagsets                 7 : 1 : NNS     tagsets         
+  8 : 1 : VBP     include                 8 : 1 : VBP     include         
+  9 : 1 : DT      a                       9 : 1 : DT      a               
+ 10 : 1 : JJ      separate               10 : 1 : JJ      separate        
+ 11 : 1 : NN      tag                    11 : 1 : NN      tag             
+ 12 : 1 : IN      for                    12 : 1 : IN      for             
+ 13 : 1 : DT      each                   13 : 1 : DT      each            
+ 14 : 1 : IN      of                     14 : 1 : IN      of              
+ 15 : 1 : DT      the                    15 : 1 : DT      the             
+ 16 : 1 : JJ      different              16 : 1 : JJ      different       
+ 17 : 1 : NNS     forms                  17 : 1 : NNS     forms           
+ 18 : 1 : IN      of                     18 : 1 : IN      of              
+ 19 : 1 : DT      the                    19 : 1 : DT      the             
+ 20 : 1 : NNS     verbs                  20 : 1 : NNS     verbs           
+ 21 : 0 : VB      do                     21 : 0 : VBP     do              
+ 22 : 1 : -LRB-   -LRB-                  22 : 1 : -LRB-   -LRB-           
+ 23 : 0 : RB      e.g.                   23 : 0 : UH      e.g.            
+ 24 : 0 : NNP     c5                     24 : 0 : UH      c5              
+ 25 : 0 : NN      tag                    25 : 0 : VB      tag             
+ 26 : 0 : NN      vdd                    26 : 0 : JJ      vdd             
+ 27 : 1 : IN      for                    27 : 1 : IN      for             
+ 28 : 0 : VBN     did                    28 : 0 : VBD     did             
+ 29 : 1 : CC      and                    29 : 1 : CC      and             
+ 30 : 0 : NN      vdg                    30 : 0 : CD      vdg             
+ 31 : 1 : NN      tag                    31 : 1 : NN      tag             
+ 32 : 1 : IN      for                    32 : 1 : IN      for             
+ 33 : 1 : VBG     doing                  33 : 1 : VBG     doing           
+ 34 : 1 : -RRB-   -RRB-                  34 : 1 : -RRB-   -RRB-           
+ 35 : 1 : VB      be                     35 : 1 : VB      be              
+ 36 : 1 : CC      and                    36 : 1 : CC      and             
+ 37 : 1 : VB      have                   37 : 1 : VB      have            
+
+  0 : 5 :   0   38  TOP           0 : 1 :   0   38  S     
+  1 : 1 :   0   38  S             1 : 1 :   0    2  PP    
+  2 : 1 :   0    2  PP            2 : 1 :   1    2  NP    
+  3 : 1 :   1    2  NP            3 : 1 :   2    8  NP    
+  4 : 0 :   2   38  S             4 : 1 :   8   38  VP    
+  5 : 1 :   2    8  NP            5 : 1 :   9   38  NP    
+  6 : 0 :   3    8  ADJP          6 : 0 :   9   12  NP    
+  7 : 0 :   4    5  NP            7 : 1 :  12   38  PP    
+  8 : 0 :   5    8  CONJP         8 : 0 :  13   38  NP    
+  9 : 0 :   6    8  NP            9 : 0 :  13   14  NP    
+ 10 : 0 :   6    7  NP           10 : 1 :  14   38  PP    
+ 11 : 1 :   8   38  VP           11 : 1 :  15   38  NP    
+ 12 : 1 :   9   38  NP           12 : 0 :  15   18  NP    
+ 13 : 0 :  10   38  ADJP         13 : 0 :  18   35  PP    
+ 14 : 0 :  11   38  NP           14 : 0 :  19   35  NP    
+ 15 : 1 :  12   38  PP           15 : 0 :  19   21  NP    
+ 16 : 0 :  12   14  PP           16 : 0 :  21   35  SBAR  
+ 17 : 1 :  14   38  PP           17 : 0 :  21   35  S     
+ 18 : 1 :  15   38  NP           18 : 0 :  21   35  VP    
+ 19 : 0 :  16   38  ADJP         19 : 1 :  22   35  PRN   
+ 20 : 0 :  17   38  NP           20 : 0 :  23   25  INTJ  
+ 21 : 0 :  18   38  PP           21 : 0 :  25   34  VP    
+ 22 : 0 :  19   38  NP           22 : 0 :  26   34  ADJP  
+ 23 : 0 :  20   38  NP           23 : 0 :  27   34  PP    
+ 24 : 0 :  21   38  LST          24 : 0 :  28   34  NP    
+ 25 : 0 :  21   36  LST          25 : 0 :  28   29  NP    
+ 26 : 0 :  21   35  LST          26 : 0 :  30   34  NP    
+ 27 : 1 :  22   35  PRN          27 : 1 :  30   32  NP    
+ 28 : 0 :  23   34  ADVP         28 : 1 :  32   34  PP    
+ 29 : 0 :  23   29  ADVP         29 : 0 :  33   34  S     
+ 30 : 0 :  24   27  NP           30 : 0 :  33   34  VP    
+ 31 : 0 :  25   27  NP           31 : 0 :  35   38  ADJP  
+ 32 : 0 :  27   29  PP          
+ 33 : 0 :  29   34  CONJP       
+ 34 : 1 :  30   32  NP          
+ 35 : 1 :  32   34  PP          
+ 36 : 0 :  36   38  CONJP       
+
+========
 ============================================================================
                  52.24  62.50     70   134   112     15    122   102    83.61
 === Summary ===
