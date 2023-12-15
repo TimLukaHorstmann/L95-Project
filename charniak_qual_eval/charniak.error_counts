@@ -1,0 +1,15 @@
+# Time of run:
+# Fri Dec 15 10:42:54 2023
+# Command:
+# jkkummerfeld-berkeley-parser-analyser-1a67d5c/berkeley_parse_analyser/classify_english.py gold_trees.txt charniak_trees.txt charniak_qual_eval/charniak
+#
+20 20 UNSET add
+18 18 Single Word Phrase
+12 12 NP Internal Structure
+9 11 PP Attachment
+8 12 Modifier Attachment
+5 10 Different label
+5 5 Unary
+1 3 UNSET move
+1 3 Co-ordination
+1 1 UNSET remove

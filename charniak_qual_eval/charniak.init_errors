@@ -1,0 +1,448 @@
+# Time of run:
+# Fri Dec 15 10:42:54 2023
+# Command:
+# jkkummerfeld-berkeley-parser-analyser-1a67d5c/berkeley_parse_analyser/classify_english.py gold_trees.txt charniak_trees.txt charniak_qual_eval/charniak
+#
+Sentence 1:
+(S
+	(NP
+		[01;31m(NP[00m
+			(PRP$ my)
+			(NN [01;33m(NP[00m aunt)
+			(POS [01;33m(NP[00m 's)[01;31m)[00m
+		[01;36m(NP[00m
+			(NN can)
+			(NN opener)[01;36m)[00m) [01;33mNP) NP)[00m
+	(VP
+		(MD can)
+		(VP
+			(VB open)
+			(NP
+				(DT a)
+				([01;36mNN[00m [01;31mVB[00m drum)))))
+
+
+Sentence 2:
+(S
+	(NP
+		(DT the)
+		[01;36m(NP[00m
+			[01;36m(ADJP[00m
+				(JJ old)[01;36m)[00m
+			(NN car)[01;36m)[00m)
+	(VP
+		[01;36m(V[00m
+			(VBD broke)
+			[01;31m(ADVP[00m
+				(RP down)[01;31m)[00m[01;36m)[00m
+		(PP
+			(IN in)
+			(NP
+				(DT the)
+				[01;36m(NP[00m
+					(NN car)
+					(NN park)[01;36m)[00m))))
+
+
+Sentence 3:
+(S
+	(NP
+		[01;36m(ADVP[00m [01;31m(QP[00m
+			([01;36mRB[00m [01;31mIN[00m at)
+			[01;36m(ADVP[00m
+				([01;36mRBS[00m [01;31mJJS[00m least)
+				(CD two)[01;36m)[00m[01;31m)[00m[01;36m)[00m
+		(NNS men))
+	(VP
+		[01;36m(V[00m
+			(VP
+				(VBD broke)
+				[01;31m(ADVP[00m
+					(RP in)[01;31m)[00m)[01;36m)[00m
+		[01;36m(CONJP[00m
+			(CC and)
+			(VP stole my tv)[01;36m)[00m))
+
+
+Sentence 4:
+(S
+	(NP
+		[01;36m(NP[00m
+			(NNP kim)[01;36m)[00m
+		[01;36m(CONJP[00m
+			(CC and)
+			[01;36m(NP[00m
+				(NNP sandy)[01;36m)[00m[01;36m)[00m)
+	[01;36m(VP[00m
+		[01;36m(ADVP[00m
+			([01;36mRB[00m [01;31mDT[00m both)[01;36m)[00m
+		(VP
+			[01;36m(V[00m
+				(VBD broke)
+				[01;31m(ADVP[00m
+					(RP up)[01;31m)[00m[01;36m)[00m
+			(PP with their partners))[01;36m)[00m)
+
+
+Sentence 5:
+(S
+	(NP
+		(NP the horse)
+		[01;36m(CONJP[00m
+			[01;36m(ADVP[00m [01;31m(CONJP[00m
+				(RB as)
+				[01;36m(ADVP[00m
+					(RB well)[01;36m)[00m
+				[01;36m(ADVP[00m
+					([01;36mRB[00m [01;31mIN[00m as)[01;36m)[00m[01;31m)[00m[01;36m)[00m
+			(NP
+				(NP the rabbits)
+				[01;36m(S[00m [01;31m(SBAR[00m
+					[01;31m(WHNP[00m
+						(WDT which)[01;31m)[00m
+					(S
+						[01;31m(NP[00m
+							(PRP we)[01;31m)[00m
+						(VP
+							(VBD wanted)
+							[01;31m(S[00m
+								(VP
+									(TO to)
+									[01;31m(VP[00m
+										(VB eat)[01;31m)[00m)[01;31m)[00m))[01;31m)[00m[01;36m)[00m)[01;36m)[00m)
+	(VP has escaped))
+
+
+Sentence 6:
+(S
+	(NP it)
+	(VP
+		(VBD was)
+		(NP
+			(NP
+				[01;31m(NP[00m
+					(PRP$ my)
+					(NN [01;33m(NP[00m aunt)
+					(POS [01;33m(NP[00m 's)[01;31m)[00m
+				(NN car)) [01;33mNP) NP)[00m
+			[01;36m(S[00m [01;31m(SBAR[00m
+				[01;31m(WHNP[00m
+					(WDT which)[01;31m)[00m
+				(S
+					(NP we)
+					(VP
+						[01;36m(VP[00m
+							[01;36m(VP[00m
+								(VBD sold)
+								(PP at auction)[01;36m)[00m
+							[01;36m(ADVP[00m [01;31m(NP[00m
+								([01;36mRB[00m [01;31mJJ[00m last)
+								[01;36m(NP[00m
+									(NN year)[01;36m)[00m[01;31m)[00m[01;36m)[00m[01;36m)[00m
+						(PP in february)))[01;31m)[00m[01;36m)[00m)))
+
+
+Sentence 7:
+[01;31m(S[00m
+	[01;31m(NP[00m
+		(NP
+			[01;36m(ADJP[00m
+				(JJ natural)[01;36m)[00m
+			(NNS disasters))
+		[01;31m(PP[00m [01;33m(PRN (PRN (NP (NP[00m
+			[01;36m(NP[00m
+				([01;36mNNS[00m [01;31mIN[00m –)[01;36m)[00m
+			[01;31m(NP[00m
+				[01;36m(LST[00m
+					(NP
+						([01;36mNN[00m [01;31mNNS[00m storms)) [01;33mNP)[00m[01;36m)[00m
+				[01;36m(LST[00m
+					(NP
+						([01;36mNNS[00m [01;31mNN[00m flooding)) [01;33mNP) PRN) PRN) NP)[00m[01;36m)[00m
+				[01;36m(VP[00m [01;31m(NP[00m [01;33m(VP (VP[00m
+					([01;36mVBP[00m [01;31mNNS[00m hurricanes)[01;31m)[00m[01;36m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m
+	(ADVP –) [01;33mVP)[00m
+	[01;31m(VP[00m [01;33m(CONJP[00m
+		[01;31m(VP[00m
+			([01;36mCC[00m [01;31mVBP[00m occur)
+			[01;31m(ADVP[00m [01;33m(VP[00m
+				([01;36mVBP[00m [01;31mRB[00m infrequently)[01;31m)[00m[01;31m)[00m
+		([01;36mNN[00m [01;31mCC[00m [01;33m(NP[00m but)
+		[01;31m(VP[00m [01;33m(S[00m
+			([01;36mWDT[00m [01;31mVB[00m cause)
+			[01;31m(NP[00m [01;33m(VP (VP[00m
+				[01;31m(NP[00m
+					([01;36mVBZ[00m [01;31mNN[00m devastation)[01;31m)[00m
+				[01;31m(SBAR[00m
+					[01;36m(NP[00m [01;31m(WHNP[00m
+						([01;36mNNS[00m [01;31mWDT[00m that)[01;31m)[00m [01;33mVP)[00m[01;36m)[00m
+					[01;31m(S[00m [01;33m(PP[00m
+						[01;31m(VP[00m
+							([01;36mIN[00m [01;31mNNS[00m strains)
+							[01;31m(NP[00m [01;33m(NP[00m
+								([01;36mNN[00m [01;31mNNS[00m resources)[01;31m)[00m
+							[01;31m(PP[00m
+								([01;36mNN[00m [01;31mTO[00m to) [01;33mNP) PP) VP) S) NP) VP) CONJP) VP) ROOT) S)[00m
+								[01;31m(NP[00m
+									(NN breaking)
+									(NN point)[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m
+
+
+Sentence 8:
+[01;31m(S[00m
+	[01;31m(S[00m
+		[01;31m(NP[00m
+			(NP letters)
+			[01;31m(VP[00m [01;33m(VP (S[00m
+				[01;36m(VP[00m
+					(VBN delivered)
+					(PP on time)[01;36m)[00m
+				[01;31m(PP[00m [01;33m(PP[00m
+					(IN by)
+					[01;36m(ADJP[00m [01;31m(NP[00m [01;33m(NP[00m
+						[01;36m(ADJP[00m
+							[01;36m(ADJP[00m
+								(JJ old-fashioned)[01;36m)[00m[01;36m)[00m
+						([01;36mJJ[00m [01;31mNNS[00m means)[01;31m)[00m[01;36m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m
+		[01;31m(VP[00m
+			([01;36mNNS[00m [01;31mVBP[00m are) [01;33mNP) PP) S) VP) NP)[00m
+			[01;31m(ADJP[00m [01;33m(VP[00m
+				([01;36mVBP[00m [01;31mRB[00m increasingly)
+				[01;36m(ADVP[00m
+					([01;36mRB[00m [01;31mJJ[00m [01;33m(ADJP[00m rare)[01;36m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m
+	([01;36mJJ[00m [01;31mCC[00m so) [01;33mADJP) VP)[00m
+	[01;31m(S[00m [01;33m(S[00m
+		[01;36m(ADVP[00m [01;31m(NP[00m
+			([01;36mRB[00m [01;31mPRP[00m it)[01;31m)[00m[01;36m)[00m
+		[01;31m(VP[00m [01;33m(S[00m
+			[01;36m(NP[00m
+				([01;36mPRP[00m [01;31mVBZ[00m is)[01;36m)[00m
+			[01;31m(ADVP[00m [01;33m(VP (VP[00m
+				([01;36mVBZ[00m [01;31mRB[00m as)
+				(RB [01;33m(ADVP[00m well)[01;31m)[00m
+			[01;31m(SBAR[00m
+				[01;36m(ADVP[00m
+					([01;36mRB[00m [01;31mIN[00m that) [01;33mADVP) VP)[00m[01;36m)[00m
+				[01;31m(S[00m [01;33m(S[00m
+					[01;31m(NP[00m
+						([01;36mIN[00m [01;31mDT[00m that)[01;31m)[00m
+					[01;31m(VP[00m [01;33m(S[00m
+						[01;36m(NP[00m
+							([01;36mDT[00m [01;31mVBZ[00m is)[01;36m)[00m
+						([01;36mVBZ[00m [01;31mRB[00m [01;33m(VP[00m not)
+						[01;31m(NP[00m [01;33m(ADVP[00m
+							[01;31m(NP[00m
+								([01;36mRB[00m [01;31mDT[00m the)
+								([01;36mDT[00m [01;31mJJ[00m [01;33m(NP (NP[00m only)
+								[01;36m(ADJP[00m
+									([01;36mJJ[00m [01;31mNN[00m [01;33m(NP[00m option)[01;36m)[00m[01;31m)[00m
+							[01;31m(ADJP[00m
+								([01;36mNN[00m [01;31mJJ[00m available)[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m
+
+
+Sentence 9:
+[01;31m(S[00m
+	(NP english)
+	[01;33m(VP[00m (ADVP also)
+	[01;31m(VP[00m [01;33m(VP[00m
+		(VBZ has)
+		[01;31m(NP[00m [01;33m(NP (NP[00m
+			[01;31m(NP[00m
+				[01;36m(ADJP[00m
+					(JJ many)[01;36m)[00m
+				(NNS [01;33m(NP[00m words)[01;31m)[00m
+			[01;31m(PP[00m [01;33m(PP[00m
+				(IN of)
+				(NP [01;33m(NP[00m
+					[01;36m(ADJP[00m
+						[01;36m(ADJP[00m
+							(JJR more)[01;36m)[00m
+						[01;36m(CONJP[00m
+							(CC or)
+							[01;36m(ADJP[00m
+								(JJR less)[01;36m)[00m[01;36m)[00m[01;36m)[00m
+					[01;36m(NP[00m
+						[01;36m(ADJP[00m
+							(JJ unique)[01;36m)[00m
+						(NN function)[01;36m)[00m)[01;31m)[00m[01;31m)[00m
+		[01;31m(PRN[00m [01;33m(VP (VP (VP[00m
+			[01;36m(VP[00m
+				(VP
+					[01;31m(VP[00m
+						(VBG including)
+						[01;31m(NP[00m
+							[01;31m(NP[00m
+								[01;36m(NP[00m
+									(NP interjections)
+									(PRN
+										(-LRB- -LRB-)
+										[01;36m(LST[00m [01;31m(INTJ[00m
+											[01;36m(LST[00m
+												(UH oh)[01;36m)[00m
+											(UH ah)[01;31m)[00m[01;36m)[00m
+										(-RRB- -RRB-))[01;36m)[00m
+								[01;36m(NP[00m
+									(NP negatives)
+									(PRN
+										(-LRB- -LRB-)
+										[01;36m(LST[00m
+											[01;36m(LST[00m [01;31m(INTJ[00m
+												([01;36mRB[00m [01;31mUH[00m no)[01;31m)[00m[01;36m)[00m
+											[01;31m(ADVP[00m
+												(RB not)[01;31m)[00m[01;36m)[00m
+										(-RRB- -RRB-))[01;36m)[00m
+								[01;36m(NP[00m
+									(NP politeness markers)
+									(PRN
+										(-LRB- -LRB-)
+										[01;36m(LST[00m [01;31m(S[00m
+											[01;36m(LST[00m [01;31m(INTJ[00m
+												(UH please)[01;31m)[00m[01;36m)[00m
+											(VP thank you)[01;31m)[00m[01;36m)[00m
+										(-RRB- -RRB-))[01;36m)[00m[01;31m)[00m
+							(CC [01;33m(CONJP[00m and)
+							[01;36m(ADVP[00m [01;36m(ADVP[00m [01;31m(NP[00m [01;33m(ADVP[00m
+								(DT the)
+								[01;36m(ADVP[00m
+									[01;36m(ADJP[00m
+										(JJ existential)[01;36m)[00m
+									[01;36m(ADVP[00m
+										([01;36mRB[00m [01;31mPOS[00m ')[01;36m)[00m[01;36m)[00m[01;31m)[00m[01;36m)[00m[01;36m)[00m[01;31m)[00m
+						[01;31m(ADVP[00m [01;33m(PRN[00m
+							([01;36m-LRB-[00m [01;31mRB[00m there)[01;31m)[00m
+						([01;36mEX[00m [01;31m-LRB-[00m [01;33m(S[00m -LRB-)
+						[01;31m(S[00m [01;33m(VP[00m
+							[01;31m(NP[00m
+								([01;36mVBP[00m [01;31mEX[00m there)[01;31m)[00m
+							[01;31m(VP[00m [01;33m(NP[00m
+								([01;36mNNS[00m [01;31mVBP[00m are)
+								[01;31m(NP[00m [01;33m(CONJP[00m
+									([01;36mCC[00m [01;31mNNS[00m horses)[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m
+					[01;36m(ADVP[00m
+						([01;36mRB[00m [01;31mCC[00m but)[01;36m)[00m
+					[01;36m(NP[00m
+						([01;36mNNS[00m [01;31mRB[00m not) [01;33mCONJP) NP) VP) S) PRN) ADVP) CONJP)[00m[01;36m)[00m
+					[01;31m(NP[00m
+						([01;36m-RRB-[00m [01;31mNNS[00m unicorns)[01;31m)[00m)[01;36m)[00m
+			([01;36mIN[00m [01;31m-RRB-[00m [01;33m(PP[00m -RRB-)[01;31m)[00m
+		[01;31m(PP[00m
+			[01;36m(NP[00m
+				([01;36mNNS[00m [01;31mIN[00m among) [01;33mPP) VP) VP) VP) NP) PP) NP) NP) NP) VP) VP) ROOT) S)[00m[01;36m)[00m
+			[01;31m(NP[00m
+				(NNS others)[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m
+
+
+Sentence 10:
+[01;31m(S[00m
+	(NP
+		(DT the)
+		[01;36m(NP[00m
+			(NNP penn)
+			[01;36m(NP[00m
+				([01;36mNNP[00m [01;31mNN[00m treebank)
+				[01;36m(NP[00m
+					(NN tagset)[01;36m)[00m[01;36m)[00m[01;36m)[00m)
+	[01;31m(VP[00m [01;33m(VP (VP[00m
+		(VBD was)
+		[01;31m(VP[00m
+			(VBN culled) [01;33mVP)[00m
+			[01;31m(PP[00m [01;33m(PP[00m
+				(IN from)
+				[01;31m(NP[00m [01;33m(NP[00m
+					[01;31m(NP[00m
+						(DT the)
+						[01;36m(ADJP[00m
+							(JJ original)
+							[01;36m(NP[00m
+								[01;36m(NP[00m
+									([01;36mCD[00m [01;31mNN[00m 87-tag)[01;36m)[00m
+								[01;36m(NP[00m
+									(NN tagset)[01;36m)[00m[01;36m)[00m[01;36m)[00m[01;31m)[00m
+					[01;31m(PP[00m [01;33m(NP[00m
+						([01;36mNN[00m [01;31mIN[00m for)
+						[01;31m(NP[00m [01;33m(PP[00m
+							([01;36mIN[00m [01;31mDT[00m the)
+							([01;36mDT[00m [01;31mJJ[00m [01;33m(NP[00m brown)
+							([01;36mNNP[00m [01;31mNN[00m [01;33m(NP[00m corpus)[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m
+
+
+Sentence 11:
+(S
+	(PP for example)
+	[01;36m(S[00m
+		(NP
+			(DT the)
+			[01;36m(ADJP[00m
+				(JJ original)
+				[01;36m(NP[00m
+					([01;36mNNP[00m [01;31mJJ[00m brown)[01;36m)[00m
+				[01;36m(CONJP[00m
+					(CC and)
+					[01;36m(NP[00m
+						[01;36m(NP[00m
+							([01;36mNNP[00m [01;31mNNS[00m c5)[01;36m)[00m
+						(NNS tagsets)[01;36m)[00m[01;36m)[00m[01;36m)[00m)
+		(VP
+			(VBP include)
+			(NP
+				[01;31m(NP[00m
+					(DT a)
+					(JJ [01;33m(ADJP[00m separate)
+					(NN [01;33m(NP[00m tag)[01;31m)[00m
+				(PP [01;33m(PP[00m
+					(IN for)
+					[01;31m(NP[00m
+						[01;31m(NP[00m
+							(DT each)[01;31m)[00m [01;33mPP)[00m
+						(PP
+							(IN of)
+							(NP
+								[01;31m(NP[00m
+									(DT the)
+									(JJ [01;33m(ADJP[00m different)
+									(NNS [01;33m(NP[00m forms)[01;31m)[00m
+								[01;36m(PP[00m
+									[01;31m(PP[00m
+										(IN of)
+										[01;31m(NP[00m [01;33m(NP[00m
+											[01;31m(NP[00m
+												(DT the)
+												(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+											[01;36m(LST[00m [01;31m(SBAR[00m [01;33m(LST (LST[00m
+												[01;31m(S[00m
+													[01;31m(VP[00m
+														([01;36mVB[00m [01;31mVBP[00m do)
+														(PRN
+															(-LRB- -LRB-)
+															[01;36m(ADVP[00m
+																[01;31m(INTJ[00m [01;33m(ADVP[00m
+																	([01;36mRB[00m [01;31mUH[00m e.g.)
+																	([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																[01;31m(VP[00m [01;33m(NP[00m
+																	([01;36mNN[00m [01;31mVB[00m tag)
+																	[01;31m(ADJP[00m
+																		([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																		[01;31m(PP[00m [01;33m(PP[00m
+																			(IN for)
+																			[01;31m(NP[00m
+																				[01;31m(NP[00m
+																					([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m [01;33mPP) ADVP)[00m
+																				[01;36m(CONJP[00m
+																					(CC and)
+																					[01;31m(NP[00m
+																						(NP
+																							([01;36mNN[00m [01;31mCD[00m vdg)
+																							(NN tag))
+																						(PP
+																							(IN for)
+																							[01;31m(S[00m
+																								[01;31m(VP[00m
+																									(VBG doing)[01;31m)[00m[01;31m)[00m)[01;31m)[00m[01;36m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;36m)[00m
+															(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;36m)[00m[01;31m)[00m[01;31m)[00m
+									[01;31m(ADJP[00m
+										(VB be) [01;33mLST)[00m
+										[01;36m(CONJP[00m
+											(CC and)
+											(VB have)[01;36m)[00m[01;31m)[00m[01;36m)[00m))[01;31m)[00m)))[01;36m)[00m)
+
+

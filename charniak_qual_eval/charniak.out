@@ -1,0 +1,3955 @@
+# Time of run:
+# Fri Dec 15 10:42:54 2023
+# Command:
+# jkkummerfeld-berkeley-parser-analyser-1a67d5c/berkeley_parse_analyser/classify_english.py gold_trees.txt charniak_trees.txt charniak_qual_eval/charniak
+#
+Printing tree transformations
+Sentence 1:
+5 Initial errors
+0 on fringe, 5 iterations
+1 Error:UNSET add
+1 Error:NP Internal Structure
+1 Error:NP Internal Structure
+1 Error:UNSET add
+1 Error:UNSET add
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+[01;36m(ROOT[00m
+	(S
+		(NP
+			[01;31m(NP[00m
+				(PRP$ my)
+				(NN [01;33m(NP[00m aunt)
+				(POS [01;33m(NP[00m 's)[01;31m)[00m
+			[01;36m(NP[00m
+				(NN can)
+				(NN opener)[01;36m)[00m) [01;33mNP) NP)[00m
+		(VP
+			(MD can)
+			(VP
+				(VB open)
+				(NP
+					(DT a)
+					([01;36mNN[00m [01;31mVB[00m drum)))))[01;36m)[00m
+Step:UNSET add
+{'type': 'add', 'label': 'ROOT', 'span': (0, 9), 'subtrees': ['NP', 'VP'], 'parent': 'S', 'family': ['ROOT'], 'auto preterminals': ('PRP$', 'NN', 'POS', 'NN', 'NN', 'MD', 'VB', 'DT', 'VB'), 'auto preterminal span': (0, 9), 'left siblings': [], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(NP
+			[01;31m(NP[00m
+				(PRP$ my)
+				(NN [01;33m(NP[00m aunt)
+				(POS [01;33m(NP[00m 's)[01;31m)[00m
+			[01;36m(NP[00m
+				(NN can)
+				(NN opener)[01;36m)[00m) [01;33mNP) NP)[00m
+		(VP
+			(MD can)
+			(VP
+				(VB open)
+				(NP
+					(DT a)
+					([01;36mNN[00m [01;31mVB[00m drum))))))
+Step:NP Internal Structure
+{'type': 'add', 'label': 'NP', 'span': (3, 5), 'subtrees': ['NN', 'NN'], 'parent': 'NP', 'family': ['NP', 'NP'], 'auto preterminals': ('NN', 'NN'), 'auto preterminal span': (3, 5), 'left siblings': [(NP (PRP$ my) (NN aunt) (POS 's))], 'right siblings': [], 'over_word': False, 'over words': True, 'classified_type': 'NP Internal Structure'}
+(S
+	(ROOT
+		(NP
+			[01;31m(NP[00m
+				(PRP$ my)
+				(NN [01;33m(NP[00m aunt)
+				(POS [01;33m(NP[00m 's)[01;31m)[00m
+			(NP can opener)) [01;33mNP) NP)[00m
+		(VP
+			(MD can)
+			(VP
+				(VB open)
+				(NP
+					(DT a)
+					([01;36mNN[00m [01;31mVB[00m drum))))))
+Step:NP Internal Structure
+{'type': 'remove', 'label': 'NP', 'span': (0, 3), 'subtrees': ['PRP$', 'NN', 'POS'], 'parent': 'NP', 'family': ['NP', 'NP'], 'left siblings': [], 'right siblings': ['NP'], 'over words': True, 'over_word': False, 'auto preterminals': ('PRP$', 'NN', 'POS', 'NN', 'NN'), 'auto preterminal span': (0, 5), 'classified_type': 'NP Internal Structure'}
+(S
+	(ROOT
+		(NP
+			(PRP$ my)
+			[01;36m(NP[00m
+				(NN aunt)
+				[01;36m(NP[00m
+					(POS 's)
+					(NP can opener)[01;36m)[00m[01;36m)[00m)
+		(VP
+			(MD can)
+			(VP
+				(VB open)
+				(NP
+					(DT a)
+					([01;36mNN[00m [01;31mVB[00m drum))))))
+Step:UNSET add
+{'type': 'add', 'label': 'NP', 'span': (1, 5), 'subtrees': ['NN', 'POS', 'NP'], 'parent': 'NP', 'family': ['PRP$', 'NP'], 'auto preterminals': ('NN', 'POS', 'NN', 'NN'), 'auto preterminal span': (1, 5), 'left siblings': [(PRP$ my)], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(NP
+			(PRP$ my)
+			(NP
+				(NN aunt)
+				[01;36m(NP[00m
+					(POS 's)
+					(NP can opener)[01;36m)[00m))
+		(VP
+			(MD can)
+			(VP
+				(VB open)
+				(NP
+					(DT a)
+					([01;36mNN[00m [01;31mVB[00m drum))))))
+Step:UNSET add
+{'type': 'add', 'label': 'NP', 'span': (2, 5), 'subtrees': ['POS', 'NP'], 'parent': 'NP', 'family': ['NN', 'NP'], 'auto preterminals': ('POS', 'NN', 'NN'), 'auto preterminal span': (2, 5), 'left siblings': [(NN aunt)], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(NP my aunt 's can opener)
+		(VP
+			(MD can)
+			(VP
+				(VB open)
+				(NP
+					(DT a)
+					([01;36mNN[00m [01;31mVB[00m drum))))))
+
+Sentence 2:
+6 Initial errors
+0 on fringe, 6 iterations
+1 Error:UNSET add
+1 Error:Single Word Phrase
+1 Error:UNSET add
+1 Error:Modifier Attachment
+1 Error:NP Internal Structure
+1 Error:Single Word Phrase
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+[01;36m(ROOT[00m
+	(S
+		(NP
+			(DT the)
+			[01;36m(NP[00m
+				[01;36m(ADJP[00m
+					(JJ old)[01;36m)[00m
+				(NN car)[01;36m)[00m)
+		(VP
+			[01;36m(V[00m
+				(VBD broke)
+				[01;31m(ADVP[00m
+					(RP down)[01;31m)[00m[01;36m)[00m
+			(PP
+				(IN in)
+				(NP
+					(DT the)
+					[01;36m(NP[00m
+						(NN car)
+						(NN park)[01;36m)[00m))))[01;36m)[00m
+Step:UNSET add
+{'type': 'add', 'label': 'ROOT', 'span': (0, 9), 'subtrees': ['NP', 'VP'], 'parent': 'S', 'family': ['ROOT'], 'auto preterminals': ('DT', 'JJ', 'NN', 'VBD', 'RP', 'IN', 'DT', 'NN', 'NN'), 'auto preterminal span': (0, 9), 'left siblings': [], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(NP
+			(DT the)
+			[01;36m(NP[00m
+				[01;36m(ADJP[00m
+					(JJ old)[01;36m)[00m
+				(NN car)[01;36m)[00m)
+		(VP
+			[01;36m(V[00m
+				(VBD broke)
+				[01;31m(ADVP[00m
+					(RP down)[01;31m)[00m[01;36m)[00m
+			(PP
+				(IN in)
+				(NP
+					(DT the)
+					[01;36m(NP[00m
+						(NN car)
+						(NN park)[01;36m)[00m)))))
+Step:Single Word Phrase
+{'type': 'add', 'label': 'ADJP', 'span': (1, 2), 'subtrees': ['JJ'], 'parent': 'NP', 'family': ['DT', 'ADJP', 'NN'], 'auto preterminals': ('JJ',), 'auto preterminal span': (1, 2), 'left siblings': [(DT the)], 'right siblings': [(NN car)], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(NP
+			(DT the)
+			[01;36m(NP[00m
+				(ADJP old)
+				(NN car)[01;36m)[00m)
+		(VP
+			[01;36m(V[00m
+				(VBD broke)
+				[01;31m(ADVP[00m
+					(RP down)[01;31m)[00m[01;36m)[00m
+			(PP
+				(IN in)
+				(NP
+					(DT the)
+					[01;36m(NP[00m
+						(NN car)
+						(NN park)[01;36m)[00m)))))
+Step:UNSET add
+{'type': 'add', 'label': 'NP', 'span': (1, 3), 'subtrees': ['ADJP', 'NN'], 'parent': 'NP', 'family': ['DT', 'NP'], 'auto preterminals': ('JJ', 'NN'), 'auto preterminal span': (1, 3), 'left siblings': [(DT the)], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(NP the old car)
+		(VP
+			[01;36m(V[00m
+				(VBD broke)
+				[01;31m(ADVP[00m
+					(RP down)[01;31m)[00m[01;36m)[00m
+			(PP
+				(IN in)
+				(NP
+					(DT the)
+					[01;36m(NP[00m
+						(NN car)
+						(NN park)[01;36m)[00m)))))
+Step:Modifier Attachment
+{'type': 'add', 'label': 'V', 'span': (3, 5), 'subtrees': ['VBD', 'ADVP'], 'parent': 'VP', 'family': ['V', 'PP'], 'auto preterminals': ('VBD', 'RP'), 'auto preterminal span': (3, 5), 'left siblings': [], 'right siblings': [(PP (IN in) (NP (DT the) (NN car) (NN park)))], 'over_word': False, 'over words': False, 'classified_type': 'Modifier Attachment'}
+(S
+	(ROOT
+		(NP the old car)
+		(VP
+			(V
+				(VBD broke)
+				[01;31m(ADVP[00m
+					(RP down)[01;31m)[00m)
+			(PP
+				(IN in)
+				(NP
+					(DT the)
+					[01;36m(NP[00m
+						(NN car)
+						(NN park)[01;36m)[00m)))))
+Step:NP Internal Structure
+{'type': 'add', 'label': 'NP', 'span': (7, 9), 'subtrees': ['NN', 'NN'], 'parent': 'NP', 'family': ['DT', 'NP'], 'auto preterminals': ('NN', 'NN'), 'auto preterminal span': (7, 9), 'left siblings': [(DT the)], 'right siblings': [], 'over_word': False, 'over words': True, 'classified_type': 'NP Internal Structure'}
+(S
+	(ROOT
+		(NP the old car)
+		(VP
+			(V
+				(VBD broke)
+				[01;31m(ADVP[00m
+					(RP down)[01;31m)[00m)
+			(PP in the car park))))
+Step:Single Word Phrase
+{'type': 'remove', 'label': 'ADVP', 'span': (4, 5), 'subtrees': ['RP'], 'parent': 'V', 'family': ['VBD', 'ADVP'], 'left siblings': ['VBD'], 'right siblings': [], 'over words': True, 'over_word': True, 'auto preterminals': ('VBD', 'RP'), 'auto preterminal span': (3, 5), 'classified_type': 'Single Word Phrase'}
+(S the old car broke down in the car park)
+
+Sentence 3:
+7 Initial errors
+0 on fringe, 6 iterations
+2 Error:Different label
+1 Error:UNSET add
+1 Error:Modifier Attachment
+1 Error:Unary
+1 Error:UNSET add
+1 Error:Single Word Phrase
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+[01;36m(ROOT[00m
+	(S
+		(NP
+			[01;36m(ADVP[00m [01;31m(QP[00m
+				([01;36mRB[00m [01;31mIN[00m at)
+				[01;36m(ADVP[00m
+					([01;36mRBS[00m [01;31mJJS[00m least)
+					(CD two)[01;36m)[00m[01;31m)[00m[01;36m)[00m
+			(NNS men))
+		(VP
+			[01;36m(V[00m
+				(VP
+					(VBD broke)
+					[01;31m(ADVP[00m
+						(RP in)[01;31m)[00m)[01;36m)[00m
+			[01;36m(CONJP[00m
+				(CC and)
+				(VP stole my tv)[01;36m)[00m))[01;36m)[00m
+Step:Different label
+{'type': 'relabel', 'change': ('QP', 'ADVP'), 'subtrees': ['IN', 'JJS', 'CD'], 'parent': 'NP', 'span': (0, 3), 'family': ['ADVP', 'NNS'], 'auto preterminals': ('IN', 'JJS', 'CD'), 'auto preterminal span': (0, 3), 'over_word': False, 'classified_type': 'Different label'}
+[01;36m(ROOT[00m
+	(S
+		(NP
+			(ADVP
+				([01;36mRB[00m [01;31mIN[00m at)
+				[01;36m(ADVP[00m
+					([01;36mRBS[00m [01;31mJJS[00m least)
+					(CD two)[01;36m)[00m)
+			(NNS men))
+		(VP
+			[01;36m(V[00m
+				(VP
+					(VBD broke)
+					[01;31m(ADVP[00m
+						(RP in)[01;31m)[00m)[01;36m)[00m
+			[01;36m(CONJP[00m
+				(CC and)
+				(VP stole my tv)[01;36m)[00m))[01;36m)[00m
+Step:UNSET add
+{'type': 'add', 'label': 'ROOT', 'span': (0, 10), 'subtrees': ['NP', 'VP'], 'parent': 'S', 'family': ['ROOT'], 'auto preterminals': ('IN', 'JJS', 'CD', 'NNS', 'VBD', 'RP', 'CC', 'VBD', 'PRP$', 'NN'), 'auto preterminal span': (0, 10), 'left siblings': [], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(NP
+			(ADVP
+				([01;36mRB[00m [01;31mIN[00m at)
+				[01;36m(ADVP[00m
+					([01;36mRBS[00m [01;31mJJS[00m least)
+					(CD two)[01;36m)[00m)
+			(NNS men))
+		(VP
+			[01;36m(V[00m
+				(VP
+					(VBD broke)
+					[01;31m(ADVP[00m
+						(RP in)[01;31m)[00m)[01;36m)[00m
+			[01;36m(CONJP[00m
+				(CC and)
+				(VP stole my tv)[01;36m)[00m)))
+Step:Modifier Attachment
+{'type': 'add', 'label': 'ADVP', 'span': (1, 3), 'subtrees': ['JJS', 'CD'], 'parent': 'ADVP', 'family': ['IN', 'ADVP'], 'auto preterminals': ('JJS', 'CD'), 'auto preterminal span': (1, 3), 'left siblings': [(IN at)], 'right siblings': [], 'over_word': False, 'over words': True, 'classified_type': 'Modifier Attachment'}
+(S
+	(ROOT
+		(NP
+			(ADVP
+				([01;36mRB[00m [01;31mIN[00m at)
+				(ADVP
+					([01;36mRBS[00m [01;31mJJS[00m least)
+					(CD two)))
+			(NNS men))
+		(VP
+			[01;36m(V[00m
+				(VP
+					(VBD broke)
+					[01;31m(ADVP[00m
+						(RP in)[01;31m)[00m)[01;36m)[00m
+			[01;36m(CONJP[00m
+				(CC and)
+				(VP stole my tv)[01;36m)[00m)))
+Step:Unary
+{'type': 'add', 'label': 'V', 'span': (4, 6), 'subtrees': ['VP'], 'parent': 'VP', 'family': ['V', 'CC', 'VP'], 'auto preterminals': ('VBD', 'RP'), 'auto preterminal span': (4, 6), 'left siblings': [], 'right siblings': [(CC and), (VP (VBD stole) (NP (PRP$ my) (NN tv)))], 'over_word': False, 'over words': False, 'classified_type': 'Unary'}
+(S
+	(ROOT
+		(NP
+			(ADVP
+				([01;36mRB[00m [01;31mIN[00m at)
+				(ADVP
+					([01;36mRBS[00m [01;31mJJS[00m least)
+					(CD two)))
+			(NNS men))
+		(VP
+			(V
+				(VP
+					(VBD broke)
+					[01;31m(ADVP[00m
+						(RP in)[01;31m)[00m))
+			[01;36m(CONJP[00m
+				(CC and)
+				(VP stole my tv)[01;36m)[00m)))
+Step:UNSET add
+{'type': 'add', 'label': 'CONJP', 'span': (6, 10), 'subtrees': ['CC', 'VP'], 'parent': 'VP', 'family': ['V', 'CONJP'], 'auto preterminals': ('CC', 'VBD', 'PRP$', 'NN'), 'auto preterminal span': (6, 10), 'left siblings': [(V (VP (VBD broke) (ADVP (RP in))))], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(NP
+			(ADVP
+				([01;36mRB[00m [01;31mIN[00m at)
+				(ADVP
+					([01;36mRBS[00m [01;31mJJS[00m least)
+					(CD two)))
+			(NNS men))
+		(VP
+			(V
+				(VP
+					(VBD broke)
+					[01;31m(ADVP[00m
+						(RP in)[01;31m)[00m))
+			(CONJP and stole my tv))))
+Step:Single Word Phrase
+{'type': 'remove', 'label': 'ADVP', 'span': (5, 6), 'subtrees': ['RP'], 'parent': 'VP', 'family': ['VBD', 'ADVP'], 'left siblings': ['VBD'], 'right siblings': [], 'over words': True, 'over_word': True, 'auto preterminals': ('VBD', 'RP'), 'auto preterminal span': (4, 6), 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(NP
+			(ADVP
+				([01;36mRB[00m [01;31mIN[00m at)
+				(ADVP
+					([01;36mRBS[00m [01;31mJJS[00m least)
+					(CD two)))
+			(NNS men))
+		(VP broke in and stole my tv)))
+
+Sentence 4:
+8 Initial errors
+0 on fringe, 8 iterations
+1 Error:Single Word Phrase
+1 Error:UNSET add
+1 Error:NP Internal Structure
+1 Error:Single Word Phrase
+1 Error:Single Word Phrase
+1 Error:UNSET add
+1 Error:Modifier Attachment
+1 Error:Single Word Phrase
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+[01;36m(ROOT[00m
+	(S
+		(NP
+			[01;36m(NP[00m
+				(NNP kim)[01;36m)[00m
+			[01;36m(CONJP[00m
+				(CC and)
+				[01;36m(NP[00m
+					(NNP sandy)[01;36m)[00m[01;36m)[00m)
+		[01;36m(VP[00m
+			[01;36m(ADVP[00m
+				([01;36mRB[00m [01;31mDT[00m both)[01;36m)[00m
+			(VP
+				[01;36m(V[00m
+					(VBD broke)
+					[01;31m(ADVP[00m
+						(RP up)[01;31m)[00m[01;36m)[00m
+				(PP with their partners))[01;36m)[00m)[01;36m)[00m
+Step:Single Word Phrase
+{'type': 'add', 'label': 'NP', 'span': (0, 1), 'subtrees': ['NNP'], 'parent': 'NP', 'family': ['NP', 'CC', 'NNP'], 'auto preterminals': ('NNP',), 'auto preterminal span': (0, 1), 'left siblings': [], 'right siblings': [(CC and), (NNP sandy)], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+[01;36m(ROOT[00m
+	(S
+		(NP
+			(NP kim)
+			[01;36m(CONJP[00m
+				(CC and)
+				[01;36m(NP[00m
+					(NNP sandy)[01;36m)[00m[01;36m)[00m)
+		[01;36m(VP[00m
+			[01;36m(ADVP[00m
+				([01;36mRB[00m [01;31mDT[00m both)[01;36m)[00m
+			(VP
+				[01;36m(V[00m
+					(VBD broke)
+					[01;31m(ADVP[00m
+						(RP up)[01;31m)[00m[01;36m)[00m
+				(PP with their partners))[01;36m)[00m)[01;36m)[00m
+Step:UNSET add
+{'type': 'add', 'label': 'ROOT', 'span': (0, 9), 'subtrees': ['NP', 'DT', 'VP'], 'parent': 'S', 'family': ['ROOT'], 'auto preterminals': ('NNP', 'CC', 'NNP', 'DT', 'VBD', 'RP', 'IN', 'PRP$', 'NNS'), 'auto preterminal span': (0, 9), 'left siblings': [], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(NP
+			(NP kim)
+			[01;36m(CONJP[00m
+				(CC and)
+				[01;36m(NP[00m
+					(NNP sandy)[01;36m)[00m[01;36m)[00m)
+		[01;36m(VP[00m
+			[01;36m(ADVP[00m
+				([01;36mRB[00m [01;31mDT[00m both)[01;36m)[00m
+			(VP
+				[01;36m(V[00m
+					(VBD broke)
+					[01;31m(ADVP[00m
+						(RP up)[01;31m)[00m[01;36m)[00m
+				(PP with their partners))[01;36m)[00m))
+Step:NP Internal Structure
+{'type': 'add', 'label': 'CONJP', 'span': (1, 3), 'subtrees': ['CC', 'NNP'], 'parent': 'NP', 'family': ['NP', 'CONJP'], 'auto preterminals': ('CC', 'NNP'), 'auto preterminal span': (1, 3), 'left siblings': [(NP (NNP kim))], 'right siblings': [], 'over_word': False, 'over words': True, 'classified_type': 'NP Internal Structure'}
+(S
+	(ROOT
+		(NP
+			(NP kim)
+			(CONJP
+				(CC and)
+				[01;36m(NP[00m
+					(NNP sandy)[01;36m)[00m))
+		[01;36m(VP[00m
+			[01;36m(ADVP[00m
+				([01;36mRB[00m [01;31mDT[00m both)[01;36m)[00m
+			(VP
+				[01;36m(V[00m
+					(VBD broke)
+					[01;31m(ADVP[00m
+						(RP up)[01;31m)[00m[01;36m)[00m
+				(PP with their partners))[01;36m)[00m))
+Step:Single Word Phrase
+{'type': 'add', 'label': 'NP', 'span': (2, 3), 'subtrees': ['NNP'], 'parent': 'CONJP', 'family': ['CC', 'NP'], 'auto preterminals': ('NNP',), 'auto preterminal span': (2, 3), 'left siblings': [(CC and)], 'right siblings': [], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(NP kim and sandy)
+		[01;36m(VP[00m
+			[01;36m(ADVP[00m
+				([01;36mRB[00m [01;31mDT[00m both)[01;36m)[00m
+			(VP
+				[01;36m(V[00m
+					(VBD broke)
+					[01;31m(ADVP[00m
+						(RP up)[01;31m)[00m[01;36m)[00m
+				(PP with their partners))[01;36m)[00m))
+Step:Single Word Phrase
+{'type': 'add', 'label': 'ADVP', 'span': (3, 4), 'subtrees': ['DT'], 'parent': 'ROOT', 'family': ['NP', 'ADVP', 'VP'], 'auto preterminals': ('DT',), 'auto preterminal span': (3, 4), 'left siblings': [(NP (NP (NNP kim)) (CONJP (CC and) (NP (NNP sandy))))], 'right siblings': [(VP (VBD broke) (ADVP (RP up)) (PP (IN with) (NP (PRP$ their) (NNS partners))))], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(NP kim and sandy)
+		[01;36m(VP[00m
+			(ADVP
+				([01;36mRB[00m [01;31mDT[00m both))
+			(VP
+				[01;36m(V[00m
+					(VBD broke)
+					[01;31m(ADVP[00m
+						(RP up)[01;31m)[00m[01;36m)[00m
+				(PP with their partners))[01;36m)[00m))
+Step:UNSET add
+{'type': 'add', 'label': 'VP', 'span': (3, 9), 'subtrees': ['ADVP', 'VP'], 'parent': 'ROOT', 'family': ['NP', 'VP'], 'auto preterminals': ('DT', 'VBD', 'RP', 'IN', 'PRP$', 'NNS'), 'auto preterminal span': (3, 9), 'left siblings': [(NP (NP (NNP kim)) (CONJP (CC and) (NP (NNP sandy))))], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(NP kim and sandy)
+		(VP
+			(ADVP
+				([01;36mRB[00m [01;31mDT[00m both))
+			(VP
+				[01;36m(V[00m
+					(VBD broke)
+					[01;31m(ADVP[00m
+						(RP up)[01;31m)[00m[01;36m)[00m
+				(PP with their partners)))))
+Step:Modifier Attachment
+{'type': 'add', 'label': 'V', 'span': (4, 6), 'subtrees': ['VBD', 'ADVP'], 'parent': 'VP', 'family': ['V', 'PP'], 'auto preterminals': ('VBD', 'RP'), 'auto preterminal span': (4, 6), 'left siblings': [], 'right siblings': [(PP (IN with) (NP (PRP$ their) (NNS partners)))], 'over_word': False, 'over words': False, 'classified_type': 'Modifier Attachment'}
+(S
+	(ROOT
+		(NP kim and sandy)
+		(VP
+			(ADVP
+				([01;36mRB[00m [01;31mDT[00m both))
+			(VP
+				(V
+					(VBD broke)
+					[01;31m(ADVP[00m
+						(RP up)[01;31m)[00m)
+				(PP with their partners)))))
+Step:Single Word Phrase
+{'type': 'remove', 'label': 'ADVP', 'span': (5, 6), 'subtrees': ['RP'], 'parent': 'V', 'family': ['VBD', 'ADVP'], 'left siblings': ['VBD'], 'right siblings': [], 'over words': True, 'over_word': True, 'auto preterminals': ('VBD', 'RP'), 'auto preterminal span': (4, 6), 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(NP kim and sandy)
+		(VP
+			(ADVP
+				([01;36mRB[00m [01;31mDT[00m both))
+			(VP broke up with their partners))))
+
+Sentence 5:
+12 Initial errors
+0 on fringe, 10 iterations
+2 Error:Different label
+2 Error:Different label
+1 Error:UNSET add
+1 Error:UNSET add
+1 Error:Single Word Phrase
+1 Error:Single Word Phrase
+1 Error:Single Word Phrase
+1 Error:Single Word Phrase
+1 Error:Unary
+1 Error:Single Word Phrase
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+[01;36m(ROOT[00m
+	(S
+		(NP
+			(NP the horse)
+			[01;36m(CONJP[00m
+				[01;36m(ADVP[00m [01;31m(CONJP[00m
+					(RB as)
+					[01;36m(ADVP[00m
+						(RB well)[01;36m)[00m
+					[01;36m(ADVP[00m
+						([01;36mRB[00m [01;31mIN[00m as)[01;36m)[00m[01;31m)[00m[01;36m)[00m
+				(NP
+					(NP the rabbits)
+					[01;36m(S[00m [01;31m(SBAR[00m
+						[01;31m(WHNP[00m
+							(WDT which)[01;31m)[00m
+						(S
+							[01;31m(NP[00m
+								(PRP we)[01;31m)[00m
+							(VP
+								(VBD wanted)
+								[01;31m(S[00m
+									(VP
+										(TO to)
+										[01;31m(VP[00m
+											(VB eat)[01;31m)[00m)[01;31m)[00m))[01;31m)[00m[01;36m)[00m)[01;36m)[00m)
+		(VP has escaped))[01;36m)[00m
+Step:Different label
+{'type': 'relabel', 'change': ('CONJP', 'ADVP'), 'subtrees': ['RB', 'RB', 'IN'], 'parent': 'NP', 'span': (2, 5), 'family': ['NP', 'ADVP', 'NP'], 'auto preterminals': ('RB', 'RB', 'IN'), 'auto preterminal span': (2, 5), 'over_word': False, 'classified_type': 'Different label'}
+[01;36m(ROOT[00m
+	(S
+		(NP
+			(NP the horse)
+			[01;36m(CONJP[00m
+				(ADVP
+					(RB as)
+					[01;36m(ADVP[00m
+						(RB well)[01;36m)[00m
+					[01;36m(ADVP[00m
+						([01;36mRB[00m [01;31mIN[00m as)[01;36m)[00m)
+				(NP
+					(NP the rabbits)
+					[01;36m(S[00m [01;31m(SBAR[00m
+						[01;31m(WHNP[00m
+							(WDT which)[01;31m)[00m
+						(S
+							[01;31m(NP[00m
+								(PRP we)[01;31m)[00m
+							(VP
+								(VBD wanted)
+								[01;31m(S[00m
+									(VP
+										(TO to)
+										[01;31m(VP[00m
+											(VB eat)[01;31m)[00m)[01;31m)[00m))[01;31m)[00m[01;36m)[00m)[01;36m)[00m)
+		(VP has escaped))[01;36m)[00m
+Step:Different label
+{'type': 'relabel', 'change': ('SBAR', 'S'), 'subtrees': ['WHNP', 'S'], 'parent': 'NP', 'span': (7, 12), 'family': ['NP', 'S'], 'auto preterminals': ('WDT', 'PRP', 'VBD', 'TO', 'VB'), 'auto preterminal span': (7, 12), 'over_word': False, 'classified_type': 'Different label'}
+[01;36m(ROOT[00m
+	(S
+		(NP
+			(NP the horse)
+			[01;36m(CONJP[00m
+				(ADVP
+					(RB as)
+					[01;36m(ADVP[00m
+						(RB well)[01;36m)[00m
+					[01;36m(ADVP[00m
+						([01;36mRB[00m [01;31mIN[00m as)[01;36m)[00m)
+				(NP
+					(NP the rabbits)
+					(S
+						[01;31m(WHNP[00m
+							(WDT which)[01;31m)[00m
+						(S
+							[01;31m(NP[00m
+								(PRP we)[01;31m)[00m
+							(VP
+								(VBD wanted)
+								[01;31m(S[00m
+									(VP
+										(TO to)
+										[01;31m(VP[00m
+											(VB eat)[01;31m)[00m)[01;31m)[00m))))[01;36m)[00m)
+		(VP has escaped))[01;36m)[00m
+Step:UNSET add
+{'type': 'add', 'label': 'ROOT', 'span': (0, 14), 'subtrees': ['NP', 'VP'], 'parent': 'S', 'family': ['ROOT'], 'auto preterminals': ('DT', 'NN', 'RB', 'RB', 'IN', 'DT', 'NNS', 'WDT', 'PRP', 'VBD', 'TO', 'VB', 'VBZ', 'VBN'), 'auto preterminal span': (0, 14), 'left siblings': [], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(NP
+			(NP the horse)
+			[01;36m(CONJP[00m
+				(ADVP
+					(RB as)
+					[01;36m(ADVP[00m
+						(RB well)[01;36m)[00m
+					[01;36m(ADVP[00m
+						([01;36mRB[00m [01;31mIN[00m as)[01;36m)[00m)
+				(NP
+					(NP the rabbits)
+					(S
+						[01;31m(WHNP[00m
+							(WDT which)[01;31m)[00m
+						(S
+							[01;31m(NP[00m
+								(PRP we)[01;31m)[00m
+							(VP
+								(VBD wanted)
+								[01;31m(S[00m
+									(VP
+										(TO to)
+										[01;31m(VP[00m
+											(VB eat)[01;31m)[00m)[01;31m)[00m))))[01;36m)[00m)
+		(VP has escaped)))
+Step:UNSET add
+{'type': 'add', 'label': 'CONJP', 'span': (2, 12), 'subtrees': ['ADVP', 'NP'], 'parent': 'NP', 'family': ['NP', 'CONJP'], 'auto preterminals': ('RB', 'RB', 'IN', 'DT', 'NNS', 'WDT', 'PRP', 'VBD', 'TO', 'VB'), 'auto preterminal span': (2, 12), 'left siblings': [(NP (DT the) (NN horse))], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(NP
+			(NP the horse)
+			(CONJP
+				(ADVP
+					(RB as)
+					[01;36m(ADVP[00m
+						(RB well)[01;36m)[00m
+					[01;36m(ADVP[00m
+						([01;36mRB[00m [01;31mIN[00m as)[01;36m)[00m)
+				(NP
+					(NP the rabbits)
+					(S
+						[01;31m(WHNP[00m
+							(WDT which)[01;31m)[00m
+						(S
+							[01;31m(NP[00m
+								(PRP we)[01;31m)[00m
+							(VP
+								(VBD wanted)
+								[01;31m(S[00m
+									(VP
+										(TO to)
+										[01;31m(VP[00m
+											(VB eat)[01;31m)[00m)[01;31m)[00m))))))
+		(VP has escaped)))
+Step:Single Word Phrase
+{'type': 'add', 'label': 'ADVP', 'span': (3, 4), 'subtrees': ['RB'], 'parent': 'ADVP', 'family': ['RB', 'ADVP', 'IN'], 'auto preterminals': ('RB',), 'auto preterminal span': (3, 4), 'left siblings': [(RB as)], 'right siblings': [(IN as)], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(NP
+			(NP the horse)
+			(CONJP
+				(ADVP
+					(RB as)
+					(ADVP well)
+					[01;36m(ADVP[00m
+						([01;36mRB[00m [01;31mIN[00m as)[01;36m)[00m)
+				(NP
+					(NP the rabbits)
+					(S
+						[01;31m(WHNP[00m
+							(WDT which)[01;31m)[00m
+						(S
+							[01;31m(NP[00m
+								(PRP we)[01;31m)[00m
+							(VP
+								(VBD wanted)
+								[01;31m(S[00m
+									(VP
+										(TO to)
+										[01;31m(VP[00m
+											(VB eat)[01;31m)[00m)[01;31m)[00m))))))
+		(VP has escaped)))
+Step:Single Word Phrase
+{'type': 'add', 'label': 'ADVP', 'span': (4, 5), 'subtrees': ['IN'], 'parent': 'ADVP', 'family': ['RB', 'ADVP', 'ADVP'], 'auto preterminals': ('IN',), 'auto preterminal span': (4, 5), 'left siblings': [(RB as), (ADVP (RB well))], 'right siblings': [], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(NP
+			(NP the horse)
+			(CONJP
+				(ADVP
+					(RB as)
+					(ADVP well)
+					(ADVP
+						([01;36mRB[00m [01;31mIN[00m as)))
+				(NP
+					(NP the rabbits)
+					(S
+						[01;31m(WHNP[00m
+							(WDT which)[01;31m)[00m
+						(S
+							[01;31m(NP[00m
+								(PRP we)[01;31m)[00m
+							(VP
+								(VBD wanted)
+								[01;31m(S[00m
+									(VP
+										(TO to)
+										[01;31m(VP[00m
+											(VB eat)[01;31m)[00m)[01;31m)[00m))))))
+		(VP has escaped)))
+Step:Single Word Phrase
+{'type': 'remove', 'label': 'WHNP', 'span': (7, 8), 'subtrees': ['WDT'], 'parent': 'S', 'family': ['WHNP', 'S'], 'left siblings': [], 'right siblings': ['S'], 'over words': True, 'over_word': True, 'auto preterminals': ('WDT', 'PRP', 'VBD', 'TO', 'VB'), 'auto preterminal span': (7, 12), 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(NP
+			(NP the horse)
+			(CONJP
+				(ADVP
+					(RB as)
+					(ADVP well)
+					(ADVP
+						([01;36mRB[00m [01;31mIN[00m as)))
+				(NP
+					(NP the rabbits)
+					(S
+						(WDT which)
+						(S
+							[01;31m(NP[00m
+								(PRP we)[01;31m)[00m
+							(VP
+								(VBD wanted)
+								[01;31m(S[00m
+									(VP
+										(TO to)
+										[01;31m(VP[00m
+											(VB eat)[01;31m)[00m)[01;31m)[00m))))))
+		(VP has escaped)))
+Step:Single Word Phrase
+{'type': 'remove', 'label': 'NP', 'span': (8, 9), 'subtrees': ['PRP'], 'parent': 'S', 'family': ['NP', 'VP'], 'left siblings': [], 'right siblings': ['VP'], 'over words': True, 'over_word': True, 'auto preterminals': ('PRP', 'VBD', 'TO', 'VB'), 'auto preterminal span': (8, 12), 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(NP
+			(NP the horse)
+			(CONJP
+				(ADVP
+					(RB as)
+					(ADVP well)
+					(ADVP
+						([01;36mRB[00m [01;31mIN[00m as)))
+				(NP
+					(NP the rabbits)
+					(S
+						(WDT which)
+						(S
+							(PRP we)
+							(VP
+								(VBD wanted)
+								[01;31m(S[00m
+									(VP
+										(TO to)
+										[01;31m(VP[00m
+											(VB eat)[01;31m)[00m)[01;31m)[00m))))))
+		(VP has escaped)))
+Step:Unary
+{'type': 'remove', 'label': 'S', 'span': (10, 12), 'subtrees': ['VP'], 'parent': 'VP', 'family': ['VBD', 'S'], 'left siblings': ['VBD'], 'right siblings': [], 'over words': False, 'over_word': False, 'auto preterminals': ('VBD', 'TO', 'VB'), 'auto preterminal span': (9, 12), 'classified_type': 'Unary'}
+(S
+	(ROOT
+		(NP
+			(NP the horse)
+			(CONJP
+				(ADVP
+					(RB as)
+					(ADVP well)
+					(ADVP
+						([01;36mRB[00m [01;31mIN[00m as)))
+				(NP
+					(NP the rabbits)
+					(S
+						(WDT which)
+						(S
+							(PRP we)
+							(VP
+								(VBD wanted)
+								(VP
+									(TO to)
+									[01;31m(VP[00m
+										(VB eat)[01;31m)[00m)))))))
+		(VP has escaped)))
+Step:Single Word Phrase
+{'type': 'remove', 'label': 'VP', 'span': (11, 12), 'subtrees': ['VB'], 'parent': 'VP', 'family': ['TO', 'VP'], 'left siblings': ['TO'], 'right siblings': [], 'over words': True, 'over_word': True, 'auto preterminals': ('TO', 'VB'), 'auto preterminal span': (10, 12), 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(NP
+			(NP the horse)
+			(CONJP
+				(ADVP
+					(RB as)
+					(ADVP well)
+					(ADVP
+						([01;36mRB[00m [01;31mIN[00m as)))
+				(NP the rabbits which we wanted to eat)))
+		(VP has escaped)))
+
+Sentence 6:
+12 Initial errors
+0 on fringe, 9 iterations
+3 Error:UNSET move
+2 Error:Different label
+1 Error:UNSET add
+1 Error:PP Attachment
+1 Error:Modifier Attachment
+1 Error:NP Internal Structure
+1 Error:NP Internal Structure
+1 Error:NP Internal Structure
+1 Error:Single Word Phrase
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+[01;36m(ROOT[00m
+	(S
+		(NP it)
+		(VP
+			(VBD was)
+			(NP
+				(NP
+					[01;31m(NP[00m
+						(PRP$ my)
+						(NN [01;33m(NP[00m aunt)
+						(POS [01;33m(NP[00m 's)[01;31m)[00m
+					(NN car)) [01;33mNP) NP)[00m
+				[01;36m(S[00m [01;31m(SBAR[00m
+					[01;31m(WHNP[00m
+						(WDT which)[01;31m)[00m
+					(S
+						(NP we)
+						(VP
+							[01;36m(VP[00m
+								[01;36m(VP[00m
+									(VBD sold)
+									(PP at auction)[01;36m)[00m
+								[01;36m(ADVP[00m [01;31m(NP[00m
+									([01;36mRB[00m [01;31mJJ[00m last)
+									[01;36m(NP[00m
+										(NN year)[01;36m)[00m[01;31m)[00m[01;36m)[00m[01;36m)[00m
+							(PP in february)))[01;31m)[00m[01;36m)[00m)))[01;36m)[00m
+Step:UNSET move
+{'type': 'move', 'old_parent': 'NP', 'new_parent': 'VP', 'movers': ['JJ'], 'mover info': [('JJ', (11, 12))], 'new_family': ['VBD', 'PP', 'JJ', 'NP', 'PP'], 'old_family': ['JJ', 'NN'], 'start left siblings': [], 'start right siblings': ['NN'], 'end left siblings': ['VBD', 'PP'], 'end right siblings': ['NP', 'PP'], 'auto preterminals': ('VBD', 'IN', 'NN', 'JJ', 'NN', 'IN', 'NNP'), 'auto preterminal span': (8, 15), 'POS confusion': ('JJ', 'RB'), 'added and moved': True, 'added label': 'ADVP', 'adding node already present': False, 'classified_type': 'UNSET move'}
+[01;36m(ROOT[00m
+	(S
+		(NP it)
+		(VP
+			(VBD was)
+			(NP
+				(NP
+					[01;31m(NP[00m
+						(PRP$ my)
+						(NN [01;33m(NP[00m aunt)
+						(POS [01;33m(NP[00m 's)[01;31m)[00m
+					(NN car)) [01;33mNP) NP)[00m
+				[01;36m(S[00m [01;31m(SBAR[00m
+					[01;31m(WHNP[00m
+						(WDT which)[01;31m)[00m
+					(S
+						(NP we)
+						(VP
+							[01;36m(VP[00m
+								[01;36m(VP[00m
+									(VBD sold)
+									(PP at auction)[01;36m)[00m
+								(ADVP
+									([01;36mRB[00m [01;31mJJ[00m last)
+									(NP year))[01;36m)[00m
+							(PP in february)))[01;31m)[00m[01;36m)[00m)))[01;36m)[00m
+Step:Different label
+{'type': 'relabel', 'change': ('SBAR', 'S'), 'subtrees': ['WHNP', 'S'], 'parent': 'NP', 'span': (6, 15), 'family': ['NP', 'S'], 'auto preterminals': ('WDT', 'PRP', 'VBD', 'IN', 'NN', 'JJ', 'NN', 'IN', 'NNP'), 'auto preterminal span': (6, 15), 'over_word': False, 'classified_type': 'Different label'}
+[01;36m(ROOT[00m
+	(S
+		(NP it)
+		(VP
+			(VBD was)
+			(NP
+				(NP
+					[01;31m(NP[00m
+						(PRP$ my)
+						(NN [01;33m(NP[00m aunt)
+						(POS [01;33m(NP[00m 's)[01;31m)[00m
+					(NN car)) [01;33mNP) NP)[00m
+				(S
+					[01;31m(WHNP[00m
+						(WDT which)[01;31m)[00m
+					(S
+						(NP we)
+						(VP
+							[01;36m(VP[00m
+								[01;36m(VP[00m
+									(VBD sold)
+									(PP at auction)[01;36m)[00m
+								(ADVP
+									([01;36mRB[00m [01;31mJJ[00m last)
+									(NP year))[01;36m)[00m
+							(PP in february)))))))[01;36m)[00m
+Step:UNSET add
+{'type': 'add', 'label': 'ROOT', 'span': (0, 15), 'subtrees': ['NP', 'VP'], 'parent': 'S', 'family': ['ROOT'], 'auto preterminals': ('PRP', 'VBD', 'PRP$', 'NN', 'POS', 'NN', 'WDT', 'PRP', 'VBD', 'IN', 'NN', 'JJ', 'NN', 'IN', 'NNP'), 'auto preterminal span': (0, 15), 'left siblings': [], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(NP it)
+		(VP
+			(VBD was)
+			(NP
+				(NP
+					[01;31m(NP[00m
+						(PRP$ my)
+						(NN [01;33m(NP[00m aunt)
+						(POS [01;33m(NP[00m 's)[01;31m)[00m
+					(NN car)) [01;33mNP) NP)[00m
+				(S
+					[01;31m(WHNP[00m
+						(WDT which)[01;31m)[00m
+					(S
+						(NP we)
+						(VP
+							[01;36m(VP[00m
+								[01;36m(VP[00m
+									(VBD sold)
+									(PP at auction)[01;36m)[00m
+								(ADVP
+									([01;36mRB[00m [01;31mJJ[00m last)
+									(NP year))[01;36m)[00m
+							(PP in february))))))))
+Step:PP Attachment
+{'type': 'add', 'label': 'VP', 'span': (8, 11), 'subtrees': ['VBD', 'PP'], 'parent': 'VP', 'family': ['VP', 'ADVP', 'PP'], 'auto preterminals': ('VBD', 'IN', 'NN'), 'auto preterminal span': (8, 11), 'left siblings': [], 'right siblings': [(ADVP (JJ last) (NP (NN year))), (PP (IN in) (NP (NNP february)))], 'over_word': False, 'over words': False, 'classified_type': 'PP Attachment'}
+(S
+	(ROOT
+		(NP it)
+		(VP
+			(VBD was)
+			(NP
+				(NP
+					[01;31m(NP[00m
+						(PRP$ my)
+						(NN [01;33m(NP[00m aunt)
+						(POS [01;33m(NP[00m 's)[01;31m)[00m
+					(NN car)) [01;33mNP) NP)[00m
+				(S
+					[01;31m(WHNP[00m
+						(WDT which)[01;31m)[00m
+					(S
+						(NP we)
+						(VP
+							[01;36m(VP[00m
+								(VP sold at auction)
+								(ADVP
+									([01;36mRB[00m [01;31mJJ[00m last)
+									(NP year))[01;36m)[00m
+							(PP in february))))))))
+Step:Modifier Attachment
+{'type': 'add', 'label': 'VP', 'span': (8, 13), 'subtrees': ['VP', 'ADVP'], 'parent': 'VP', 'family': ['VP', 'PP'], 'auto preterminals': ('VBD', 'IN', 'NN', 'JJ', 'NN'), 'auto preterminal span': (8, 13), 'left siblings': [], 'right siblings': [(PP (IN in) (NP (NNP february)))], 'over_word': False, 'over words': False, 'classified_type': 'Modifier Attachment'}
+(S
+	(ROOT
+		(NP it)
+		(VP
+			(VBD was)
+			(NP
+				(NP
+					[01;31m(NP[00m
+						(PRP$ my)
+						(NN [01;33m(NP[00m aunt)
+						(POS [01;33m(NP[00m 's)[01;31m)[00m
+					(NN car)) [01;33mNP) NP)[00m
+				(S
+					[01;31m(WHNP[00m
+						(WDT which)[01;31m)[00m
+					(S
+						(NP we)
+						(VP
+							(VP
+								(VP sold at auction)
+								(ADVP
+									([01;36mRB[00m [01;31mJJ[00m last)
+									(NP year)))
+							(PP in february))))))))
+Step:NP Internal Structure
+{'type': 'remove', 'label': 'NP', 'span': (2, 5), 'subtrees': ['PRP$', 'NN', 'POS'], 'parent': 'NP', 'family': ['NP', 'NN'], 'left siblings': [], 'right siblings': ['NN'], 'over words': True, 'over_word': False, 'auto preterminals': ('PRP$', 'NN', 'POS', 'NN'), 'auto preterminal span': (2, 6), 'classified_type': 'NP Internal Structure'}
+(S
+	(ROOT
+		(NP it)
+		(VP
+			(VBD was)
+			(NP
+				(NP
+					(PRP$ my)
+					[01;36m(NP[00m
+						(NN aunt)
+						[01;36m(NP[00m
+							(POS 's)
+							(NN car)[01;36m)[00m[01;36m)[00m)
+				(S
+					[01;31m(WHNP[00m
+						(WDT which)[01;31m)[00m
+					(S
+						(NP we)
+						(VP
+							(VP
+								(VP sold at auction)
+								(ADVP
+									([01;36mRB[00m [01;31mJJ[00m last)
+									(NP year)))
+							(PP in february))))))))
+Step:NP Internal Structure
+{'type': 'add', 'label': 'NP', 'span': (3, 6), 'subtrees': ['NN', 'POS', 'NN'], 'parent': 'NP', 'family': ['PRP$', 'NP'], 'auto preterminals': ('NN', 'POS', 'NN'), 'auto preterminal span': (3, 6), 'left siblings': [(PRP$ my)], 'right siblings': [], 'over_word': False, 'over words': True, 'classified_type': 'NP Internal Structure'}
+(S
+	(ROOT
+		(NP it)
+		(VP
+			(VBD was)
+			(NP
+				(NP
+					(PRP$ my)
+					(NP
+						(NN aunt)
+						[01;36m(NP[00m
+							(POS 's)
+							(NN car)[01;36m)[00m))
+				(S
+					[01;31m(WHNP[00m
+						(WDT which)[01;31m)[00m
+					(S
+						(NP we)
+						(VP
+							(VP
+								(VP sold at auction)
+								(ADVP
+									([01;36mRB[00m [01;31mJJ[00m last)
+									(NP year)))
+							(PP in february))))))))
+Step:NP Internal Structure
+{'type': 'add', 'label': 'NP', 'span': (4, 6), 'subtrees': ['POS', 'NN'], 'parent': 'NP', 'family': ['NN', 'NP'], 'auto preterminals': ('POS', 'NN'), 'auto preterminal span': (4, 6), 'left siblings': [(NN aunt)], 'right siblings': [], 'over_word': False, 'over words': True, 'classified_type': 'NP Internal Structure'}
+(S
+	(ROOT
+		(NP it)
+		(VP
+			(VBD was)
+			(NP
+				(NP my aunt 's car)
+				(S
+					[01;31m(WHNP[00m
+						(WDT which)[01;31m)[00m
+					(S
+						(NP we)
+						(VP
+							(VP
+								(VP sold at auction)
+								(ADVP
+									([01;36mRB[00m [01;31mJJ[00m last)
+									(NP year)))
+							(PP in february))))))))
+Step:Single Word Phrase
+{'type': 'remove', 'label': 'WHNP', 'span': (6, 7), 'subtrees': ['WDT'], 'parent': 'S', 'family': ['WHNP', 'S'], 'left siblings': [], 'right siblings': ['S'], 'over words': True, 'over_word': True, 'auto preterminals': ('WDT', 'PRP', 'VBD', 'IN', 'NN', 'JJ', 'NN', 'IN', 'NNP'), 'auto preterminal span': (6, 15), 'POS confusion': ('JJ', 'RB'), 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(NP it)
+		(VP
+			(VBD was)
+			(NP
+				(NP my aunt 's car)
+				(S
+					(WDT which)
+					(S
+						(NP we)
+						(VP
+							(VP
+								(VP sold at auction)
+								(ADVP
+									([01;36mRB[00m [01;31mJJ[00m last)
+									(NP year)))
+							(PP in february))))))))
+
+Sentence 7:
+Sentence lengths do not match...
+Gold: natural disasters storms flooding hurricanes occur infrequently but cause devastation that strains resources to breaking point
+Test: natural disasters – storms flooding hurricanes – occur infrequently but cause devastation that strains resources to breaking point
+Sentence 8:
+Sentence lengths do not match...
+Gold: letters delivered on time by old fashioned means are increasingly rare so it is as well that that is not the only option available
+Test: letters delivered on time by old-fashioned means are increasingly rare so it is as well that that is not the only option available
+Sentence 9:
+Sentence lengths do not match...
+Gold: english also has many words of more or less unique function including interjections -LRB- oh ah -RRB- negatives -LRB- no not -RRB- politeness markers -LRB- please thank you -RRB- and the existential there -LRB- there are horses but not unicorns -RRB- among others
+Test: english also has many words of more or less unique function including interjections -LRB- oh ah -RRB- negatives -LRB- no not -RRB- politeness markers -LRB- please thank you -RRB- and the existential ' there -LRB- there are horses but not unicorns -RRB- among others
+Sentence 10:
+Sentence lengths do not match...
+Gold: the penn treebank tagset was culled from the original 87 tag tagset for the brown corpus
+Test: the penn treebank tagset was culled from the original 87-tag tagset for the brown corpus
+Sentence 11:
+45 Initial errors
+0 on fringe, 36 iterations
+5 Error:Modifier Attachment
+3 Error:Co-ordination
+2 Error:Different label
+2 Error:PP Attachment
+2 Error:PP Attachment
+1 Error:UNSET add
+1 Error:UNSET add
+1 Error:NP Internal Structure
+1 Error:Single Word Phrase
+1 Error:UNSET add
+1 Error:Single Word Phrase
+1 Error:UNSET add
+1 Error:Modifier Attachment
+1 Error:UNSET add
+1 Error:NP Internal Structure
+1 Error:PP Attachment
+1 Error:PP Attachment
+1 Error:Single Word Phrase
+1 Error:NP Internal Structure
+1 Error:PP Attachment
+1 Error:PP Attachment
+1 Error:NP Internal Structure
+1 Error:UNSET add
+1 Error:Unary
+1 Error:Unary
+1 Error:UNSET remove
+1 Error:Modifier Attachment
+1 Error:PP Attachment
+1 Error:PP Attachment
+1 Error:UNSET add
+1 Error:NP Internal Structure
+1 Error:Single Word Phrase
+1 Error:Unary
+1 Error:Single Word Phrase
+1 Error:Modifier Attachment
+1 Error:UNSET add
+Step:UNSET init
+{'type': 'init', 'classified_type': 'UNSET init'}
+[01;36m(ROOT[00m
+	(S
+		(PP for example)
+		[01;36m(S[00m
+			(NP
+				(DT the)
+				[01;36m(ADJP[00m
+					(JJ original)
+					[01;36m(NP[00m
+						([01;36mNNP[00m [01;31mJJ[00m brown)[01;36m)[00m
+					[01;36m(CONJP[00m
+						(CC and)
+						[01;36m(NP[00m
+							[01;36m(NP[00m
+								([01;36mNNP[00m [01;31mNNS[00m c5)[01;36m)[00m
+							(NNS tagsets)[01;36m)[00m[01;36m)[00m[01;36m)[00m)
+			(VP
+				(VBP include)
+				(NP
+					[01;31m(NP[00m
+						(DT a)
+						(JJ [01;33m(ADJP[00m separate)
+						(NN [01;33m(NP[00m tag)[01;31m)[00m
+					(PP [01;33m(PP[00m
+						(IN for)
+						[01;31m(NP[00m
+							[01;31m(NP[00m
+								(DT each)[01;31m)[00m [01;33mPP)[00m
+							(PP
+								(IN of)
+								(NP
+									[01;31m(NP[00m
+										(DT the)
+										(JJ [01;33m(ADJP[00m different)
+										(NNS [01;33m(NP[00m forms)[01;31m)[00m
+									[01;36m(PP[00m
+										[01;31m(PP[00m
+											(IN of)
+											[01;31m(NP[00m [01;33m(NP[00m
+												[01;31m(NP[00m
+													(DT the)
+													(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+												[01;36m(LST[00m [01;31m(SBAR[00m [01;33m(LST (LST[00m
+													[01;31m(S[00m
+														[01;31m(VP[00m
+															([01;36mVB[00m [01;31mVBP[00m do)
+															(PRN
+																(-LRB- -LRB-)
+																[01;36m(ADVP[00m
+																	[01;31m(INTJ[00m [01;33m(ADVP[00m
+																		([01;36mRB[00m [01;31mUH[00m e.g.)
+																		([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																	[01;31m(VP[00m [01;33m(NP[00m
+																		([01;36mNN[00m [01;31mVB[00m tag)
+																		[01;31m(ADJP[00m
+																			([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																			[01;31m(PP[00m [01;33m(PP[00m
+																				(IN for)
+																				[01;31m(NP[00m
+																					[01;31m(NP[00m
+																						([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m [01;33mPP) ADVP)[00m
+																					[01;36m(CONJP[00m
+																						(CC and)
+																						[01;31m(NP[00m
+																							(NP
+																								([01;36mNN[00m [01;31mCD[00m vdg)
+																								(NN tag))
+																							(PP
+																								(IN for)
+																								[01;31m(S[00m
+																									[01;31m(VP[00m
+																										(VBG doing)[01;31m)[00m[01;31m)[00m)[01;31m)[00m[01;36m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;36m)[00m
+																(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;36m)[00m[01;31m)[00m[01;31m)[00m
+										[01;31m(ADJP[00m
+											(VB be) [01;33mLST)[00m
+											[01;36m(CONJP[00m
+												(CC and)
+												(VB have)[01;36m)[00m[01;31m)[00m[01;36m)[00m))[01;31m)[00m)))[01;36m)[00m) [01;33mLST) NP) NP) NP) ADJP) NP) ADJP)[00m[01;36m)[00m
+Step:Modifier Attachment
+{'type': 'move', 'old_parent': 'NP', 'new_parent': 'NP', 'movers': ['ADJP'], 'mover info': [('ADJP', (35, 38))], 'new_family': ['NP', 'SBAR', 'ADJP'], 'old_family': ['NP', 'PP', 'ADJP'], 'start left siblings': ['NP', 'PP'], 'start right siblings': [], 'end left siblings': ['NP', 'SBAR'], 'end right siblings': [], 'auto preterminals': ('DT', 'JJ', 'NNS', 'IN', 'DT', 'NNS', 'VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-', 'VB', 'CC', 'VB'), 'auto preterminal span': (15, 38), 'added and moved': True, 'added label': 'CONJP', 'adding node already present': False, 'classified_type': 'Modifier Attachment'}
+[01;36m(ROOT[00m
+	(S
+		(PP for example)
+		[01;36m(S[00m
+			(NP
+				(DT the)
+				[01;36m(ADJP[00m
+					(JJ original)
+					[01;36m(NP[00m
+						([01;36mNNP[00m [01;31mJJ[00m brown)[01;36m)[00m
+					[01;36m(CONJP[00m
+						(CC and)
+						[01;36m(NP[00m
+							[01;36m(NP[00m
+								([01;36mNNP[00m [01;31mNNS[00m c5)[01;36m)[00m
+							(NNS tagsets)[01;36m)[00m[01;36m)[00m[01;36m)[00m)
+			(VP
+				(VBP include)
+				(NP
+					[01;31m(NP[00m
+						(DT a)
+						(JJ [01;33m(ADJP[00m separate)
+						(NN [01;33m(NP[00m tag)[01;31m)[00m
+					(PP [01;33m(PP[00m
+						(IN for)
+						[01;31m(NP[00m
+							[01;31m(NP[00m
+								(DT each)[01;31m)[00m [01;33mPP)[00m
+							(PP
+								(IN of)
+								(NP
+									[01;31m(NP[00m
+										(DT the)
+										(JJ [01;33m(ADJP[00m different)
+										(NNS [01;33m(NP[00m forms)[01;31m)[00m
+									(PP
+										(IN of)
+										(NP
+											[01;31m(NP[00m
+												(DT the)
+												(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+											(LST [01;33m(LST[00m
+												[01;36m(LST[00m [01;31m(SBAR[00m
+													[01;31m(S[00m
+														[01;31m(VP[00m
+															([01;36mVB[00m [01;31mVBP[00m do)
+															(PRN
+																(-LRB- -LRB-)
+																[01;36m(ADVP[00m
+																	[01;31m(INTJ[00m [01;33m(ADVP[00m
+																		([01;36mRB[00m [01;31mUH[00m e.g.)
+																		([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																	[01;31m(VP[00m [01;33m(NP[00m
+																		([01;36mNN[00m [01;31mVB[00m tag)
+																		[01;31m(ADJP[00m
+																			([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																			[01;31m(PP[00m [01;33m(PP[00m
+																				(IN for)
+																				[01;31m(NP[00m
+																					[01;31m(NP[00m
+																						([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m [01;33mPP) ADVP)[00m
+																					[01;36m(CONJP[00m
+																						(CC and)
+																						[01;31m(NP[00m
+																							(NP
+																								([01;36mNN[00m [01;31mCD[00m vdg)
+																								(NN tag))
+																							(PP
+																								(IN for)
+																								[01;31m(S[00m
+																									[01;31m(VP[00m
+																										(VBG doing)[01;31m)[00m[01;31m)[00m)[01;31m)[00m[01;36m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;36m)[00m
+																(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;36m)[00m
+												[01;31m(ADJP[00m
+													(VB be) [01;33mLST)[00m
+													[01;36m(CONJP[00m
+														(CC and)
+														(VB have)[01;36m)[00m[01;31m)[00m)))))[01;31m)[00m)))[01;36m)[00m) [01;33mNP) NP) ADJP) NP) ADJP)[00m[01;36m)[00m
+Step:Co-ordination
+{'type': 'move', 'old_parent': 'NP', 'new_parent': 'ADJP', 'movers': ['CC', 'NP'], 'mover info': [('CC', (29, 30)), ('NP', (30, 34))], 'new_family': ['JJ', 'PP', 'CC', 'NP'], 'old_family': ['NP', 'CC', 'NP'], 'start left siblings': ['NP'], 'start right siblings': [], 'end left siblings': ['JJ', 'PP'], 'end right siblings': [], 'auto preterminals': ('JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG'), 'auto preterminal span': (26, 34), 'classified_type': 'Co-ordination'}
+[01;36m(ROOT[00m
+	(S
+		(PP for example)
+		[01;36m(S[00m
+			(NP
+				(DT the)
+				[01;36m(ADJP[00m
+					(JJ original)
+					[01;36m(NP[00m
+						([01;36mNNP[00m [01;31mJJ[00m brown)[01;36m)[00m
+					[01;36m(CONJP[00m
+						(CC and)
+						[01;36m(NP[00m
+							[01;36m(NP[00m
+								([01;36mNNP[00m [01;31mNNS[00m c5)[01;36m)[00m
+							(NNS tagsets)[01;36m)[00m[01;36m)[00m[01;36m)[00m)
+			(VP
+				(VBP include)
+				(NP
+					[01;31m(NP[00m
+						(DT a)
+						(JJ [01;33m(ADJP[00m separate)
+						(NN [01;33m(NP[00m tag)[01;31m)[00m
+					(PP [01;33m(PP[00m
+						(IN for)
+						[01;31m(NP[00m
+							[01;31m(NP[00m
+								(DT each)[01;31m)[00m [01;33mPP)[00m
+							(PP
+								(IN of)
+								(NP
+									[01;31m(NP[00m
+										(DT the)
+										(JJ [01;33m(ADJP[00m different)
+										(NNS [01;33m(NP[00m forms)[01;31m)[00m
+									(PP
+										(IN of)
+										(NP
+											[01;31m(NP[00m
+												(DT the)
+												(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+											(LST [01;33m(LST[00m
+												[01;36m(LST[00m [01;31m(SBAR[00m
+													[01;31m(S[00m
+														[01;31m(VP[00m
+															([01;36mVB[00m [01;31mVBP[00m do)
+															(PRN
+																(-LRB- -LRB-)
+																[01;36m(ADVP[00m
+																	[01;31m(INTJ[00m [01;33m(ADVP[00m
+																		([01;36mRB[00m [01;31mUH[00m e.g.)
+																		([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																	[01;31m(VP[00m [01;33m(NP[00m
+																		([01;36mNN[00m [01;31mVB[00m tag)
+																		[01;31m(ADJP[00m
+																			([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																			(PP
+																				(IN for)
+																				[01;31m(NP[00m
+																					([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																			[01;36m(CONJP[00m
+																				(CC and)
+																				[01;31m(NP[00m
+																					(NP
+																						([01;36mNN[00m [01;31mCD[00m vdg)
+																						(NN tag))
+																					(PP
+																						(IN for)
+																						[01;31m(S[00m
+																							[01;31m(VP[00m
+																								(VBG doing)[01;31m)[00m[01;31m)[00m)[01;31m)[00m[01;36m)[00m[01;31m)[00m[01;31m)[00m[01;36m)[00m
+																(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;36m)[00m
+												[01;31m(ADJP[00m
+													(VB be) [01;33mLST)[00m
+													[01;36m(CONJP[00m
+														(CC and)
+														(VB have)[01;36m)[00m[01;31m)[00m)))))[01;31m)[00m)))[01;36m)[00m) [01;33mNP) NP) ADJP) NP) ADJP)[00m[01;36m)[00m
+Step:Different label
+{'type': 'relabel', 'change': ('SBAR', 'LST'), 'subtrees': ['S'], 'parent': 'LST', 'span': (21, 35), 'family': ['LST', 'ADJP'], 'auto preterminals': ('VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-'), 'auto preterminal span': (21, 35), 'over_word': False, 'classified_type': 'Different label'}
+[01;36m(ROOT[00m
+	(S
+		(PP for example)
+		[01;36m(S[00m
+			(NP
+				(DT the)
+				[01;36m(ADJP[00m
+					(JJ original)
+					[01;36m(NP[00m
+						([01;36mNNP[00m [01;31mJJ[00m brown)[01;36m)[00m
+					[01;36m(CONJP[00m
+						(CC and)
+						[01;36m(NP[00m
+							[01;36m(NP[00m
+								([01;36mNNP[00m [01;31mNNS[00m c5)[01;36m)[00m
+							(NNS tagsets)[01;36m)[00m[01;36m)[00m[01;36m)[00m)
+			(VP
+				(VBP include)
+				(NP
+					[01;31m(NP[00m
+						(DT a)
+						(JJ [01;33m(ADJP[00m separate)
+						(NN [01;33m(NP[00m tag)[01;31m)[00m
+					(PP [01;33m(PP[00m
+						(IN for)
+						[01;31m(NP[00m
+							[01;31m(NP[00m
+								(DT each)[01;31m)[00m [01;33mPP)[00m
+							(PP
+								(IN of)
+								(NP
+									[01;31m(NP[00m
+										(DT the)
+										(JJ [01;33m(ADJP[00m different)
+										(NNS [01;33m(NP[00m forms)[01;31m)[00m
+									(PP
+										(IN of)
+										(NP
+											[01;31m(NP[00m
+												(DT the)
+												(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+											(LST [01;33m(LST[00m
+												(LST
+													[01;31m(S[00m
+														[01;31m(VP[00m
+															([01;36mVB[00m [01;31mVBP[00m do)
+															(PRN
+																(-LRB- -LRB-)
+																[01;36m(ADVP[00m
+																	[01;31m(INTJ[00m [01;33m(ADVP[00m
+																		([01;36mRB[00m [01;31mUH[00m e.g.)
+																		([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																	[01;31m(VP[00m [01;33m(NP[00m
+																		([01;36mNN[00m [01;31mVB[00m tag)
+																		[01;31m(ADJP[00m
+																			([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																			(PP
+																				(IN for)
+																				[01;31m(NP[00m
+																					([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																			[01;36m(CONJP[00m
+																				(CC and)
+																				[01;31m(NP[00m
+																					(NP
+																						([01;36mNN[00m [01;31mCD[00m vdg)
+																						(NN tag))
+																					(PP
+																						(IN for)
+																						[01;31m(S[00m
+																							[01;31m(VP[00m
+																								(VBG doing)[01;31m)[00m[01;31m)[00m)[01;31m)[00m[01;36m)[00m[01;31m)[00m[01;31m)[00m[01;36m)[00m
+																(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+												[01;31m(ADJP[00m
+													(VB be) [01;33mLST)[00m
+													[01;36m(CONJP[00m
+														(CC and)
+														(VB have)[01;36m)[00m[01;31m)[00m)))))[01;31m)[00m)))[01;36m)[00m) [01;33mNP) NP) ADJP) NP) ADJP)[00m[01;36m)[00m
+Step:PP Attachment
+{'type': 'move', 'old_parent': 'NP', 'new_parent': 'NP', 'movers': ['PP'], 'mover info': [('PP', (14, 38))], 'new_family': ['NP', 'PP', 'PP'], 'old_family': ['NP', 'PP'], 'start left siblings': ['NP'], 'start right siblings': [], 'end left siblings': ['NP', 'PP'], 'end right siblings': [], 'auto preterminals': ('DT', 'JJ', 'NN', 'IN', 'DT', 'IN', 'DT', 'JJ', 'NNS', 'IN', 'DT', 'NNS', 'VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-', 'VB', 'CC', 'VB'), 'auto preterminal span': (9, 38), 'added and moved': True, 'added label': 'CONJP', 'adding node already present': False, 'classified_type': 'PP Attachment'}
+[01;36m(ROOT[00m
+	(S
+		(PP for example)
+		[01;36m(S[00m
+			(NP
+				(DT the)
+				[01;36m(ADJP[00m
+					(JJ original)
+					[01;36m(NP[00m
+						([01;36mNNP[00m [01;31mJJ[00m brown)[01;36m)[00m
+					[01;36m(CONJP[00m
+						(CC and)
+						[01;36m(NP[00m
+							[01;36m(NP[00m
+								([01;36mNNP[00m [01;31mNNS[00m c5)[01;36m)[00m
+							(NNS tagsets)[01;36m)[00m[01;36m)[00m[01;36m)[00m)
+			(VP
+				(VBP include)
+				(NP
+					[01;31m(NP[00m
+						(DT a)
+						(JJ [01;33m(ADJP[00m separate)
+						(NN [01;33m(NP[00m tag)[01;31m)[00m
+					(PP
+						(PP
+							(IN for)
+							[01;31m(NP[00m
+								(DT each)[01;31m)[00m)
+						(PP
+							(IN of)
+							(NP
+								[01;31m(NP[00m
+									(DT the)
+									(JJ [01;33m(ADJP[00m different)
+									(NNS [01;33m(NP[00m forms)[01;31m)[00m
+								(PP
+									(IN of)
+									(NP
+										[01;31m(NP[00m
+											(DT the)
+											(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+										(LST [01;33m(LST[00m
+											(LST
+												[01;31m(S[00m
+													[01;31m(VP[00m
+														([01;36mVB[00m [01;31mVBP[00m do)
+														(PRN
+															(-LRB- -LRB-)
+															[01;36m(ADVP[00m
+																[01;31m(INTJ[00m [01;33m(ADVP[00m
+																	([01;36mRB[00m [01;31mUH[00m e.g.)
+																	([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																[01;31m(VP[00m [01;33m(NP[00m
+																	([01;36mNN[00m [01;31mVB[00m tag)
+																	[01;31m(ADJP[00m
+																		([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																		(PP
+																			(IN for)
+																			[01;31m(NP[00m
+																				([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																		[01;36m(CONJP[00m
+																			(CC and)
+																			[01;31m(NP[00m
+																				(NP
+																					([01;36mNN[00m [01;31mCD[00m vdg)
+																					(NN tag))
+																				(PP
+																					(IN for)
+																					[01;31m(S[00m
+																						[01;31m(VP[00m
+																							(VBG doing)[01;31m)[00m[01;31m)[00m)[01;31m)[00m[01;36m)[00m[01;31m)[00m[01;31m)[00m[01;36m)[00m
+															(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+											[01;31m(ADJP[00m
+												(VB be) [01;33mLST)[00m
+												[01;36m(CONJP[00m
+													(CC and)
+													(VB have)[01;36m)[00m[01;31m)[00m))))))))[01;36m)[00m) [01;33mNP) NP) ADJP) NP) ADJP)[00m[01;36m)[00m
+Step:PP Attachment
+{'type': 'move', 'old_parent': 'NP', 'new_parent': 'ADJP', 'movers': ['PP'], 'mover info': [('PP', (32, 34))], 'new_family': ['JJ', 'PP', 'CC', 'NP', 'PP'], 'old_family': ['NP', 'PP'], 'start left siblings': ['NP'], 'start right siblings': [], 'end left siblings': ['JJ', 'PP', 'CC', 'NP'], 'end right siblings': [], 'auto preterminals': ('JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG'), 'auto preterminal span': (26, 34), 'added and moved': True, 'added label': 'CONJP', 'adding node already present': False, 'classified_type': 'PP Attachment'}
+[01;36m(ROOT[00m
+	(S
+		(PP for example)
+		[01;36m(S[00m
+			(NP
+				(DT the)
+				[01;36m(ADJP[00m
+					(JJ original)
+					[01;36m(NP[00m
+						([01;36mNNP[00m [01;31mJJ[00m brown)[01;36m)[00m
+					[01;36m(CONJP[00m
+						(CC and)
+						[01;36m(NP[00m
+							[01;36m(NP[00m
+								([01;36mNNP[00m [01;31mNNS[00m c5)[01;36m)[00m
+							(NNS tagsets)[01;36m)[00m[01;36m)[00m[01;36m)[00m)
+			(VP
+				(VBP include)
+				(NP
+					[01;31m(NP[00m
+						(DT a)
+						(JJ [01;33m(ADJP[00m separate)
+						(NN [01;33m(NP[00m tag)[01;31m)[00m
+					(PP
+						(PP
+							(IN for)
+							[01;31m(NP[00m
+								(DT each)[01;31m)[00m)
+						(PP
+							(IN of)
+							(NP
+								[01;31m(NP[00m
+									(DT the)
+									(JJ [01;33m(ADJP[00m different)
+									(NNS [01;33m(NP[00m forms)[01;31m)[00m
+								(PP
+									(IN of)
+									(NP
+										[01;31m(NP[00m
+											(DT the)
+											(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+										(LST [01;33m(LST[00m
+											(LST
+												[01;31m(S[00m
+													[01;31m(VP[00m
+														([01;36mVB[00m [01;31mVBP[00m do)
+														(PRN
+															(-LRB- -LRB-)
+															[01;36m(ADVP[00m
+																[01;31m(INTJ[00m [01;33m(ADVP[00m
+																	([01;36mRB[00m [01;31mUH[00m e.g.)
+																	([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																[01;31m(VP[00m [01;33m(NP[00m
+																	([01;36mNN[00m [01;31mVB[00m tag)
+																	[01;31m(ADJP[00m
+																		([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																		(PP
+																			(IN for)
+																			[01;31m(NP[00m
+																				([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																		(CONJP
+																			(CC and)
+																			(NP
+																				([01;36mNN[00m [01;31mCD[00m vdg)
+																				(NN tag))
+																			(PP
+																				(IN for)
+																				[01;31m(S[00m
+																					[01;31m(VP[00m
+																						(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m[01;36m)[00m
+															(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+											[01;31m(ADJP[00m
+												(VB be) [01;33mLST)[00m
+												[01;36m(CONJP[00m
+													(CC and)
+													(VB have)[01;36m)[00m[01;31m)[00m))))))))[01;36m)[00m) [01;33mNP) NP) ADJP) NP) ADJP)[00m[01;36m)[00m
+Step:UNSET add
+{'type': 'add', 'label': 'ROOT', 'span': (0, 38), 'subtrees': ['PP', 'NP', 'VP'], 'parent': 'S', 'family': ['ROOT'], 'auto preterminals': ('IN', 'NN', 'DT', 'JJ', 'JJ', 'CC', 'NNS', 'NNS', 'VBP', 'DT', 'JJ', 'NN', 'IN', 'DT', 'IN', 'DT', 'JJ', 'NNS', 'IN', 'DT', 'NNS', 'VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-', 'VB', 'CC', 'VB'), 'auto preterminal span': (0, 38), 'left siblings': [], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(PP for example)
+		[01;36m(S[00m
+			(NP
+				(DT the)
+				[01;36m(ADJP[00m
+					(JJ original)
+					[01;36m(NP[00m
+						([01;36mNNP[00m [01;31mJJ[00m brown)[01;36m)[00m
+					[01;36m(CONJP[00m
+						(CC and)
+						[01;36m(NP[00m
+							[01;36m(NP[00m
+								([01;36mNNP[00m [01;31mNNS[00m c5)[01;36m)[00m
+							(NNS tagsets)[01;36m)[00m[01;36m)[00m[01;36m)[00m)
+			(VP
+				(VBP include)
+				(NP
+					[01;31m(NP[00m
+						(DT a)
+						(JJ [01;33m(ADJP[00m separate)
+						(NN [01;33m(NP[00m tag)[01;31m)[00m
+					(PP
+						(PP
+							(IN for)
+							[01;31m(NP[00m
+								(DT each)[01;31m)[00m)
+						(PP
+							(IN of)
+							(NP
+								[01;31m(NP[00m
+									(DT the)
+									(JJ [01;33m(ADJP[00m different)
+									(NNS [01;33m(NP[00m forms)[01;31m)[00m
+								(PP
+									(IN of)
+									(NP
+										[01;31m(NP[00m
+											(DT the)
+											(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+										(LST [01;33m(LST[00m
+											(LST
+												[01;31m(S[00m
+													[01;31m(VP[00m
+														([01;36mVB[00m [01;31mVBP[00m do)
+														(PRN
+															(-LRB- -LRB-)
+															[01;36m(ADVP[00m
+																[01;31m(INTJ[00m [01;33m(ADVP[00m
+																	([01;36mRB[00m [01;31mUH[00m e.g.)
+																	([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																[01;31m(VP[00m [01;33m(NP[00m
+																	([01;36mNN[00m [01;31mVB[00m tag)
+																	[01;31m(ADJP[00m
+																		([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																		(PP
+																			(IN for)
+																			[01;31m(NP[00m
+																				([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																		(CONJP
+																			(CC and)
+																			(NP
+																				([01;36mNN[00m [01;31mCD[00m vdg)
+																				(NN tag))
+																			(PP
+																				(IN for)
+																				[01;31m(S[00m
+																					[01;31m(VP[00m
+																						(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m[01;36m)[00m
+															(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+											[01;31m(ADJP[00m
+												(VB be) [01;33mLST)[00m
+												[01;36m(CONJP[00m
+													(CC and)
+													(VB have)[01;36m)[00m[01;31m)[00m))))))))[01;36m)[00m)) [01;33mNP) NP) ADJP) NP) ADJP)[00m
+Step:UNSET add
+{'type': 'add', 'label': 'S', 'span': (2, 38), 'subtrees': ['NP', 'VP'], 'parent': 'ROOT', 'family': ['PP', 'S'], 'auto preterminals': ('DT', 'JJ', 'JJ', 'CC', 'NNS', 'NNS', 'VBP', 'DT', 'JJ', 'NN', 'IN', 'DT', 'IN', 'DT', 'JJ', 'NNS', 'IN', 'DT', 'NNS', 'VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-', 'VB', 'CC', 'VB'), 'auto preterminal span': (2, 38), 'left siblings': [(PP (IN for) (NP (NN example)))], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				[01;36m(ADJP[00m
+					(JJ original)
+					[01;36m(NP[00m
+						([01;36mNNP[00m [01;31mJJ[00m brown)[01;36m)[00m
+					[01;36m(CONJP[00m
+						(CC and)
+						[01;36m(NP[00m
+							[01;36m(NP[00m
+								([01;36mNNP[00m [01;31mNNS[00m c5)[01;36m)[00m
+							(NNS tagsets)[01;36m)[00m[01;36m)[00m[01;36m)[00m)
+			(VP
+				(VBP include)
+				(NP
+					[01;31m(NP[00m
+						(DT a)
+						(JJ [01;33m(ADJP[00m separate)
+						(NN [01;33m(NP[00m tag)[01;31m)[00m
+					(PP
+						(PP
+							(IN for)
+							[01;31m(NP[00m
+								(DT each)[01;31m)[00m)
+						(PP
+							(IN of)
+							(NP
+								[01;31m(NP[00m
+									(DT the)
+									(JJ [01;33m(ADJP[00m different)
+									(NNS [01;33m(NP[00m forms)[01;31m)[00m
+								(PP
+									(IN of)
+									(NP
+										[01;31m(NP[00m
+											(DT the)
+											(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+										(LST [01;33m(LST[00m
+											(LST
+												[01;31m(S[00m
+													[01;31m(VP[00m
+														([01;36mVB[00m [01;31mVBP[00m do)
+														(PRN
+															(-LRB- -LRB-)
+															[01;36m(ADVP[00m
+																[01;31m(INTJ[00m [01;33m(ADVP[00m
+																	([01;36mRB[00m [01;31mUH[00m e.g.)
+																	([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																[01;31m(VP[00m [01;33m(NP[00m
+																	([01;36mNN[00m [01;31mVB[00m tag)
+																	[01;31m(ADJP[00m
+																		([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																		(PP
+																			(IN for)
+																			[01;31m(NP[00m
+																				([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																		(CONJP
+																			(CC and)
+																			(NP
+																				([01;36mNN[00m [01;31mCD[00m vdg)
+																				(NN tag))
+																			(PP
+																				(IN for)
+																				[01;31m(S[00m
+																					[01;31m(VP[00m
+																						(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m[01;36m)[00m
+															(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+											[01;31m(ADJP[00m
+												(VB be) [01;33mLST)[00m
+												[01;36m(CONJP[00m
+													(CC and)
+													(VB have)[01;36m)[00m[01;31m)[00m))))))))))) [01;33mNP) NP) ADJP) NP) ADJP)[00m
+Step:NP Internal Structure
+{'type': 'add', 'label': 'ADJP', 'span': (3, 8), 'subtrees': ['JJ', 'JJ', 'CC', 'NNS', 'NNS'], 'parent': 'NP', 'family': ['DT', 'ADJP'], 'auto preterminals': ('JJ', 'JJ', 'CC', 'NNS', 'NNS'), 'auto preterminal span': (3, 8), 'left siblings': [(DT the)], 'right siblings': [], 'over_word': False, 'over words': True, 'classified_type': 'NP Internal Structure'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					[01;36m(NP[00m
+						([01;36mNNP[00m [01;31mJJ[00m brown)[01;36m)[00m
+					[01;36m(CONJP[00m
+						(CC and)
+						[01;36m(NP[00m
+							[01;36m(NP[00m
+								([01;36mNNP[00m [01;31mNNS[00m c5)[01;36m)[00m
+							(NNS tagsets)[01;36m)[00m[01;36m)[00m))
+			(VP
+				(VBP include)
+				(NP
+					[01;31m(NP[00m
+						(DT a)
+						(JJ [01;33m(ADJP[00m separate)
+						(NN [01;33m(NP[00m tag)[01;31m)[00m
+					(PP
+						(PP
+							(IN for)
+							[01;31m(NP[00m
+								(DT each)[01;31m)[00m)
+						(PP
+							(IN of)
+							(NP
+								[01;31m(NP[00m
+									(DT the)
+									(JJ [01;33m(ADJP[00m different)
+									(NNS [01;33m(NP[00m forms)[01;31m)[00m
+								(PP
+									(IN of)
+									(NP
+										[01;31m(NP[00m
+											(DT the)
+											(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+										(LST [01;33m(LST[00m
+											(LST
+												[01;31m(S[00m
+													[01;31m(VP[00m
+														([01;36mVB[00m [01;31mVBP[00m do)
+														(PRN
+															(-LRB- -LRB-)
+															[01;36m(ADVP[00m
+																[01;31m(INTJ[00m [01;33m(ADVP[00m
+																	([01;36mRB[00m [01;31mUH[00m e.g.)
+																	([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																[01;31m(VP[00m [01;33m(NP[00m
+																	([01;36mNN[00m [01;31mVB[00m tag)
+																	[01;31m(ADJP[00m
+																		([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																		(PP
+																			(IN for)
+																			[01;31m(NP[00m
+																				([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																		(CONJP
+																			(CC and)
+																			(NP
+																				([01;36mNN[00m [01;31mCD[00m vdg)
+																				(NN tag))
+																			(PP
+																				(IN for)
+																				[01;31m(S[00m
+																					[01;31m(VP[00m
+																						(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m[01;36m)[00m
+															(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+											[01;31m(ADJP[00m
+												(VB be) [01;33mLST)[00m
+												[01;36m(CONJP[00m
+													(CC and)
+													(VB have)[01;36m)[00m[01;31m)[00m))))))))))) [01;33mNP) NP) ADJP) NP) ADJP)[00m
+Step:Single Word Phrase
+{'type': 'add', 'label': 'NP', 'span': (4, 5), 'subtrees': ['JJ'], 'parent': 'ADJP', 'family': ['JJ', 'NP', 'CC', 'NNS', 'NNS'], 'auto preterminals': ('JJ',), 'auto preterminal span': (4, 5), 'left siblings': [(JJ original)], 'right siblings': [(CC and), (NNS c5), (NNS tagsets)], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					[01;36m(CONJP[00m
+						(CC and)
+						[01;36m(NP[00m
+							[01;36m(NP[00m
+								([01;36mNNP[00m [01;31mNNS[00m c5)[01;36m)[00m
+							(NNS tagsets)[01;36m)[00m[01;36m)[00m))
+			(VP
+				(VBP include)
+				(NP
+					[01;31m(NP[00m
+						(DT a)
+						(JJ [01;33m(ADJP[00m separate)
+						(NN [01;33m(NP[00m tag)[01;31m)[00m
+					(PP
+						(PP
+							(IN for)
+							[01;31m(NP[00m
+								(DT each)[01;31m)[00m)
+						(PP
+							(IN of)
+							(NP
+								[01;31m(NP[00m
+									(DT the)
+									(JJ [01;33m(ADJP[00m different)
+									(NNS [01;33m(NP[00m forms)[01;31m)[00m
+								(PP
+									(IN of)
+									(NP
+										[01;31m(NP[00m
+											(DT the)
+											(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+										(LST [01;33m(LST[00m
+											(LST
+												[01;31m(S[00m
+													[01;31m(VP[00m
+														([01;36mVB[00m [01;31mVBP[00m do)
+														(PRN
+															(-LRB- -LRB-)
+															[01;36m(ADVP[00m
+																[01;31m(INTJ[00m [01;33m(ADVP[00m
+																	([01;36mRB[00m [01;31mUH[00m e.g.)
+																	([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																[01;31m(VP[00m [01;33m(NP[00m
+																	([01;36mNN[00m [01;31mVB[00m tag)
+																	[01;31m(ADJP[00m
+																		([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																		(PP
+																			(IN for)
+																			[01;31m(NP[00m
+																				([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																		(CONJP
+																			(CC and)
+																			(NP
+																				([01;36mNN[00m [01;31mCD[00m vdg)
+																				(NN tag))
+																			(PP
+																				(IN for)
+																				[01;31m(S[00m
+																					[01;31m(VP[00m
+																						(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m[01;36m)[00m
+															(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+											[01;31m(ADJP[00m
+												(VB be) [01;33mLST)[00m
+												[01;36m(CONJP[00m
+													(CC and)
+													(VB have)[01;36m)[00m[01;31m)[00m))))))))))) [01;33mNP) NP) ADJP) NP) ADJP)[00m
+Step:UNSET add
+{'type': 'add', 'label': 'CONJP', 'span': (5, 8), 'subtrees': ['CC', 'NNS', 'NNS'], 'parent': 'ADJP', 'family': ['JJ', 'NP', 'CONJP'], 'auto preterminals': ('CC', 'NNS', 'NNS'), 'auto preterminal span': (5, 8), 'left siblings': [(JJ original), (NP (JJ brown))], 'right siblings': [], 'over_word': False, 'over words': True, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						[01;36m(NP[00m
+							[01;36m(NP[00m
+								([01;36mNNP[00m [01;31mNNS[00m c5)[01;36m)[00m
+							(NNS tagsets)[01;36m)[00m)))
+			(VP
+				(VBP include)
+				(NP
+					[01;31m(NP[00m
+						(DT a)
+						(JJ [01;33m(ADJP[00m separate)
+						(NN [01;33m(NP[00m tag)[01;31m)[00m
+					(PP
+						(PP
+							(IN for)
+							[01;31m(NP[00m
+								(DT each)[01;31m)[00m)
+						(PP
+							(IN of)
+							(NP
+								[01;31m(NP[00m
+									(DT the)
+									(JJ [01;33m(ADJP[00m different)
+									(NNS [01;33m(NP[00m forms)[01;31m)[00m
+								(PP
+									(IN of)
+									(NP
+										[01;31m(NP[00m
+											(DT the)
+											(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+										(LST [01;33m(LST[00m
+											(LST
+												[01;31m(S[00m
+													[01;31m(VP[00m
+														([01;36mVB[00m [01;31mVBP[00m do)
+														(PRN
+															(-LRB- -LRB-)
+															[01;36m(ADVP[00m
+																[01;31m(INTJ[00m [01;33m(ADVP[00m
+																	([01;36mRB[00m [01;31mUH[00m e.g.)
+																	([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																[01;31m(VP[00m [01;33m(NP[00m
+																	([01;36mNN[00m [01;31mVB[00m tag)
+																	[01;31m(ADJP[00m
+																		([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																		(PP
+																			(IN for)
+																			[01;31m(NP[00m
+																				([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																		(CONJP
+																			(CC and)
+																			(NP
+																				([01;36mNN[00m [01;31mCD[00m vdg)
+																				(NN tag))
+																			(PP
+																				(IN for)
+																				[01;31m(S[00m
+																					[01;31m(VP[00m
+																						(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m[01;36m)[00m
+															(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+											[01;31m(ADJP[00m
+												(VB be) [01;33mLST)[00m
+												[01;36m(CONJP[00m
+													(CC and)
+													(VB have)[01;36m)[00m[01;31m)[00m))))))))))) [01;33mNP) NP) ADJP) NP) ADJP)[00m
+Step:Single Word Phrase
+{'type': 'add', 'label': 'NP', 'span': (6, 7), 'subtrees': ['NNS'], 'parent': 'CONJP', 'family': ['CC', 'NP', 'NNS'], 'auto preterminals': ('NNS',), 'auto preterminal span': (6, 7), 'left siblings': [(CC and)], 'right siblings': [(NNS tagsets)], 'over_word': True, 'over words': True, 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						[01;36m(NP[00m
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)[01;36m)[00m)))
+			(VP
+				(VBP include)
+				(NP
+					[01;31m(NP[00m
+						(DT a)
+						(JJ [01;33m(ADJP[00m separate)
+						(NN [01;33m(NP[00m tag)[01;31m)[00m
+					(PP
+						(PP
+							(IN for)
+							[01;31m(NP[00m
+								(DT each)[01;31m)[00m)
+						(PP
+							(IN of)
+							(NP
+								[01;31m(NP[00m
+									(DT the)
+									(JJ [01;33m(ADJP[00m different)
+									(NNS [01;33m(NP[00m forms)[01;31m)[00m
+								(PP
+									(IN of)
+									(NP
+										[01;31m(NP[00m
+											(DT the)
+											(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+										(LST [01;33m(LST[00m
+											(LST
+												[01;31m(S[00m
+													[01;31m(VP[00m
+														([01;36mVB[00m [01;31mVBP[00m do)
+														(PRN
+															(-LRB- -LRB-)
+															[01;36m(ADVP[00m
+																[01;31m(INTJ[00m [01;33m(ADVP[00m
+																	([01;36mRB[00m [01;31mUH[00m e.g.)
+																	([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																[01;31m(VP[00m [01;33m(NP[00m
+																	([01;36mNN[00m [01;31mVB[00m tag)
+																	[01;31m(ADJP[00m
+																		([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																		(PP
+																			(IN for)
+																			[01;31m(NP[00m
+																				([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																		(CONJP
+																			(CC and)
+																			(NP
+																				([01;36mNN[00m [01;31mCD[00m vdg)
+																				(NN tag))
+																			(PP
+																				(IN for)
+																				[01;31m(S[00m
+																					[01;31m(VP[00m
+																						(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m[01;36m)[00m
+															(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+											[01;31m(ADJP[00m
+												(VB be) [01;33mLST)[00m
+												[01;36m(CONJP[00m
+													(CC and)
+													(VB have)[01;36m)[00m[01;31m)[00m))))))))))) [01;33mNP) NP) ADJP) NP) ADJP)[00m
+Step:UNSET add
+{'type': 'add', 'label': 'NP', 'span': (6, 8), 'subtrees': ['NP', 'NNS'], 'parent': 'CONJP', 'family': ['CC', 'NP'], 'auto preterminals': ('NNS', 'NNS'), 'auto preterminal span': (6, 8), 'left siblings': [(CC and)], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					[01;31m(NP[00m
+						(DT a)
+						(JJ [01;33m(ADJP[00m separate)
+						(NN [01;33m(NP[00m tag)[01;31m)[00m
+					(PP
+						(PP
+							(IN for)
+							[01;31m(NP[00m
+								(DT each)[01;31m)[00m)
+						(PP
+							(IN of)
+							(NP
+								[01;31m(NP[00m
+									(DT the)
+									(JJ [01;33m(ADJP[00m different)
+									(NNS [01;33m(NP[00m forms)[01;31m)[00m
+								(PP
+									(IN of)
+									(NP
+										[01;31m(NP[00m
+											(DT the)
+											(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+										(LST [01;33m(LST[00m
+											(LST
+												[01;31m(S[00m
+													[01;31m(VP[00m
+														([01;36mVB[00m [01;31mVBP[00m do)
+														(PRN
+															(-LRB- -LRB-)
+															[01;36m(ADVP[00m
+																[01;31m(INTJ[00m [01;33m(ADVP[00m
+																	([01;36mRB[00m [01;31mUH[00m e.g.)
+																	([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																[01;31m(VP[00m [01;33m(NP[00m
+																	([01;36mNN[00m [01;31mVB[00m tag)
+																	[01;31m(ADJP[00m
+																		([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																		(PP
+																			(IN for)
+																			[01;31m(NP[00m
+																				([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																		(CONJP
+																			(CC and)
+																			(NP
+																				([01;36mNN[00m [01;31mCD[00m vdg)
+																				(NN tag))
+																			(PP
+																				(IN for)
+																				[01;31m(S[00m
+																					[01;31m(VP[00m
+																						(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m[01;36m)[00m
+															(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+											[01;31m(ADJP[00m
+												(VB be) [01;33mLST)[00m
+												[01;36m(CONJP[00m
+													(CC and)
+													(VB have)[01;36m)[00m[01;31m)[00m))))))))))) [01;33mNP) NP) ADJP) NP) ADJP)[00m
+Step:Modifier Attachment
+{'type': 'add', 'label': 'ADVP', 'span': (23, 34), 'subtrees': ['INTJ', 'VP'], 'parent': 'PRN', 'family': ['-LRB-', 'ADVP', '-RRB-'], 'auto preterminals': ('UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG'), 'auto preterminal span': (23, 34), 'left siblings': [(-LRB- -LRB-)], 'right siblings': [(-RRB- -RRB-)], 'over_word': False, 'over words': False, 'classified_type': 'Modifier Attachment'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					[01;31m(NP[00m
+						(DT a)
+						(JJ [01;33m(ADJP[00m separate)
+						(NN [01;33m(NP[00m tag)[01;31m)[00m
+					(PP
+						(PP
+							(IN for)
+							[01;31m(NP[00m
+								(DT each)[01;31m)[00m)
+						(PP
+							(IN of)
+							(NP
+								[01;31m(NP[00m
+									(DT the)
+									(JJ [01;33m(ADJP[00m different)
+									(NNS [01;33m(NP[00m forms)[01;31m)[00m
+								(PP
+									(IN of)
+									(NP
+										[01;31m(NP[00m
+											(DT the)
+											(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+										(LST [01;33m(LST[00m
+											(LST
+												[01;31m(S[00m
+													[01;31m(VP[00m
+														([01;36mVB[00m [01;31mVBP[00m do)
+														(PRN
+															(-LRB- -LRB-)
+															(ADVP [01;33m(ADVP[00m
+																[01;31m(INTJ[00m
+																	([01;36mRB[00m [01;31mUH[00m e.g.)
+																	([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																[01;31m(VP[00m [01;33m(NP[00m
+																	([01;36mNN[00m [01;31mVB[00m tag)
+																	[01;31m(ADJP[00m
+																		([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																		(PP
+																			(IN for)
+																			[01;31m(NP[00m
+																				([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																		(CONJP
+																			(CC and)
+																			(NP
+																				([01;36mNN[00m [01;31mCD[00m vdg)
+																				(NN tag))
+																			(PP
+																				(IN for)
+																				[01;31m(S[00m
+																					[01;31m(VP[00m
+																						(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m)
+															(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+											[01;31m(ADJP[00m
+												(VB be) [01;33mLST)[00m
+												[01;36m(CONJP[00m
+													(CC and)
+													(VB have)[01;36m)[00m[01;31m)[00m))))))))))) [01;33mNP) NP) ADJP) NP) ADJP)[00m
+Step:UNSET add
+{'type': 'add', 'label': 'CONJP', 'span': (36, 38), 'subtrees': ['CC', 'VB'], 'parent': 'ADJP', 'family': ['VB', 'CONJP'], 'auto preterminals': ('CC', 'VB'), 'auto preterminal span': (36, 38), 'left siblings': [(VB be)], 'right siblings': [], 'over_word': False, 'over words': True, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					[01;31m(NP[00m
+						(DT a)
+						(JJ [01;33m(ADJP[00m separate)
+						(NN [01;33m(NP[00m tag)[01;31m)[00m
+					(PP
+						(PP
+							(IN for)
+							[01;31m(NP[00m
+								(DT each)[01;31m)[00m)
+						(PP
+							(IN of)
+							(NP
+								[01;31m(NP[00m
+									(DT the)
+									(JJ [01;33m(ADJP[00m different)
+									(NNS [01;33m(NP[00m forms)[01;31m)[00m
+								(PP
+									(IN of)
+									(NP
+										[01;31m(NP[00m
+											(DT the)
+											(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+										(LST [01;33m(LST[00m
+											(LST
+												[01;31m(S[00m
+													[01;31m(VP[00m
+														([01;36mVB[00m [01;31mVBP[00m do)
+														(PRN
+															(-LRB- -LRB-)
+															(ADVP [01;33m(ADVP[00m
+																[01;31m(INTJ[00m
+																	([01;36mRB[00m [01;31mUH[00m e.g.)
+																	([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																[01;31m(VP[00m [01;33m(NP[00m
+																	([01;36mNN[00m [01;31mVB[00m tag)
+																	[01;31m(ADJP[00m
+																		([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																		(PP
+																			(IN for)
+																			[01;31m(NP[00m
+																				([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																		(CONJP
+																			(CC and)
+																			(NP
+																				([01;36mNN[00m [01;31mCD[00m vdg)
+																				(NN tag))
+																			(PP
+																				(IN for)
+																				[01;31m(S[00m
+																					[01;31m(VP[00m
+																						(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m)
+															(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+											[01;31m(ADJP[00m
+												(VB be) [01;33mLST)[00m
+												(CONJP and have)[01;31m)[00m))))))))))) [01;33mNP) NP) ADJP) NP) ADJP)[00m
+Step:NP Internal Structure
+{'type': 'remove', 'label': 'NP', 'span': (9, 12), 'subtrees': ['DT', 'JJ', 'NN'], 'parent': 'NP', 'family': ['NP', 'PP'], 'left siblings': [], 'right siblings': ['PP'], 'over words': True, 'over_word': False, 'auto preterminals': ('DT', 'JJ', 'NN', 'IN', 'DT', 'IN', 'DT', 'JJ', 'NNS', 'IN', 'DT', 'NNS', 'VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-', 'VB', 'CC', 'VB'), 'auto preterminal span': (9, 38), 'POS confusion': ('CD', 'NN'), 'classified_type': 'NP Internal Structure'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					[01;36m(ADJP[00m
+						(JJ separate)
+						[01;36m(NP[00m
+							(NN tag)
+							(PP
+								(PP
+									(IN for)
+									[01;31m(NP[00m
+										(DT each)[01;31m)[00m)
+								(PP
+									(IN of)
+									(NP
+										[01;31m(NP[00m
+											(DT the)
+											(JJ [01;33m(ADJP[00m different)
+											(NNS [01;33m(NP[00m forms)[01;31m)[00m
+										(PP
+											(IN of)
+											(NP
+												[01;31m(NP[00m
+													(DT the)
+													(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+												(LST [01;33m(LST[00m
+													(LST
+														[01;31m(S[00m
+															[01;31m(VP[00m
+																([01;36mVB[00m [01;31mVBP[00m do)
+																(PRN
+																	(-LRB- -LRB-)
+																	(ADVP [01;33m(ADVP[00m
+																		[01;31m(INTJ[00m
+																			([01;36mRB[00m [01;31mUH[00m e.g.)
+																			([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																		[01;31m(VP[00m [01;33m(NP[00m
+																			([01;36mNN[00m [01;31mVB[00m tag)
+																			[01;31m(ADJP[00m
+																				([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																				(PP
+																					(IN for)
+																					[01;31m(NP[00m
+																						([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																				(CONJP
+																					(CC and)
+																					(NP
+																						([01;36mNN[00m [01;31mCD[00m vdg)
+																						(NN tag))
+																					(PP
+																						(IN for)
+																						[01;31m(S[00m
+																							[01;31m(VP[00m
+																								(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m)
+																	(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+													[01;31m(ADJP[00m
+														(VB be) [01;33mLST)[00m
+														(CONJP and have)[01;31m)[00m))))))[01;36m)[00m[01;36m)[00m))))) [01;33mNP) NP) ADJP)[00m
+Step:PP Attachment
+{'type': 'add', 'label': 'ADJP', 'span': (10, 38), 'subtrees': ['JJ', 'NN', 'PP'], 'parent': 'NP', 'family': ['DT', 'ADJP'], 'auto preterminals': ('JJ', 'NN', 'IN', 'DT', 'IN', 'DT', 'JJ', 'NNS', 'IN', 'DT', 'NNS', 'VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-', 'VB', 'CC', 'VB'), 'auto preterminal span': (10, 38), 'left siblings': [(DT a)], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'PP Attachment'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						[01;36m(NP[00m
+							(NN tag)
+							(PP
+								(PP
+									(IN for)
+									[01;31m(NP[00m
+										(DT each)[01;31m)[00m)
+								(PP
+									(IN of)
+									(NP
+										[01;31m(NP[00m
+											(DT the)
+											(JJ [01;33m(ADJP[00m different)
+											(NNS [01;33m(NP[00m forms)[01;31m)[00m
+										(PP
+											(IN of)
+											(NP
+												[01;31m(NP[00m
+													(DT the)
+													(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+												(LST [01;33m(LST[00m
+													(LST
+														[01;31m(S[00m
+															[01;31m(VP[00m
+																([01;36mVB[00m [01;31mVBP[00m do)
+																(PRN
+																	(-LRB- -LRB-)
+																	(ADVP [01;33m(ADVP[00m
+																		[01;31m(INTJ[00m
+																			([01;36mRB[00m [01;31mUH[00m e.g.)
+																			([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																		[01;31m(VP[00m [01;33m(NP[00m
+																			([01;36mNN[00m [01;31mVB[00m tag)
+																			[01;31m(ADJP[00m
+																				([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																				(PP
+																					(IN for)
+																					[01;31m(NP[00m
+																						([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																				(CONJP
+																					(CC and)
+																					(NP
+																						([01;36mNN[00m [01;31mCD[00m vdg)
+																						(NN tag))
+																					(PP
+																						(IN for)
+																						[01;31m(S[00m
+																							[01;31m(VP[00m
+																								(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m)
+																	(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+													[01;31m(ADJP[00m
+														(VB be) [01;33mLST)[00m
+														(CONJP and have)[01;31m)[00m))))))[01;36m)[00m)))))) [01;33mNP) NP) ADJP)[00m
+Step:PP Attachment
+{'type': 'add', 'label': 'NP', 'span': (11, 38), 'subtrees': ['NN', 'PP'], 'parent': 'ADJP', 'family': ['JJ', 'NP'], 'auto preterminals': ('NN', 'IN', 'DT', 'IN', 'DT', 'JJ', 'NNS', 'IN', 'DT', 'NNS', 'VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-', 'VB', 'CC', 'VB'), 'auto preterminal span': (11, 38), 'left siblings': [(JJ separate)], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'PP Attachment'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP
+									(IN for)
+									[01;31m(NP[00m
+										(DT each)[01;31m)[00m)
+								(PP
+									(IN of)
+									(NP
+										[01;31m(NP[00m
+											(DT the)
+											(JJ [01;33m(ADJP[00m different)
+											(NNS [01;33m(NP[00m forms)[01;31m)[00m
+										(PP
+											(IN of)
+											(NP
+												[01;31m(NP[00m
+													(DT the)
+													(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+												(LST [01;33m(LST[00m
+													(LST
+														[01;31m(S[00m
+															[01;31m(VP[00m
+																([01;36mVB[00m [01;31mVBP[00m do)
+																(PRN
+																	(-LRB- -LRB-)
+																	(ADVP [01;33m(ADVP[00m
+																		[01;31m(INTJ[00m
+																			([01;36mRB[00m [01;31mUH[00m e.g.)
+																			([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																		[01;31m(VP[00m [01;33m(NP[00m
+																			([01;36mNN[00m [01;31mVB[00m tag)
+																			[01;31m(ADJP[00m
+																				([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																				(PP
+																					(IN for)
+																					[01;31m(NP[00m
+																						([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																				(CONJP
+																					(CC and)
+																					(NP
+																						([01;36mNN[00m [01;31mCD[00m vdg)
+																						(NN tag))
+																					(PP
+																						(IN for)
+																						[01;31m(S[00m
+																							[01;31m(VP[00m
+																								(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m)
+																	(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+													[01;31m(ADJP[00m
+														(VB be) [01;33mLST)[00m
+														(CONJP and have)[01;31m)[00m))))))))))))) [01;33mNP) NP) ADJP)[00m
+Step:Single Word Phrase
+{'type': 'remove', 'label': 'NP', 'span': (13, 14), 'subtrees': ['DT'], 'parent': 'PP', 'family': ['IN', 'NP'], 'left siblings': ['IN'], 'right siblings': [], 'over words': True, 'over_word': True, 'auto preterminals': ('IN', 'DT'), 'auto preterminal span': (12, 14), 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										[01;31m(NP[00m
+											(DT the)
+											(JJ [01;33m(ADJP[00m different)
+											(NNS [01;33m(NP[00m forms)[01;31m)[00m
+										(PP
+											(IN of)
+											(NP
+												[01;31m(NP[00m
+													(DT the)
+													(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+												(LST [01;33m(LST[00m
+													(LST
+														[01;31m(S[00m
+															[01;31m(VP[00m
+																([01;36mVB[00m [01;31mVBP[00m do)
+																(PRN
+																	(-LRB- -LRB-)
+																	(ADVP [01;33m(ADVP[00m
+																		[01;31m(INTJ[00m
+																			([01;36mRB[00m [01;31mUH[00m e.g.)
+																			([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																		[01;31m(VP[00m [01;33m(NP[00m
+																			([01;36mNN[00m [01;31mVB[00m tag)
+																			[01;31m(ADJP[00m
+																				([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																				(PP
+																					(IN for)
+																					[01;31m(NP[00m
+																						([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																				(CONJP
+																					(CC and)
+																					(NP
+																						([01;36mNN[00m [01;31mCD[00m vdg)
+																						(NN tag))
+																					(PP
+																						(IN for)
+																						[01;31m(S[00m
+																							[01;31m(VP[00m
+																								(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m)
+																	(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+													[01;31m(ADJP[00m
+														(VB be) [01;33mLST)[00m
+														(CONJP and have)[01;31m)[00m))))))))))))) [01;33mNP) NP) ADJP)[00m
+Step:NP Internal Structure
+{'type': 'remove', 'label': 'NP', 'span': (15, 18), 'subtrees': ['DT', 'JJ', 'NNS'], 'parent': 'NP', 'family': ['NP', 'PP'], 'left siblings': [], 'right siblings': ['PP'], 'over words': True, 'over_word': False, 'auto preterminals': ('DT', 'JJ', 'NNS', 'IN', 'DT', 'NNS', 'VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-', 'VB', 'CC', 'VB'), 'auto preterminal span': (15, 38), 'POS confusion': ('CD', 'NN'), 'classified_type': 'NP Internal Structure'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										[01;36m(ADJP[00m
+											(JJ different)
+											[01;36m(NP[00m
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														[01;31m(NP[00m
+															(DT the)
+															(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+														(LST [01;33m(LST[00m
+															(LST
+																[01;31m(S[00m
+																	[01;31m(VP[00m
+																		([01;36mVB[00m [01;31mVBP[00m do)
+																		(PRN
+																			(-LRB- -LRB-)
+																			(ADVP [01;33m(ADVP[00m
+																				[01;31m(INTJ[00m
+																					([01;36mRB[00m [01;31mUH[00m e.g.)
+																					([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																				[01;31m(VP[00m [01;33m(NP[00m
+																					([01;36mNN[00m [01;31mVB[00m tag)
+																					[01;31m(ADJP[00m
+																						([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																						(PP
+																							(IN for)
+																							[01;31m(NP[00m
+																								([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																						(CONJP
+																							(CC and)
+																							(NP
+																								([01;36mNN[00m [01;31mCD[00m vdg)
+																								(NN tag))
+																							(PP
+																								(IN for)
+																								[01;31m(S[00m
+																									[01;31m(VP[00m
+																										(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m)
+																			(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+															[01;31m(ADJP[00m
+																(VB be) [01;33mLST)[00m
+																(CONJP and have)[01;31m)[00m)))[01;36m)[00m[01;36m)[00m)))))))))) [01;33mNP)[00m
+Step:PP Attachment
+{'type': 'add', 'label': 'ADJP', 'span': (16, 38), 'subtrees': ['JJ', 'NNS', 'PP'], 'parent': 'NP', 'family': ['DT', 'ADJP'], 'auto preterminals': ('JJ', 'NNS', 'IN', 'DT', 'NNS', 'VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-', 'VB', 'CC', 'VB'), 'auto preterminal span': (16, 38), 'left siblings': [(DT the)], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'PP Attachment'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											[01;36m(NP[00m
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														[01;31m(NP[00m
+															(DT the)
+															(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+														(LST [01;33m(LST[00m
+															(LST
+																[01;31m(S[00m
+																	[01;31m(VP[00m
+																		([01;36mVB[00m [01;31mVBP[00m do)
+																		(PRN
+																			(-LRB- -LRB-)
+																			(ADVP [01;33m(ADVP[00m
+																				[01;31m(INTJ[00m
+																					([01;36mRB[00m [01;31mUH[00m e.g.)
+																					([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																				[01;31m(VP[00m [01;33m(NP[00m
+																					([01;36mNN[00m [01;31mVB[00m tag)
+																					[01;31m(ADJP[00m
+																						([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																						(PP
+																							(IN for)
+																							[01;31m(NP[00m
+																								([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																						(CONJP
+																							(CC and)
+																							(NP
+																								([01;36mNN[00m [01;31mCD[00m vdg)
+																								(NN tag))
+																							(PP
+																								(IN for)
+																								[01;31m(S[00m
+																									[01;31m(VP[00m
+																										(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m)
+																			(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+															[01;31m(ADJP[00m
+																(VB be) [01;33mLST)[00m
+																(CONJP and have)[01;31m)[00m)))[01;36m)[00m))))))))))) [01;33mNP)[00m
+Step:PP Attachment
+{'type': 'add', 'label': 'NP', 'span': (17, 38), 'subtrees': ['NNS', 'PP'], 'parent': 'ADJP', 'family': ['JJ', 'NP'], 'auto preterminals': ('NNS', 'IN', 'DT', 'NNS', 'VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-', 'VB', 'CC', 'VB'), 'auto preterminal span': (17, 38), 'left siblings': [(JJ different)], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'PP Attachment'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														[01;31m(NP[00m
+															(DT the)
+															(NNS [01;33m(NP[00m verbs)[01;31m)[00m
+														(LST [01;33m(LST[00m
+															(LST
+																[01;31m(S[00m
+																	[01;31m(VP[00m
+																		([01;36mVB[00m [01;31mVBP[00m do)
+																		(PRN
+																			(-LRB- -LRB-)
+																			(ADVP [01;33m(ADVP[00m
+																				[01;31m(INTJ[00m
+																					([01;36mRB[00m [01;31mUH[00m e.g.)
+																					([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																				[01;31m(VP[00m [01;33m(NP[00m
+																					([01;36mNN[00m [01;31mVB[00m tag)
+																					[01;31m(ADJP[00m
+																						([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																						(PP
+																							(IN for)
+																							[01;31m(NP[00m
+																								([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																						(CONJP
+																							(CC and)
+																							(NP
+																								([01;36mNN[00m [01;31mCD[00m vdg)
+																								(NN tag))
+																							(PP
+																								(IN for)
+																								[01;31m(S[00m
+																									[01;31m(VP[00m
+																										(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m)
+																			(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+															[01;31m(ADJP[00m
+																(VB be) [01;33mLST)[00m
+																(CONJP and have)[01;31m)[00m))))))))))))))) [01;33mNP)[00m
+Step:NP Internal Structure
+{'type': 'remove', 'label': 'NP', 'span': (19, 21), 'subtrees': ['DT', 'NNS'], 'parent': 'NP', 'family': ['NP', 'LST'], 'left siblings': [], 'right siblings': ['LST'], 'over words': True, 'over_word': False, 'auto preterminals': ('DT', 'NNS', 'VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-', 'VB', 'CC', 'VB'), 'auto preterminal span': (19, 38), 'POS confusion': ('CD', 'NN'), 'classified_type': 'NP Internal Structure'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														(DT the)
+														[01;36m(NP[00m
+															(NNS verbs)
+															(LST [01;33m(LST[00m
+																(LST
+																	[01;31m(S[00m
+																		[01;31m(VP[00m
+																			([01;36mVB[00m [01;31mVBP[00m do)
+																			(PRN
+																				(-LRB- -LRB-)
+																				(ADVP [01;33m(ADVP[00m
+																					[01;31m(INTJ[00m
+																						([01;36mRB[00m [01;31mUH[00m e.g.)
+																						([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																					[01;31m(VP[00m [01;33m(NP[00m
+																						([01;36mNN[00m [01;31mVB[00m tag)
+																						[01;31m(ADJP[00m
+																							([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																							(PP
+																								(IN for)
+																								[01;31m(NP[00m
+																									([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																							(CONJP
+																								(CC and)
+																								(NP
+																									([01;36mNN[00m [01;31mCD[00m vdg)
+																									(NN tag))
+																								(PP
+																									(IN for)
+																									[01;31m(S[00m
+																										[01;31m(VP[00m
+																											(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m)
+																				(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+																[01;31m(ADJP[00m
+																	(VB be) [01;33mLST)[00m
+																	(CONJP and have)[01;31m)[00m)[01;36m)[00m))))))))))))))
+Step:UNSET add
+{'type': 'add', 'label': 'NP', 'span': (20, 38), 'subtrees': ['NNS', 'LST'], 'parent': 'NP', 'family': ['DT', 'NP'], 'auto preterminals': ('NNS', 'VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-', 'VB', 'CC', 'VB'), 'auto preterminal span': (20, 38), 'left siblings': [(DT the)], 'right siblings': [], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														(DT the)
+														(NP
+															(NNS verbs)
+															(LST [01;33m(LST[00m
+																(LST
+																	[01;31m(S[00m
+																		[01;31m(VP[00m
+																			([01;36mVB[00m [01;31mVBP[00m do)
+																			(PRN
+																				(-LRB- -LRB-)
+																				(ADVP [01;33m(ADVP[00m
+																					[01;31m(INTJ[00m
+																						([01;36mRB[00m [01;31mUH[00m e.g.)
+																						([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																					[01;31m(VP[00m [01;33m(NP[00m
+																						([01;36mNN[00m [01;31mVB[00m tag)
+																						[01;31m(ADJP[00m
+																							([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																							(PP
+																								(IN for)
+																								[01;31m(NP[00m
+																									([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																							(CONJP
+																								(CC and)
+																								(NP
+																									([01;36mNN[00m [01;31mCD[00m vdg)
+																									(NN tag))
+																								(PP
+																									(IN for)
+																									[01;31m(S[00m
+																										[01;31m(VP[00m
+																											(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m)
+																				(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m)
+																[01;31m(ADJP[00m
+																	(VB be) [01;33mLST)[00m
+																	(CONJP and have)[01;31m)[00m))))))))))))))))
+Step:Unary
+{'type': 'remove', 'label': 'S', 'span': (21, 35), 'subtrees': ['VP'], 'parent': 'LST', 'family': ['S'], 'left siblings': [], 'right siblings': [], 'over words': False, 'over_word': False, 'auto preterminals': ('VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-'), 'auto preterminal span': (21, 35), 'classified_type': 'Unary'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														(DT the)
+														(NP
+															(NNS verbs)
+															(LST [01;33m(LST[00m
+																(LST
+																	[01;31m(VP[00m
+																		([01;36mVB[00m [01;31mVBP[00m do)
+																		(PRN
+																			(-LRB- -LRB-)
+																			(ADVP [01;33m(ADVP[00m
+																				[01;31m(INTJ[00m
+																					([01;36mRB[00m [01;31mUH[00m e.g.)
+																					([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																				[01;31m(VP[00m [01;33m(NP[00m
+																					([01;36mNN[00m [01;31mVB[00m tag)
+																					[01;31m(ADJP[00m
+																						([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																						(PP
+																							(IN for)
+																							[01;31m(NP[00m
+																								([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																						(CONJP
+																							(CC and)
+																							(NP
+																								([01;36mNN[00m [01;31mCD[00m vdg)
+																								(NN tag))
+																							(PP
+																								(IN for)
+																								[01;31m(S[00m
+																									[01;31m(VP[00m
+																										(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m)
+																			(-RRB- -RRB-))[01;31m)[00m)
+																[01;31m(ADJP[00m
+																	(VB be) [01;33mLST)[00m
+																	(CONJP and have)[01;31m)[00m))))))))))))))))
+Step:Unary
+{'type': 'remove', 'label': 'VP', 'span': (21, 35), 'subtrees': ['VBP', 'PRN'], 'parent': 'LST', 'family': ['VP'], 'left siblings': [], 'right siblings': [], 'over words': False, 'over_word': False, 'auto preterminals': ('VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-'), 'auto preterminal span': (21, 35), 'classified_type': 'Unary'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														(DT the)
+														(NP
+															(NNS verbs)
+															(LST [01;33m(LST[00m
+																(LST
+																	([01;36mVB[00m [01;31mVBP[00m do)
+																	(PRN
+																		(-LRB- -LRB-)
+																		(ADVP [01;33m(ADVP[00m
+																			[01;31m(INTJ[00m
+																				([01;36mRB[00m [01;31mUH[00m e.g.)
+																				([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
+																			[01;31m(VP[00m [01;33m(NP[00m
+																				([01;36mNN[00m [01;31mVB[00m tag)
+																				[01;31m(ADJP[00m
+																					([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																					(PP
+																						(IN for)
+																						[01;31m(NP[00m
+																							([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																					(CONJP
+																						(CC and)
+																						(NP
+																							([01;36mNN[00m [01;31mCD[00m vdg)
+																							(NN tag))
+																						(PP
+																							(IN for)
+																							[01;31m(S[00m
+																								[01;31m(VP[00m
+																									(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m)
+																		(-RRB- -RRB-)))
+																[01;31m(ADJP[00m
+																	(VB be) [01;33mLST)[00m
+																	(CONJP and have)[01;31m)[00m))))))))))))))))
+Step:UNSET remove
+{'type': 'remove', 'label': 'INTJ', 'span': (23, 25), 'subtrees': ['UH', 'UH'], 'parent': 'ADVP', 'family': ['INTJ', 'VP'], 'left siblings': [], 'right siblings': ['VP'], 'over words': True, 'over_word': False, 'auto preterminals': ('UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG'), 'auto preterminal span': (23, 34), 'POS confusion': ('CD', 'NN'), 'classified_type': 'UNSET remove'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														(DT the)
+														(NP
+															(NNS verbs)
+															(LST [01;33m(LST[00m
+																(LST
+																	([01;36mVB[00m [01;31mVBP[00m do)
+																	(PRN
+																		(-LRB- -LRB-)
+																		(ADVP [01;33m(ADVP[00m
+																			([01;36mRB[00m [01;31mUH[00m e.g.)
+																			([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)
+																			[01;31m(VP[00m [01;33m(NP[00m
+																				([01;36mNN[00m [01;31mVB[00m tag)
+																				[01;31m(ADJP[00m
+																					([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																					(PP
+																						(IN for)
+																						[01;31m(NP[00m
+																							([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																					(CONJP
+																						(CC and)
+																						(NP
+																							([01;36mNN[00m [01;31mCD[00m vdg)
+																							(NN tag))
+																						(PP
+																							(IN for)
+																							[01;31m(S[00m
+																								[01;31m(VP[00m
+																									(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m[01;31m)[00m)
+																		(-RRB- -RRB-)))
+																[01;31m(ADJP[00m
+																	(VB be) [01;33mLST)[00m
+																	(CONJP and have)[01;31m)[00m))))))))))))))))
+Step:Modifier Attachment
+{'type': 'remove', 'label': 'VP', 'span': (25, 34), 'subtrees': ['VB', 'ADJP'], 'parent': 'ADVP', 'family': ['UH', 'UH', 'VP'], 'left siblings': ['UH', 'UH'], 'right siblings': [], 'over words': False, 'over_word': False, 'auto preterminals': ('UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG'), 'auto preterminal span': (23, 34), 'classified_type': 'Modifier Attachment'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														(DT the)
+														(NP
+															(NNS verbs)
+															(LST [01;33m(LST[00m
+																(LST
+																	([01;36mVB[00m [01;31mVBP[00m do)
+																	(PRN
+																		(-LRB- -LRB-)
+																		(ADVP [01;33m(ADVP[00m
+																			([01;36mRB[00m [01;31mUH[00m e.g.)
+																			([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)
+																			([01;36mNN[00m [01;31mVB[00m [01;33m(NP[00m tag)
+																			[01;31m(ADJP[00m
+																				([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
+																				(PP
+																					(IN for)
+																					[01;31m(NP[00m
+																						([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m) [01;33mADVP)[00m
+																				(CONJP
+																					(CC and)
+																					(NP
+																						([01;36mNN[00m [01;31mCD[00m vdg)
+																						(NN tag))
+																					(PP
+																						(IN for)
+																						[01;31m(S[00m
+																							[01;31m(VP[00m
+																								(VBG doing)[01;31m)[00m[01;31m)[00m))[01;31m)[00m)
+																		(-RRB- -RRB-)))
+																[01;31m(ADJP[00m
+																	(VB be) [01;33mLST)[00m
+																	(CONJP and have)[01;31m)[00m))))))))))))))))
+Step:PP Attachment
+{'type': 'remove', 'label': 'ADJP', 'span': (26, 34), 'subtrees': ['JJ', 'PP', 'CONJP'], 'parent': 'ADVP', 'family': ['UH', 'UH', 'VB', 'ADJP'], 'left siblings': ['UH', 'UH', 'VB'], 'right siblings': [], 'over words': False, 'over_word': False, 'auto preterminals': ('UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG'), 'auto preterminal span': (23, 34), 'classified_type': 'PP Attachment'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														(DT the)
+														(NP
+															(NNS verbs)
+															(LST [01;33m(LST[00m
+																(LST
+																	([01;36mVB[00m [01;31mVBP[00m do)
+																	(PRN
+																		(-LRB- -LRB-)
+																		(ADVP
+																			[01;36m(ADVP[00m
+																				([01;36mRB[00m [01;31mUH[00m e.g.)
+																				[01;36m(NP[00m
+																					([01;36mNNP[00m [01;31mUH[00m c5)
+																					[01;36m(NP[00m
+																						([01;36mNN[00m [01;31mVB[00m tag)
+																						([01;36mNN[00m [01;31mJJ[00m vdd)[01;36m)[00m[01;36m)[00m
+																				(PP
+																					(IN for)
+																					[01;31m(NP[00m
+																						([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m)[01;36m)[00m
+																			(CONJP
+																				(CC and)
+																				(NP
+																					([01;36mNN[00m [01;31mCD[00m vdg)
+																					(NN tag))
+																				(PP
+																					(IN for)
+																					[01;31m(S[00m
+																						[01;31m(VP[00m
+																							(VBG doing)[01;31m)[00m[01;31m)[00m)))
+																		(-RRB- -RRB-)))
+																[01;31m(ADJP[00m
+																	(VB be) [01;33mLST)[00m
+																	(CONJP and have)[01;31m)[00m))))))))))))))))
+Step:PP Attachment
+{'type': 'add', 'label': 'ADVP', 'span': (23, 29), 'subtrees': ['UH', 'UH', 'VB', 'JJ', 'PP'], 'parent': 'ADVP', 'family': ['ADVP', 'CONJP'], 'auto preterminals': ('UH', 'UH', 'VB', 'JJ', 'IN', 'VBD'), 'auto preterminal span': (23, 29), 'left siblings': [], 'right siblings': [(CONJP (CC and) (NP (CD vdg) (NN tag)) (PP (IN for) (S (VP (VBG doing)))))], 'over_word': False, 'over words': False, 'classified_type': 'PP Attachment'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														(DT the)
+														(NP
+															(NNS verbs)
+															(LST [01;33m(LST[00m
+																(LST
+																	([01;36mVB[00m [01;31mVBP[00m do)
+																	(PRN
+																		(-LRB- -LRB-)
+																		(ADVP
+																			(ADVP
+																				([01;36mRB[00m [01;31mUH[00m e.g.)
+																				[01;36m(NP[00m
+																					([01;36mNNP[00m [01;31mUH[00m c5)
+																					[01;36m(NP[00m
+																						([01;36mNN[00m [01;31mVB[00m tag)
+																						([01;36mNN[00m [01;31mJJ[00m vdd)[01;36m)[00m[01;36m)[00m
+																				(PP
+																					(IN for)
+																					[01;31m(NP[00m
+																						([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m))
+																			(CONJP
+																				(CC and)
+																				(NP
+																					([01;36mNN[00m [01;31mCD[00m vdg)
+																					(NN tag))
+																				(PP
+																					(IN for)
+																					[01;31m(S[00m
+																						[01;31m(VP[00m
+																							(VBG doing)[01;31m)[00m[01;31m)[00m)))
+																		(-RRB- -RRB-)))
+																[01;31m(ADJP[00m
+																	(VB be) [01;33mLST)[00m
+																	(CONJP and have)[01;31m)[00m))))))))))))))))
+Step:UNSET add
+{'type': 'add', 'label': 'NP', 'span': (24, 27), 'subtrees': ['UH', 'VB', 'JJ'], 'parent': 'ADVP', 'family': ['UH', 'NP', 'PP'], 'auto preterminals': ('UH', 'VB', 'JJ'), 'auto preterminal span': (24, 27), 'left siblings': [(UH e.g.)], 'right siblings': [(PP (IN for) (NP (VBD did)))], 'over_word': False, 'over words': True, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														(DT the)
+														(NP
+															(NNS verbs)
+															(LST [01;33m(LST[00m
+																(LST
+																	([01;36mVB[00m [01;31mVBP[00m do)
+																	(PRN
+																		(-LRB- -LRB-)
+																		(ADVP
+																			(ADVP
+																				([01;36mRB[00m [01;31mUH[00m e.g.)
+																				(NP
+																					([01;36mNNP[00m [01;31mUH[00m c5)
+																					[01;36m(NP[00m
+																						([01;36mNN[00m [01;31mVB[00m tag)
+																						([01;36mNN[00m [01;31mJJ[00m vdd)[01;36m)[00m)
+																				(PP
+																					(IN for)
+																					[01;31m(NP[00m
+																						([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m))
+																			(CONJP
+																				(CC and)
+																				(NP
+																					([01;36mNN[00m [01;31mCD[00m vdg)
+																					(NN tag))
+																				(PP
+																					(IN for)
+																					[01;31m(S[00m
+																						[01;31m(VP[00m
+																							(VBG doing)[01;31m)[00m[01;31m)[00m)))
+																		(-RRB- -RRB-)))
+																[01;31m(ADJP[00m
+																	(VB be) [01;33mLST)[00m
+																	(CONJP and have)[01;31m)[00m))))))))))))))))
+Step:NP Internal Structure
+{'type': 'add', 'label': 'NP', 'span': (25, 27), 'subtrees': ['VB', 'JJ'], 'parent': 'NP', 'family': ['UH', 'NP'], 'auto preterminals': ('VB', 'JJ'), 'auto preterminal span': (25, 27), 'left siblings': [(UH c5)], 'right siblings': [], 'over_word': False, 'over words': True, 'classified_type': 'NP Internal Structure'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														(DT the)
+														(NP
+															(NNS verbs)
+															(LST [01;33m(LST[00m
+																(LST
+																	([01;36mVB[00m [01;31mVBP[00m do)
+																	(PRN
+																		(-LRB- -LRB-)
+																		(ADVP
+																			(ADVP
+																				([01;36mRB[00m [01;31mUH[00m e.g.)
+																				(NP
+																					([01;36mNNP[00m [01;31mUH[00m c5)
+																					(NP
+																						([01;36mNN[00m [01;31mVB[00m tag)
+																						([01;36mNN[00m [01;31mJJ[00m vdd)))
+																				(PP
+																					(IN for)
+																					[01;31m(NP[00m
+																						([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m))
+																			(CONJP
+																				(CC and)
+																				(NP
+																					([01;36mNN[00m [01;31mCD[00m vdg)
+																					(NN tag))
+																				(PP
+																					(IN for)
+																					[01;31m(S[00m
+																						[01;31m(VP[00m
+																							(VBG doing)[01;31m)[00m[01;31m)[00m)))
+																		(-RRB- -RRB-)))
+																[01;31m(ADJP[00m
+																	(VB be) [01;33mLST)[00m
+																	(CONJP and have)[01;31m)[00m))))))))))))))))
+Step:Single Word Phrase
+{'type': 'remove', 'label': 'NP', 'span': (28, 29), 'subtrees': ['VBD'], 'parent': 'PP', 'family': ['IN', 'NP'], 'left siblings': ['IN'], 'right siblings': [], 'over words': True, 'over_word': True, 'auto preterminals': ('IN', 'VBD'), 'auto preterminal span': (27, 29), 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														(DT the)
+														(NP
+															(NNS verbs)
+															(LST [01;33m(LST[00m
+																(LST
+																	([01;36mVB[00m [01;31mVBP[00m do)
+																	(PRN
+																		(-LRB- -LRB-)
+																		(ADVP
+																			(ADVP
+																				([01;36mRB[00m [01;31mUH[00m e.g.)
+																				(NP
+																					([01;36mNNP[00m [01;31mUH[00m c5)
+																					(NP
+																						([01;36mNN[00m [01;31mVB[00m tag)
+																						([01;36mNN[00m [01;31mJJ[00m vdd)))
+																				(PP
+																					(IN for)
+																					([01;36mVBN[00m [01;31mVBD[00m did)))
+																			(CONJP
+																				(CC and)
+																				(NP
+																					([01;36mNN[00m [01;31mCD[00m vdg)
+																					(NN tag))
+																				(PP
+																					(IN for)
+																					[01;31m(S[00m
+																						[01;31m(VP[00m
+																							(VBG doing)[01;31m)[00m[01;31m)[00m)))
+																		(-RRB- -RRB-)))
+																[01;31m(ADJP[00m
+																	(VB be) [01;33mLST)[00m
+																	(CONJP and have)[01;31m)[00m))))))))))))))))
+Step:Unary
+{'type': 'remove', 'label': 'S', 'span': (33, 34), 'subtrees': ['VP'], 'parent': 'PP', 'family': ['IN', 'S'], 'left siblings': ['IN'], 'right siblings': [], 'over words': False, 'over_word': False, 'auto preterminals': ('IN', 'VBG'), 'auto preterminal span': (32, 34), 'classified_type': 'Unary'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														(DT the)
+														(NP
+															(NNS verbs)
+															(LST [01;33m(LST[00m
+																(LST
+																	([01;36mVB[00m [01;31mVBP[00m do)
+																	(PRN
+																		(-LRB- -LRB-)
+																		(ADVP
+																			(ADVP
+																				([01;36mRB[00m [01;31mUH[00m e.g.)
+																				(NP
+																					([01;36mNNP[00m [01;31mUH[00m c5)
+																					(NP
+																						([01;36mNN[00m [01;31mVB[00m tag)
+																						([01;36mNN[00m [01;31mJJ[00m vdd)))
+																				(PP
+																					(IN for)
+																					([01;36mVBN[00m [01;31mVBD[00m did)))
+																			(CONJP
+																				(CC and)
+																				(NP
+																					([01;36mNN[00m [01;31mCD[00m vdg)
+																					(NN tag))
+																				(PP
+																					(IN for)
+																					[01;31m(VP[00m
+																						(VBG doing)[01;31m)[00m)))
+																		(-RRB- -RRB-)))
+																[01;31m(ADJP[00m
+																	(VB be) [01;33mLST)[00m
+																	(CONJP and have)[01;31m)[00m))))))))))))))))
+Step:Single Word Phrase
+{'type': 'remove', 'label': 'VP', 'span': (33, 34), 'subtrees': ['VBG'], 'parent': 'PP', 'family': ['IN', 'VP'], 'left siblings': ['IN'], 'right siblings': [], 'over words': True, 'over_word': True, 'auto preterminals': ('IN', 'VBG'), 'auto preterminal span': (32, 34), 'classified_type': 'Single Word Phrase'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														(DT the)
+														(NP
+															(NNS verbs)
+															(LST [01;33m(LST[00m
+																(LST
+																	([01;36mVB[00m [01;31mVBP[00m do)
+																	(PRN
+																		(-LRB- -LRB-)
+																		(ADVP
+																			(ADVP
+																				([01;36mRB[00m [01;31mUH[00m e.g.)
+																				(NP
+																					([01;36mNNP[00m [01;31mUH[00m c5)
+																					(NP
+																						([01;36mNN[00m [01;31mVB[00m tag)
+																						([01;36mNN[00m [01;31mJJ[00m vdd)))
+																				(PP
+																					(IN for)
+																					([01;36mVBN[00m [01;31mVBD[00m did)))
+																			(CONJP
+																				(CC and)
+																				(NP
+																					([01;36mNN[00m [01;31mCD[00m vdg)
+																					(NN tag))
+																				(PP for doing)))
+																		(-RRB- -RRB-)))
+																[01;31m(ADJP[00m
+																	(VB be) [01;33mLST)[00m
+																	(CONJP and have)[01;31m)[00m))))))))))))))))
+Step:Modifier Attachment
+{'type': 'remove', 'label': 'ADJP', 'span': (35, 38), 'subtrees': ['VB', 'CONJP'], 'parent': 'LST', 'family': ['LST', 'ADJP'], 'left siblings': ['LST'], 'right siblings': [], 'over words': False, 'over_word': False, 'auto preterminals': ('VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-', 'VB', 'CC', 'VB'), 'auto preterminal span': (21, 38), 'classified_type': 'Modifier Attachment'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														(DT the)
+														(NP
+															(NNS verbs)
+															(LST
+																[01;36m(LST[00m
+																	(LST
+																		([01;36mVB[00m [01;31mVBP[00m do)
+																		(PRN
+																			(-LRB- -LRB-)
+																			(ADVP
+																				(ADVP
+																					([01;36mRB[00m [01;31mUH[00m e.g.)
+																					(NP
+																						([01;36mNNP[00m [01;31mUH[00m c5)
+																						(NP
+																							([01;36mNN[00m [01;31mVB[00m tag)
+																							([01;36mNN[00m [01;31mJJ[00m vdd)))
+																					(PP
+																						(IN for)
+																						([01;36mVBN[00m [01;31mVBD[00m did)))
+																				(CONJP
+																					(CC and)
+																					(NP
+																						([01;36mNN[00m [01;31mCD[00m vdg)
+																						(NN tag))
+																					(PP for doing)))
+																			(-RRB- -RRB-)))
+																	(VB be)[01;36m)[00m
+																(CONJP and have)))))))))))))))))
+Step:UNSET add
+{'type': 'add', 'label': 'LST', 'span': (21, 36), 'subtrees': ['LST', 'VB'], 'parent': 'LST', 'family': ['LST', 'CONJP'], 'auto preterminals': ('VBP', '-LRB-', 'UH', 'UH', 'VB', 'JJ', 'IN', 'VBD', 'CC', 'CD', 'NN', 'IN', 'VBG', '-RRB-', 'VB'), 'auto preterminal span': (21, 36), 'left siblings': [], 'right siblings': [(CONJP (CC and) (VB have))], 'over_word': False, 'over words': False, 'classified_type': 'UNSET add'}
+(S
+	(ROOT
+		(PP for example)
+		(S
+			(NP
+				(DT the)
+				(ADJP
+					(JJ original)
+					(NP
+						([01;36mNNP[00m [01;31mJJ[00m brown))
+					(CONJP
+						(CC and)
+						(NP
+							(NP
+								([01;36mNNP[00m [01;31mNNS[00m c5))
+							(NNS tagsets)))))
+			(VP
+				(VBP include)
+				(NP
+					(DT a)
+					(ADJP
+						(JJ separate)
+						(NP
+							(NN tag)
+							(PP
+								(PP for each)
+								(PP
+									(IN of)
+									(NP
+										(DT the)
+										(ADJP
+											(JJ different)
+											(NP
+												(NNS forms)
+												(PP
+													(IN of)
+													(NP
+														(DT the)
+														(NP
+															(NNS verbs)
+															(LST
+																(LST
+																	(LST
+																		([01;36mVB[00m [01;31mVBP[00m do)
+																		(PRN
+																			(-LRB- -LRB-)
+																			(ADVP
+																				(ADVP
+																					([01;36mRB[00m [01;31mUH[00m e.g.)
+																					(NP
+																						([01;36mNNP[00m [01;31mUH[00m c5)
+																						(NP
+																							([01;36mNN[00m [01;31mVB[00m tag)
+																							([01;36mNN[00m [01;31mJJ[00m vdd)))
+																					(PP
+																						(IN for)
+																						([01;36mVBN[00m [01;31mVBD[00m did)))
+																				(CONJP
+																					(CC and)
+																					(NP
+																						([01;36mNN[00m [01;31mCD[00m vdg)
+																						(NN tag))
+																					(PP for doing)))
+																			(-RRB- -RRB-)))
+																	(VB be))
+																(CONJP and have)))))))))))))))))
+

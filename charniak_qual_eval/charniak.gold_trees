@@ -1,0 +1,12 @@
+# Time of run:
+# Fri Dec 15 10:42:54 2023
+# Command:
+# jkkummerfeld-berkeley-parser-analyser-1a67d5c/berkeley_parse_analyser/classify_english.py gold_trees.txt charniak_trees.txt charniak_qual_eval/charniak
+#
+(ROOT (S (NP (PRP$ my) (NP (NN aunt) (NP (POS 's) (NP (NN can) (NN opener))))) (VP (MD can) (VP (VB open) (NP (DT a) (NN drum))))))
+(ROOT (S (NP (DT the) (NP (ADJP (JJ old)) (NN car))) (VP (V (VBD broke) (RP down)) (PP (IN in) (NP (DT the) (NP (NN car) (NN park)))))))
+(ROOT (S (NP (ADVP (RB at) (ADVP (RBS least) (CD two))) (NNS men)) (VP (VP (V (VBD broke) (RP in))) (CONJP (CC and) (VP (VBD stole) (NP (PRP$ my) (NN tv)))))))
+(ROOT (S (NP (NP (NNP kim)) (CONJP (CC and) (NP (NNP sandy)))) (VP (ADVP (RB both)) (VP (V (VBD broke) (RP up)) (PP (IN with) (NP (PRP$ their) (NNS partners)))))))
+(ROOT (S (NP (NP (DT the) (NN horse)) (CONJP (ADVP (RB as) (ADVP (RB well)) (ADVP (RB as))) (NP (NP (DT the) (NNS rabbits)) (S (WDT which) (S (PRP we) (VP (VBD wanted) (VP (TO to) (VB eat)))))))) (VP (VBZ has) (VP (VBN escaped)))))
+(ROOT (S (NP (PRP it)) (VP (VBD was) (NP (NP (PRP$ my) (NP (NN aunt) (NP (POS 's) (NN car)))) (S (WDT which) (S (NP (PRP we)) (VP (VP (VP (VBD sold) (PP (IN at) (NP (NN auction)))) (ADVP (RB last) (NP (NN year)))) (PP (IN in) (NP (NNP february))))))))))
+(ROOT (S (PP (IN for) (NP (NN example))) (S (NP (DT the) (ADJP (JJ original) (NP (NNP brown)) (CONJP (CC and) (NP (NP (NNP c5)) (NNS tagsets))))) (VP (VBP include) (NP (DT a) (ADJP (JJ separate) (NP (NN tag) (PP (PP (IN for) (DT each)) (PP (IN of) (NP (DT the) (ADJP (JJ different) (NP (NNS forms) (PP (IN of) (NP (DT the) (NP (NNS verbs) (LST (LST (LST (VB do) (PRN (-LRB- -LRB-) (ADVP (ADVP (RB e.g.) (NP (NNP c5) (NP (NN tag) (NN vdd))) (PP (IN for) (VBN did))) (CONJP (CC and) (NP (NN vdg) (NN tag)) (PP (IN for) (VBG doing)))) (-RRB- -RRB-))) (VB be)) (CONJP (CC and) (VB have))))))))))))))))))
