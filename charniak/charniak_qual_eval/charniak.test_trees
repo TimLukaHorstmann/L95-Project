@@ -1,7 +1,7 @@
 # Time of run:
-# Fri Dec 15 10:42:54 2023
+# Sat Dec 16 15:27:12 2023
 # Command:
-# jkkummerfeld-berkeley-parser-analyser-1a67d5c/berkeley_parse_analyser/classify_english.py gold_trees.txt charniak_trees.txt charniak_qual_eval/charniak
+# jkkummerfeld-berkeley-parser-analyser-1a67d5c/berkeley_parse_analyser/classify_english.py gold/gold_trees.txt charniak/charniak_trees.txt charniak/charniak_qual_eval/charniak
 #
 (S (NP (NP (PRP$ my) (NN aunt) (POS 's)) (NN can) (NN opener)) (VP (MD can) (VP (VB open) (NP (DT a) (VB drum)))))
 (S (NP (DT the) (JJ old) (NN car)) (VP (VBD broke) (ADVP (RP down)) (PP (IN in) (NP (DT the) (NN car) (NN park)))))

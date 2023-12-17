@@ -1,0 +1,29 @@
+# Time of run:
+# Sat Dec 16 17:52:06 2023
+# Command:
+# jkkummerfeld-berkeley-parser-analyser-1a67d5c/berkeley_parse_analyser/classify_english.py gold/gold_trees.txt charniak/charniak_trees_2023-12-16-HACK.txt charniak/charniak_qual_eval/charniak-HACK
+#
+Printing tree transformations
+Sentence 1:
+
+Sentence 2:
+
+Sentence 3:
+
+Sentence 4:
+
+Sentence 5:
+
+Sentence 6:
+
+Sentence 7:
+
+Sentence 8:
+
+Sentence 9:
+
+Sentence 10:
+
+Sentence 11:
+
+End of both input files

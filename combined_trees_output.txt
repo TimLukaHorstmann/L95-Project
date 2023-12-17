@@ -1,0 +1,55 @@
+Sentence 1:
+Gold: (TOP  (S   (NP (PRP$ my) (NP (NN aunt) (NP (POS 's) (NP (NN can) (NN opener)))))   (VP (MD can) (VP (VB open) (NP (DT a) (NN drum)))))  (. .))
+Berkeley: (S (NP (NP (PRP$ my) (NN aunt) (POS 's)) (NN can) (NN opener)) (VP (MD can) (VP (VB open) (NP (DT a) (NN drum)))) (. .))
+Charniak: (S (NP (NP (PRP$ my) (NN aunt) (POS 's)) (NN can) (NN opener)) (VP (MD can) (VP (VB open) (NP (DT a) (VB drum)))) (. .))
+
+Sentence 2:
+Gold: (TOP  (S (NP (DT the) (NP (ADJP (JJ old)) (NN car)))   (VP (V (VBD broke) (RP down))    (PP (IN in) (NP (DT the) (NP (NN car) (NN park))))))  (. .))
+Berkeley: (S (NP (DT the) (JJ old) (NN car)) (VP (VBD broke) (PRT (RP down)) (PP (IN in) (NP (DT the) (NN car) (NN park)))) (. .))
+Charniak: (S (NP (DT the) (JJ old) (NN car)) (VP (VBD broke) (PRT (RP down)) (PP (IN in) (NP (DT the) (NN car) (NN park)))) (. .))
+
+Sentence 3:
+Gold: (TOP  (S (NP (ADVP (RB at)   (ADVP (RBS least) (CD two))) (NNS men))     (VP (VP (V (VBD broke) (RP in)))      (CONJP (CC and)       (VP (VBD stole) (NP (PRP$ my) (NN tv))))))  (. .))
+Berkeley: (S (NP (QP (ADVP (RB at) (RBS least)) (CD two)) (NNS men)) (VP (VP (VBD broke) (PRT (IN in))) (CC and) (VP (VBD stole) (NP (PRP$ my) (NN tv)))) (. .))
+Charniak: (S (NP (QP (IN at) (JJS least) (CD two)) (NNS men)) (VP (VP (VBD broke) (PRT (RP in))) (CC and) (VP (VBD stole) (NP (PRP$ my) (NN tv)))) (. .))
+
+Sentence 4:
+Gold: (TOP (S (NP (NP (NNP kim)) (CONJP (CC and) (NP (NNP sandy)))) (VP (ADVP (RB both))   (VP (V (VBD broke) (RP up))    (PP (IN with) (NP (PRP$ their) (NNS partners))))))  (. .))
+Berkeley: (S (NP (NN kim) (CC and) (NNP sandy)) (DT both) (VP (VBD broke) (PRT (RP up)) (PP (IN with) (NP (PRP$ their) (NNS partners)))) (. .))
+Charniak: (S (NP (NNP kim) (CC and) (NNP sandy)) (DT both) (VP (VBD broke) (PRT (RP up)) (PP (IN with) (NP (PRP$ their) (NNS partners)))) (. .))
+
+Sentence 5:
+Gold: (TOP  (S   (NP (NP (DT the) (NN horse))    (CONJP (ADVP (RB as) (ADVP (RB well)) (ADVP (RB as)))       (NP (NP (DT the) (NNS rabbits))        (S (WDT which)         (S (PRP we)          (VP (VBD wanted) (VP (TO to) (VB eat))))))))   (VP (VBZ has) (VP (VBN escaped))))  (. .))
+Berkeley: (S (NP (NP (DT the) (NN horse)) (CONJP (RB as) (RB well) (IN as)) (NP (NP (DT the) (NNS rabbits)) (SBAR (WHNP (WDT which)) (S (NP (PRP we)) (VP (VBD wanted) (S (VP (TO to) (VP (VB eat))))))))) (VP (VBZ has) (VP (VBN escaped))) (. .))
+Charniak: (S (NP (NP (DT the) (NN horse)) (CONJP (RB as) (RB well) (IN as)) (NP (NP (DT the) (NNS rabbits)) (SBAR (WHNP (WDT which)) (S (NP (PRP we)) (VP (VBD wanted) (S (VP (TO to) (VP (VB eat))))))))) (VP (VBZ has) (VP (VBN escaped))) (. .))
+
+Sentence 6:
+Gold: (TOP  (S (NP (PRP it))   (VP (VBD was)    (NP (NP (PRP$ my) (NP (NN aunt) (NP (POS 's) (NN car))))     (S (WDT which)      (S (NP (PRP we))       (VP (VP (VP (VBD sold) (PP (IN at) (NP (NN auction))))        (ADVP (RB last) (NP (NN year))))         (PP (IN in) (NP (NNP february)))))))))  (. .))
+Berkeley: (S (NP (PRP it)) (VP (VBD was) (NP (NP (NP (PRP$ my) (NN aunt) (POS 's)) (NN car)) (SBAR (WHNP (WDT which)) (S (NP (PRP we)) (VP (VBD sold) (PP (IN at) (NP (NN auction))) (NP (JJ last) (NN year)) (PP (IN in) (NP (NN february)))))))) (. .))
+Charniak: (S (NP (PRP it)) (VP (VBD was) (NP (NP (NP (PRP$ my) (NN aunt) (POS 's)) (NN car)) (SBAR (WHNP (WDT which)) (S (NP (PRP we)) (VP (VBD sold) (PP (IN at) (NP (NN auction))) (NP (JJ last) (NN year)) (PP (IN in) (NP (NNP february)))))))) (. .))
+
+Sentence 7:
+Gold: (TOP (S (NP (NP (ADJP (JJ natural)) (NNS disasters)) (PRN (PRN (: –) (NP (NP (NP (NNS storms)) (LST (, ,) (NP (NN flooding)))) (LST (, ,)     (NP (NNS hurricanes))))) (: –))) (VP (VP (VP (VBP occur)) (ADVP (RB infrequently)))  (CONJP (CC but) (VP (VBP cause) (NP (NN devastation) (S (WDT that)   (VP (VP (VBZ strains)    (NP (NNS resources)))     (PP (IN to) (NP (NN breaking) (NN point))))))))))  (. .))
+Berkeley: (S (NP (NP (JJ natural) (NNS disasters)) (: –) (NP (NNS storms) (, ,) (NN flooding) (, ,) (NNS hurricanes)) (: –)) (VP (VP (VBP occur) (ADVP (RB infrequently))) (CC but) (VP (VBP cause) (NP (NP (NN devastation)) (SBAR (WHNP (WDT that)) (S (VP (VBZ strains) (NP (NNS resources)) (PP (IN to) (NP (VBG breaking) (NN point))))))))) (. .))
+Charniak: (S (NP (NP (JJ natural) (NNS disasters)) (PP (: –) (NP (NP (NNS storms)) (, ,) (NP (NN flooding)) (, ,) (NP (NNS hurricanes))))) (ADVP (: –)) (VP (VP (VBP occur) (ADVP (RB infrequently))) (CC but) (VP (VB cause) (NP (NP (NN devastation)) (SBAR (WHNP (WDT that)) (S (VP (NNS strains) (NP (NNS resources)) (PP (TO to) (NP (NN breaking) (NN point))))))))) (. .))
+
+Sentence 8:
+Gold: (TOP  (S (NP (NP (NNS letters))   (S (VP (VP (VBN delivered) (PP (IN on) (NP (NN time))))    (PP (IN by) (NP (ADJP (ADJP (ADJP (JJ old))  (HYPH -))  (JJ fashioned)) (NNS means))))))    (VP (VBP are) (ADJP (ADVP (RB increasingly)) (JJ rare)))   (S (ADVP (, ,) (RB so))    (S (NP (PRP it))     (VP (VP (VBZ is)      (ADVP (RB as)       (ADVP (RB well))))        (S (IN that)         (S (NP (DT that))          (VP (VBZ is) (ADVP (RB not)           (NP (NP (DT the) (NP (ADJP (JJ only)) (NN option)))            (ADJP (JJ available)))))))))))  (. .))
+Berkeley: (S (S (NP (NP (NNS letters)) (VP (VBN delivered) (PP (IN on) (NP (NN time))) (PP (IN by) (NP (ADJP (JJ old) (HYPH -) (JJ fashioned)) (NNS means))))) (VP (VBP are) (ADJP (RB increasingly) (JJ rare)))) (, ,) (IN so) (S (NP (NP (PRP it))) (VP (VBZ is) (ADVP (RB as) (RB well)) (SBAR (IN that) (S (NP (DT that)) (VP (VBZ is) (RB not) (NP (NP (DT the) (JJ only) (NN option)) (ADJP (JJ available)))))))) (. .))
+Charniak: (S (S (NP (NP (NNS letters)) (VP (VBN delivered) (PP (IN on) (NP (NN time))) (PP (IN by) (NP (JJ old) (VBN fashioned) (NNS means))))) (VP (VBP are) (ADJP (RB increasingly) (JJ rare)))) (, ,) (CC so) (S (NP (PRP it)) (VP (VBZ is) (ADVP (RB as) (RB well)) (SBAR (IN that) (S (NP (DT that)) (VP (VBZ is) (RB not) (NP (NP (DT the) (JJ only) (NN option)) (ADJP (JJ available)))))))) (. .))
+
+Sentence 9:
+Gold: (TOP (S (NP (NNP english))  (VP (ADVP (RB also))   (VP (VBZ has)    (NP (NP (ADJP (JJ many)) (NP (NNS words) (PP (IN of) (NP (NP (ADJP (ADJP (JJR more))     (CONJP (CC or) (ADJP (JJR less)))) (NP (ADJP (JJ unique)) (NN function))) (VP (, ,)     (VP (VP (VP (VP (VBG including) (NP (NP (NNS interjections)) (PRN (-LRB- -LRB-)      (LST (LST (UH oh) (, ,)) (UH ah)) (-RRB- -RRB-)))     (, ,) (NP (NP (NNS negatives))  (PRN (-LRB- -LRB-) (LST (LST (RB no) (, ,)) (RB not)) (-RRB- -RRB-))) (, ,)  (NP (NP (NN politeness) (NNS markers)) (PRN (-LRB- -LRB-)  (LST (LST (UH please) (, ,)) (VP (VB thank) (NP (PRP you))))  (-RRB- -RRB-))) (, ,)  (CONJP (CC and) (ADVP (ADVP (ADVP (DT the) (ADVP (ADJP (JJ existential)) (`` ')  (ADVP (RB there)))) ('' ')) (PRN (-LRB- -LRB-)  (S (EX there)   (VP (VBP are)    (NP (NNS horses) (CONJP (CC but) (ADVP (RB not))     (NP (NNS unicorns)))))))))  (-RRB- -RRB-))) (PP (IN among) (NP (NNS others)))))))))))))) (. .))
+Berkeley: (S (NP (NN english)) (ADVP (RB also)) (VP (VBZ has) (NP (NP (JJ many) (NNS words)) (PP (IN of) (NP (ADJP (ADVP (JJR more) (CC or) (RBR less)) (JJ unique)) (NN function))) (, ,) (PP (VBG including) (NP (NP (NP (NNS interjections)) (-LRB- -LRB-) (INTJ (UH oh) (, ,) (UH ah)) (-RRB- -RRB-)) (, ,) (NP (NP (NNS negatives)) (-LRB- -LRB-) (UH no) (, ,) (UH not) (-RRB- -RRB-)) (, ,) (NP (NP (NN politeness) (NNS markers)) (-LRB- -LRB-) (INTJ (VB please) (, ,) (VP (VB thank) (NP (PRP you)))) (-RRB- -RRB-)) (, ,) (CC and) (NP (NP (NP (DT the) (JJ existential) (`` ') (RB there) ('' ')) (-LRB- -LRB-) (S (NP (EX there)) (VP (VBP are) (NP (NP (NNS horses)) (CC but) (RB not) (NP (NNS unicorns))))) (-RRB- -RRB-)) (PP (IN among) (NP (NNS others)))))))) (. .))
+Charniak: (S (NP (NNP english)) (ADVP (RB also)) (VP (VBZ has) (NP (NP (JJ many) (NNS words)) (PP (IN of) (NP (JJR more) (CC or) (JJR less) (JJ unique) (NN function)))) (PRN (, ,) (VP (VP (VBG including) (NP (NP (NP (NNS interjections)) (PRN (-LRB- -LRB-) (INTJ (UH oh) (, ,) (UH ah)) (-RRB- -RRB-)) (, ,) (NP (NNS negatives)) (PRN (-LRB- -LRB-) (INTJ (UH no)) (, ,) (ADVP (RB not)) (-RRB- -RRB-)) (, ,) (NP (NN politeness) (NNS markers)) (PRN (-LRB- -LRB-) (S (INTJ (UH please)) (, ,) (VP (VB thank) (NP (PRP you)))) (-RRB- -RRB-))) (, ,) (CC and) (NP (DT the) (JJ existential) ('' '))) (ADVP (RB there)) ('' ') (-LRB- -LRB-) (S (NP (EX there)) (VP (VBP are) (NP (NNS horses))))) (CC but) (RB not) (NP (NNS unicorns))) (-RRB- -RRB-)) (PP (IN among) (NP (NNS others)))) (. .))
+
+Sentence 10 A:
+Gold: (TOP  (S (NP (DT the) (NP (NNP penn) (NP (NNP treebank) (NP (NN tagset)))))   (VP (VP (VBD was) (VBN culled))    (PP (IN from) (NP (DT the) (ADJP (JJ original) (NP (NP (CD 87)  (HYPH -))  (NP (NN tag)))) (NP (NN tagset)   (PP (IN for) (NP (DT the) (NP (NNP brown) (NP (NNP corpus))))))))))  (. .))
+Berkeley: (S (NP (DT the) (JJ penn) (NN treebank) (NN tagset)) (VP (VBD was) (VP (VBN culled) (PP (IN from) (NP (NP (DT the) (JJ original) (NML (CD 87) (HYPH -) (NN tag)) (NN tagset)) (PP (IN for) (NP (DT the) (JJ brown) (NN corpus))))))) (. .))
+Charniak: (S (NP (DT the) (NNP penn) (NN treebank) (NN tagset)) (VP (VBD was) (VP (VBN culled) (PP (IN from) (NP (NP (DT the) (JJ original) (CD 87) (NN tag) (NN tagset)) (PP (IN for) (NP (DT the) (JJ brown) (NN corpus))))))) (. .))
+
+Sentence 10 B:
+Gold: (TOP  (S (PP (IN for)   (NP (NN example)))    (S     (NP (DT the) (ADJP (JJ original) (NP (NNP brown)) (CONJP (CC and)      (NP (NP (NNP c5)) (NNS tagsets)))))     (VP (VBP include)      (NP (DT a) (ADJP (JJ separate) (NP (NN tag)       (PP (PP (IN for) (DT each))      (PP (IN of)       (NP (DT the) (ADJP (JJ different) (NP (NNS forms)        (PP (IN of) (NP (DT the) (NP (NNS verbs)  (LST (LST (LST (VB do) (PRN (-LRB- -LRB-)  (ADVP (ADVP (RB e.g.) (NP (NNP c5) (NP (NN tag) (NN vdd)))  (PP (IN for) (VBN did)))  (CONJP (CC and) (NP (NN vdg) (NN tag))   (PP (IN for) (VBG doing))))  (-RRB- -RRB-))) (, ,) (VB be)) (CONJP (CC and) (VB have))))))))))))))))) (. .))
+Berkeley: (S (PP (IN for) (NP (NN example))) (NP (DT the) (JJ original) (ADJP (JJ brown) (CC and) (JJ c5)) (NNS tagsets)) (VP (VBP include) (NP (NP (NP (DT a) (JJ separate) (NN tag)) (PP (IN for) (NP (NP (DT each)) (PP (IN of) (NP (NP (NP (NP (DT the) (JJ different) (NNS forms)) (PP (IN of) (NP (DT the) (NNS verbs)))) (VBP do)) (-LRB- -LRB-) (ADVP (RB e.g.)) (NP (NP (CD c5) (NN tag) (VP (NP (NN vdd)) (PP (IN for) (S (VP (VBN did)))))) (CC and) (NP (NP (NN vdg) (NN tag)) (PP (IN for) (NP (NN doing))))) (-RRB- -RRB-)))))) (, ,) (VP (VB be) (CC and) (VBP have)))) (. .))
+Charniak: (S (PP (IN for) (NP (NN example))) (NP (DT the) (JJ original) (JJ brown) (CC and) (NNS c5) (NNS tagsets)) (VP (VBP include) (NP (NP (DT a) (JJ separate) (NN tag)) (PP (IN for) (NP (NP (DT each)) (PP (IN of) (NP (NP (DT the) (JJ different) (NNS forms)) (PP (IN of) (NP (NP (DT the) (NNS verbs)) (SBAR (S (VP (VBP do) (PRN (-LRB- -LRB-) (INTJ (UH e.g.) (UH c5)) (VP (VB tag) (ADJP (JJ vdd) (PP (IN for) (NP (NP (VBD did)) (CC and) (NP (NP (CD vdg) (NN tag)) (PP (IN for) (S (VP (VBG doing))))))))) (-RRB- -RRB-))))))) (, ,) (ADJP (VB be) (CC and) (VB have)))))))) (. .))
+
