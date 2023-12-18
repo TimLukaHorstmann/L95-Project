@@ -1,13 +1,13 @@
 # Time of run:
-# Sat Dec 16 17:52:06 2023
+# Mon Dec 18 16:15:49 2023
 # Command:
-# jkkummerfeld-berkeley-parser-analyser-1a67d5c/berkeley_parse_analyser/classify_english.py gold/gold_trees.txt charniak/charniak_trees_2023-12-16-HACK.txt charniak/charniak_qual_eval/charniak-HACK
+# jkkummerfeld-berkeley-parser-analyser-1a67d5c/berkeley_parse_analyser/classify_english.py gold/gold_trees.txt charniak/charniak_trees_2023-12-18-HACK.txt charniak/charniak_qual_eval/charniak-HACK
 #
 Sentence 1:
 (S
 	(NP
 		[01;31m(NP[00m
-			(PRP$ my)
+			(PRP$ My)
 			(NN [01;33m(NP[00m aunt)
 			(POS [01;33m(NP[00m 's)[01;31m)[00m
 		[01;36m(NP[00m
@@ -25,7 +25,7 @@ Sentence 1:
 Sentence 2:
 (S
 	(NP
-		(DT the)
+		(DT The)
 		[01;36m(NP[00m
 			[01;36m(ADJP[00m
 				(JJ old)[01;36m)[00m
@@ -48,7 +48,7 @@ Sentence 3:
 (S
 	(NP
 		[01;36m(ADVP[00m [01;31m(QP[00m
-			([01;36mRB[00m [01;31mIN[00m at)
+			([01;36mRB[00m [01;31mIN[00m At)
 			[01;36m(ADVP[00m
 				([01;36mRBS[00m [01;31mJJS[00m least)
 				(CD two)[01;36m)[00m[01;31m)[00m[01;36m)[00m
@@ -61,18 +61,18 @@ Sentence 3:
 					(RP in)[01;31m)[00m)[01;36m)[00m
 		[01;36m(CONJP[00m
 			(CC and)
-			(VP stole my tv)[01;36m)[00m))
+			(VP stole my TV)[01;36m)[00m))
 
 
 Sentence 4:
 (S
 	(NP
 		[01;36m(NP[00m
-			(NNP kim)[01;36m)[00m
+			(NNP Kim)[01;36m)[00m
 		[01;36m(CONJP[00m
 			(CC and)
 			[01;36m(NP[00m
-				(NNP sandy)[01;36m)[00m[01;36m)[00m)
+				(NNP Sandy)[01;36m)[00m[01;36m)[00m)
 	[01;36m(VP[00m
 		[01;36m(ADVP[00m
 			([01;36mRB[00m [01;31mDT[00m both)[01;36m)[00m
@@ -87,7 +87,7 @@ Sentence 4:
 Sentence 5:
 (S
 	(NP
-		(NP the horse)
+		(NP The horse)
 		[01;36m(CONJP[00m
 			[01;36m(ADVP[00m [01;31m(CONJP[00m
 				(RB as)
@@ -115,7 +115,7 @@ Sentence 5:
 
 Sentence 6:
 (S
-	(NP it)
+	(NP It)
 	(VP
 		(VBD was)
 		(NP
@@ -139,7 +139,7 @@ Sentence 6:
 								([01;36mRB[00m [01;31mJJ[00m last)
 								[01;36m(NP[00m
 									(NN year)[01;36m)[00m[01;31m)[00m[01;36m)[00m[01;36m)[00m
-						(PP in february)))[01;31m)[00m[01;36m)[00m)))
+						(PP in February)))[01;31m)[00m[01;36m)[00m)))
 
 
 Sentence 7:
@@ -147,7 +147,7 @@ Sentence 7:
 	(NP
 		(NP
 			[01;36m(ADJP[00m
-				(JJ natural)[01;36m)[00m
+				(JJ Natural)[01;36m)[00m
 			(NNS disasters))
 		[01;36m(PRN[00m [01;36m(PRN[00m [01;31m(PP[00m
 			(NP
@@ -188,7 +188,7 @@ Sentence 8:
 (S
 	[01;31m(S[00m
 		(NP
-			(NP letters)
+			(NP Letters)
 			[01;36m(S[00m
 				(VP
 					[01;36m(VP[00m
@@ -241,7 +241,7 @@ Sentence 8:
 
 Sentence 9:
 (S
-	(NP english)
+	(NP English)
 	[01;36m(VP[00m
 		(ADVP also)
 		(VP
@@ -330,11 +330,11 @@ Sentence 9:
 Sentence 10:
 (S
 	(NP
-		(DT the)
+		(DT The)
 		[01;36m(NP[00m
-			(NNP penn)
+			(NNP Penn)
 			[01;36m(NP[00m
-				([01;36mNNP[00m [01;31mNN[00m treebank)
+				(NNP Treebank)
 				[01;36m(NP[00m
 					(NN tagset)[01;36m)[00m[01;36m)[00m[01;36m)[00m)
 	(VP [01;33m(VP[00m
@@ -359,26 +359,26 @@ Sentence 10:
 						(NP
 							(DT the)
 							[01;36m(NP[00m
-								([01;36mNNP[00m [01;31mJJ[00m brown)
+								(NNP Brown)
 								[01;36m(NP[00m
-									([01;36mNNP[00m [01;31mNN[00m corpus)[01;36m)[00m[01;36m)[00m))))[01;31m)[00m))
+									(NNP Corpus)[01;36m)[00m[01;36m)[00m))))[01;31m)[00m))
 
 
 Sentence 11:
 (S
-	(PP for example)
+	(PP For example)
 	[01;36m(S[00m
 		(NP
 			(DT the)
 			[01;36m(ADJP[00m
 				(JJ original)
 				[01;36m(NP[00m
-					([01;36mNNP[00m [01;31mJJ[00m brown)[01;36m)[00m
+					(NNP Brown)[01;36m)[00m
 				[01;36m(CONJP[00m
 					(CC and)
 					[01;36m(NP[00m
 						[01;36m(NP[00m
-							([01;36mNNP[00m [01;31mNNS[00m c5)[01;36m)[00m
+							(NNP C5)[01;36m)[00m
 						(NNS tagsets)[01;36m)[00m[01;36m)[00m[01;36m)[00m)
 		(VP
 			(VBP include)
@@ -412,30 +412,31 @@ Sentence 11:
 														([01;36mVB[00m [01;31mVBP[00m do)
 														(PRN
 															(-LRB- -LRB-)
-															[01;36m(ADVP[00m
-																[01;31m(INTJ[00m [01;33m(ADVP[00m
+															[01;36m(ADVP[00m [01;31m(S[00m [01;33m(ADVP[00m
+																[01;31m(INTJ[00m
 																	([01;36mRB[00m [01;31mUH[00m e.g.)
-																	([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m c5)[01;31m)[00m
-																[01;31m(VP[00m [01;33m(NP[00m
-																	([01;36mNN[00m [01;31mVB[00m tag)
-																	[01;31m(ADJP[00m
-																		([01;36mNN[00m [01;31mJJ[00m vdd) [01;33mNP) NP)[00m
-																		[01;31m(PP[00m [01;33m(PP[00m
-																			(IN for)
+																	([01;36mNNP[00m [01;31mUH[00m [01;33m(NP[00m C5)[01;31m)[00m
+																[01;31m(VP[00m
+																	[01;36m(NP[00m
+																		([01;36mNN[00m [01;31mVB[00m tag)
+																		[01;31m(NP[00m
+																			([01;36mNN[00m [01;31mNNP[00m VDD)[01;31m)[00m [01;33mNP)[00m[01;36m)[00m
+																	[01;31m(PP[00m [01;33m(PP[00m
+																		(IN for)
+																		[01;31m(NP[00m
 																			[01;31m(NP[00m
+																				([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m [01;33mPP) ADVP)[00m
+																			[01;36m(CONJP[00m
+																				(CC and)
 																				[01;31m(NP[00m
-																					([01;36mVBN[00m [01;31mVBD[00m did)[01;31m)[00m [01;33mPP) ADVP)[00m
-																				[01;36m(CONJP[00m
-																					(CC and)
-																					[01;31m(NP[00m
-																						(NP
-																							([01;36mNN[00m [01;31mCD[00m vdg)
-																							(NN tag))
-																						(PP
-																							(IN for)
-																							[01;31m(S[00m
-																								[01;31m(VP[00m
-																									(VBG doing)[01;31m)[00m[01;31m)[00m)[01;31m)[00m[01;36m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;36m)[00m
+																					(NP
+																						([01;36mNN[00m [01;31mCD[00m VDG)
+																						(NN tag))
+																					(PP
+																						(IN for)
+																						[01;31m(S[00m
+																							[01;31m(VP[00m
+																								(VBG doing)[01;31m)[00m[01;31m)[00m)[01;31m)[00m[01;36m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;36m)[00m
 															(-RRB- -RRB-))[01;31m)[00m[01;31m)[00m[01;31m)[00m[01;36m)[00m[01;31m)[00m[01;31m)[00m
 									[01;31m(ADJP[00m
 										(VB be) [01;33mLST)[00m

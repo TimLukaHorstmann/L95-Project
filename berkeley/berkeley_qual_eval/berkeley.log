@@ -1,7 +1,7 @@
 # Time of run:
-# Fri Dec 15 09:51:28 2023
+# Mon Dec 18 16:16:55 2023
 # Command:
-# jkkummerfeld-berkeley-parser-analyser-1a67d5c/berkeley_parse_analyser/classify_english.py gold_trees.txt berkeley_trees.txt berkeley
+# jkkummerfeld-berkeley-parser-analyser-1a67d5c/berkeley_parse_analyser/classify_english.py gold/gold_trees.txt berkeley/berkeley_trees_2023-12-18.txt berkeley/berkeley_qual_eval/berkeley
 #
 Printing tree transformations
 Sentence 1:
